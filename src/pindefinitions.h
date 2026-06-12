@@ -54,11 +54,11 @@
 
 // ********* Analog Signal Pins ********
 #ifndef ANALOG9
-#define ANALOG9 34
+#define ANALOG9 34 // Buttons
 #endif
 
 #ifndef ANALOG10
-#define ANALOG10 35
+#define ANALOG10 35 // Display Touch
 #endif
 
 #ifndef ANALOG11
@@ -66,7 +66,7 @@
 #endif
 
 #ifndef ANALOG12
-#define ANALOG12 39
+#define ANALOG12 39 // Display Touch
 #endif
 
 
@@ -76,11 +76,11 @@
 #endif
 
 #ifndef LCD_WR
-#define LCD_WR 33
+#define LCD_WR 4 // Analog Measurement on Pin 39
 #endif
 
 #ifndef LCD_RS
-#define LCD_RS 15
+#define LCD_RS 15 // Analog Measurement on Pin 34
 #endif
 
 
@@ -121,7 +121,7 @@
 
 // ********** LED Strip ********
 #ifndef LED_PIN
-#define LED_PIN 4
+#define LED_PIN 33
 #endif
 
 #ifndef NUMBER_LEDS

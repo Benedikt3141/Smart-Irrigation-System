@@ -5,9 +5,11 @@
 #include "functions.h"
 #include <TFT_eSPI.h>
 #include <Adafruit_NeoPixel.h>
-#include "TouchScreen.h"
 #include "RTClib.h"
 #include <Wire.h>
+#include <TouchScreen.h>
+
+#define ESP32_WIFI_TOUCH
 
 TFT_eSPI tft = TFT_eSPI();
 Adafruit_NeoPixel leds(NUMBER_LEDS, LED_PIN, NEO_RGB + NEO_KHZ800);
@@ -25,6 +27,8 @@ void setup() {
 
   setTime();
   printTime();
+
+  testDisplay();
 
 }
 
