@@ -1,0 +1,21 @@
+#ifndef FUNCTIONS_H
+#define FUNCTIONS_H
+
+
+// MoistureSensor
+int getMoistureData(int);
+
+// Display
+void testDisplay(void);
+
+// LEDs
+void testLEDs(void);
+
+// I2C
+void scan_I2C_Addresses(void);
+
+// RTC
+void setTime(void);
+void printTime(void);
+
+#endif
