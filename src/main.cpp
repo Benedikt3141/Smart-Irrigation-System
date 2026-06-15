@@ -8,6 +8,9 @@
 #include "RTClib.h"
 #include <Wire.h>
 #include <TouchScreen.h>
+#include "FS.h"
+#include "SD.h"
+#include "SPI.h"
 
 #define ESP32_WIFI_TOUCH
 
@@ -17,7 +20,7 @@ RTC_DS3231 rtc;
 
 void setup() {
   Serial.begin(115200);
-  Serial.println("Start Programm: 'PlantWatering BreadBoard_Code'");
+  Serial.println("\nStart Programm: 'PlantWatering BreadBoard_Code'\n");
 
   Wire.begin(); //Start I2C
 
@@ -30,6 +33,7 @@ void setup() {
 
   testDisplay();
 
+  initSDCard();
 }
 
 void loop() {

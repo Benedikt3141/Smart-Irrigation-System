@@ -29,4 +29,5 @@ void printTime() {
     Serial.print(':');
     Serial.print(now.second(), DEC);
     Serial.println();
+    Serial.print("\n");
 }

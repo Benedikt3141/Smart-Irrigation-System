@@ -18,4 +18,7 @@ void scan_I2C_Addresses(void);
 void setTime(void);
 void printTime(void);
 
+// SD Card
+void initSDCard(void);
+
 #endif
