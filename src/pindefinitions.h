@@ -54,7 +54,7 @@
 
 // ********* Analog Signal Pins ********
 #ifndef ANALOG9
-#define ANALOG9 34 // Buttons
+#define ANALOG9 34 // MQ2
 #endif
 
 #ifndef ANALOG10
@@ -62,7 +62,7 @@
 #endif
 
 #ifndef ANALOG11
-#define ANALOG11 36
+#define ANALOG11 36 //Buttons
 #endif
 
 #ifndef ANALOG12
