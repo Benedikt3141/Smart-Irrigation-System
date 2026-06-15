@@ -71,57 +71,31 @@
 
 
 // ******** LCD Display Pins ******** //actually they're configured in .pio\libdeps\az-delivery-devkit-v4\TFT_eSPI\User_Setups. It's just for clarification :)
-#ifndef LCD_CS 
-#define LCD_CS 32 
-#endif
+#ifndef LCD_Pins 
 
-#ifndef LCD_WR
-#define LCD_WR 4 // Analog Measurement on Pin 39
-#endif
+    // Control Pins
+    #define TFT_CS   33
+    #define TFT_DC   15   // LCD_RS
+    #define TFT_RST  -1
+    #define TFT_WR    4
+    #define TFT_RD    2
 
-#ifndef LCD_RS
-#define LCD_RS 15 // Analog Measurement on Pin 34
-#endif
+    // 8-Bit-Databus
+    #define TFT_D0   12
+    #define TFT_D1   13
+    #define TFT_D2   26
+    #define TFT_D3   25
+    #define TFT_D4   17
+    #define TFT_D5   16
+    #define TFT_D6   27
+    #define TFT_D7   14
 
-
-
-
-#ifndef LCD_D0
-#define LCD_D0 16
-#endif
-
-#ifndef LCD_D1
-#define LCD_D1 17
-#endif
-
-#ifndef LCD_D2
-#define LCD_D2 25
-#endif
-
-#ifndef LCD_D3
-#define LCD_D3 26
-#endif
-
-#ifndef LCD_D4
-#define LCD_D4 27
-#endif
-
-#ifndef LCD_D5
-#define LCD_D5 14
-#endif
-
-#ifndef LCD_D6
-#define LCD_D6 12
-#endif
-
-#ifndef LCD_D7
-#define LCD_D7 13
 #endif
 
 
 // ********** LED Strip ********
 #ifndef LED_PIN
-#define LED_PIN 33
+#define LED_PIN 32
 #endif
 
 #ifndef NUMBER_LEDS
