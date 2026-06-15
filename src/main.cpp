@@ -8,6 +8,7 @@
 #include "RTClib.h"
 #include <Wire.h>
 #include <TouchScreen.h>
+#include <Adafruit_BMP280.h>
 #include "FS.h"
 #include "SD.h"
 #include "SPI.h"
@@ -16,6 +17,7 @@
 #define ESP32_WIFI_TOUCH
 
 
+Adafruit_BMP280 bmp; // use I2C interface
 MQ2 mq2(ANALOG9);
 TFT_eSPI tft = TFT_eSPI();
 Adafruit_NeoPixel leds(NUMBER_LEDS, LED_PIN, NEO_RGB + NEO_KHZ800);
@@ -37,8 +39,8 @@ void setup() {
   testDisplay();
   initSDCard();
   scan_I2C_Addresses();
-
   mq2.read(true);
+  check_BMP_Sensor();
 }
 
 void loop() {

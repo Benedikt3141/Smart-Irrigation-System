@@ -21,4 +21,7 @@ void printTime(void);
 // SD Card
 void initSDCard(void);
 
+// BMP280
+void check_BMP_Sensor(void);
+
 #endif

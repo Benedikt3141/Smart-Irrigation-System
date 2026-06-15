@@ -18,11 +18,11 @@
 #endif
 
 #ifndef ADDR_CLOCK1
-#define ADDR_CLOCK1 0x57 // Address is not used
+#define ADDR_CLOCK1 0x57 
 #endif
 
 #ifndef ADDR_CLOCK2
-#define ADDR_CLOCK2 0x68 // Address is not used
+#define ADDR_CLOCK2 0x68 
 #endif
 
 #ifndef ADDR_BMP280
