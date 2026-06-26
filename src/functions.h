@@ -24,4 +24,7 @@ void initSDCard(void);
 // BMP280
 void check_BMP_Sensor(void);
 
+// Buttons
+int readAverage(int, int);
+
 #endif

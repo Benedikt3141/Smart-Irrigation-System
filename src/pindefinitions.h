@@ -53,16 +53,16 @@
 
 
 // ********* Analog Signal Pins ********
-#ifndef ANALOG9
-#define ANALOG9 34 // MQ2
+#ifndef MQ_SENSOR_PIN
+#define MQ2_SENSOR_PIN 34 // Analog 9
 #endif
 
 #ifndef ANALOG10
 #define ANALOG10 35 // Display Touch
 #endif
 
-#ifndef ANALOG11
-#define ANALOG11 36 //Buttons
+#ifndef BUTTONS 
+#define BUTTONS 36 // Analog 11
 #endif
 
 #ifndef ANALOG12

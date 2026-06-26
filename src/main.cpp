@@ -1,3 +1,5 @@
+#define ESP32_WIFI_TOUCH
+
 #include <Arduino.h>
 #include <SPI.h>
 #include <SD.h>
@@ -14,35 +16,118 @@
 #include "SPI.h"
 #include "MQ2.h" // library: https://github.com/labay11/MQ-2-sensor-library <- Thank you so much!
 
-#define ESP32_WIFI_TOUCH
 
 
 Adafruit_BMP280 bmp; // use I2C interface
-MQ2 mq2(ANALOG9);
+MQ2 mq2(MQ2_SENSOR_PIN);
 TFT_eSPI tft = TFT_eSPI();
 Adafruit_NeoPixel leds(NUMBER_LEDS, LED_PIN, NEO_RGB + NEO_KHZ800);
 RTC_DS3231 rtc;
+
+// ***************************************** Button Interrupt *****************************************
+volatile bool buttonInterrupt = false;
+
+
+// Option declaration
+enum Button {
+    BUTTON_NONE,
+    BUTTON_1,
+    BUTTON_2,
+    BUTTON_3,
+    BUTTON_4,
+    BUTTON_UNKNOWN
+};
+
+
+Button decodeButton(int value) {
+    if (value > 3800) return BUTTON_NONE;
+
+    if (value > 0 && value < 50) {
+        return BUTTON_1;
+    }
+
+    if (value > 200 && value < 400) {
+        return BUTTON_2;
+    }
+
+    if (value > 500 && value < 720) {
+        return BUTTON_3;
+    }
+
+    if (value > 750 && value < 1000) {
+        return BUTTON_4;
+    }
+
+    return BUTTON_UNKNOWN;
+}
+
+void IRAM_ATTR onButtonChange() {
+    buttonInterrupt = true;
+}
+
+
+// ***************************************** Actual Code *****************************************
 
 void setup() {
   Serial.begin(115200);
   Serial.println("\nStart Programm: 'PlantWatering BreadBoard_Code'\n");
 
+
+  // ******** GPIO initialization ********
+  pinMode(BUTTONS, INPUT);
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(MQ2_SENSOR_PIN, INPUT);
+  analogReadResolution(12);
+
+
   Wire.begin(); //Start I2C
-  mq2.begin();
+  mq2.begin(); //Start MQ2 Sensor
 
   if (!rtc.begin()) {
     Serial.println("Couldn't find RTC!");
   }
 
-  setTime();
-  printTime();
-  testDisplay();
-  initSDCard();
-  scan_I2C_Addresses();
-  mq2.read(true);
-  check_BMP_Sensor();
+  attachInterrupt(
+        digitalPinToInterrupt(BUTTONS),
+        onButtonChange,
+        CHANGE
+    );
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+    Serial.println(analogRead(BUTTONS));
+    delay(1000);
+    if (1==2) {
+        buttonInterrupt = false;
+
+        delay(25); // Entprellen
+
+        int value = analogRead(BUTTONS);
+        Button button = decodeButton(value);
+
+        Serial.print("ADC: ");
+        Serial.print(value);
+        Serial.print(" -> ");
+
+        switch (button) {
+            case BUTTON_NONE:
+                Serial.println("kein Button");
+                break;
+            case BUTTON_1:
+                Serial.println("Button 1");
+                break;
+            case BUTTON_2:
+                Serial.println("Button 2");
+                break;
+            case BUTTON_3:
+                Serial.println("Button 3");
+                break;
+            case BUTTON_4:
+                Serial.println("Button 4");
+                break;
+            default:
+                Serial.println("unbekannter Wert");
+                break;
+        }
+    }
 }
