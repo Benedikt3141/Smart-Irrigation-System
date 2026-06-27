@@ -5,21 +5,17 @@ Each plant is monitored by a capacitive soil moisture sensor connected to the ma
 
 The project currently focuses on the main monitoring and control unit. A separate watering unit is planned but not fully designed yet. Communication between both units is intended to use ESP-NOW.
 
-
+![Concept](Concept.jpg)
 
 ## Project Overview
 
 The system consists of two main parts:
-
-
 
 ### Main Monitoring and Control Unit
 
 The main unit collects sensor data, displays current measurements on a TFT screen, logs data to an SD card and indicates the system status using an LED strip.
 
 Each soil moisture sensor is connected individually using an audio jack connector.
-
-
 
 ### Watering Unit
 
@@ -28,11 +24,7 @@ The unit should also monitor the water tank level using an ultrasonic sensor.
 
 This part of the system is still work in progress.
 
-
-
 ## Feature overview
-
-
 
 ###### Sensors (Inputs)
 
@@ -46,8 +38,6 @@ This part of the system is still work in progress.
 * \[x] 4 Buttons
 * \[ ] Tank fill state sensor
 
-
-
 ###### Other features and outputs
 
 * \[x] **Battery powered**
@@ -58,80 +48,49 @@ This part of the system is still work in progress.
 * \[ ] web interface
 * \[ ] Push Emails when water is empty/error etc.
 
-
 ![Schematic](PCB_Files/Schematic.jpeg)
 
 ![PCB](PCB_Files/PCB_Layout.jpeg)
 
-
 ## Getting started
-
-
 
 #### Requirements
 
 To work with this project, you need:
-
-
 
 * VS Code
 * PlatformIO or pioarduino IDE Extension
 * C++ Compiler
 * KiCad 10.0.1 or later
 
-
-
 #### Installation
-
-
 
 Use git to clone this repository into your computer.
 
 ```
 git clone https://github.com/Benedikt3141/Smart-Irrigation-System.git
-
 ```
 
 Open the project folder in VS Code and build/upload the firmware using PlatformIO or pioarduino.
 
-
-
 ###### Hardware
-
-###### 
 
 You can either use the provided Gerber files or modify the KiCad project and generate new manufacturing files for your preferred PCB supplier.
 
-
-
-### 
-
 ## License
-
-
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-
-
 ## Current Project Status
-
-
 
 This project is still in development.
 
-
-
 The main monitoring unit is mostly implemented. The watering unit, web interface and notification system are planned but not finished yet.
-
-
 
 ## Sources
 
 [MQ2 Library](https://github.com/labay11/MQ-2-sensor-library/)
 [SD Card](https://RandomNerdTutorials.com/esp32-web-server-microsd-card/)
-
-
 
 ## AI Usage
 
