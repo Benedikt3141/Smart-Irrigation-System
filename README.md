@@ -59,19 +59,9 @@ This part of the system is still work in progress.
 * \[ ] Push Emails when water is empty/error etc.
 
 
+![Schematic]("https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/Schematic.jpeg")
 
-<object data="https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/Schematic.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/Schematic.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/Schematic.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
-
-<object data="https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/PCB\_Layout.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/PCB\_Layout.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/PCB\_Layout.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
-
+![PCB]("https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/PCB_Layout.jpeg")
 
 
 ## Getting started
