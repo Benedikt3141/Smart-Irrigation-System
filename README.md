@@ -59,9 +59,9 @@ This part of the system is still work in progress.
 * \[ ] Push Emails when water is empty/error etc.
 
 
-![Schematic]("https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/Schematic.jpeg")
+![Schematic](https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/Schematic.jpeg)
 
-![PCB]("https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/PCB_Layout.jpeg")
+![PCB](https://github.com/Benedikt3141/Smart-Irrigation-System/tree/main/PCB\_Files/PCB_Layout.jpeg)
 
 
 ## Getting started
