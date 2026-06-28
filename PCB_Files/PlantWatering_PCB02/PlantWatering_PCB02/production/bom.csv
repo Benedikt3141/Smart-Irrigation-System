@@ -8,16 +8,6 @@ C9,0603,1,1uF,C1592
 D6,0805,1,RED,C84256
 D7,0805,1,GREEN,C84260
 D8,D_SMA,1,SS14,C2480
-J1,JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,1,Battery connection,
-"J10, J11",JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,2,I2C Pins,
-J2,PinSocket_1x08_P2.00mm_Vertical,1,AnalogSignals,
-J3,PinSocket_1x02_P2.00mm_Vertical,1,32KHZ/SQW,
-J4,JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,1,Solar Panel,
-J5,PinHeader_1x02_P2.00mm_Vertical,1,Power output,
-J6,PinSocket_1x05_P2.00mm_Vertical,1,Signal Sockets,
-J7,PinHeader_1x06_P2.00mm_Vertical,1,Connector to other Board,
-J8,PinHeader_1x02_P2.00mm_Vertical,1,I2C,
-J9,PinHeader_1x02_P2.00mm_Vertical,1,PWR_Output,
 L1,L_Bourns_SRP7028A_7.3x6.6mm,1,22uH,C2838326
 "R12, R13, R14, R15, R16, R17, R31, R42",1206,8,10k,C1489
 "R20, R22",1206,2,10k,
