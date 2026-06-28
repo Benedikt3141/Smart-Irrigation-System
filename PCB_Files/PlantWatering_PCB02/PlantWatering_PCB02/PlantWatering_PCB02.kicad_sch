@@ -6988,12 +6988,6 @@
 		(uuid "610bdc17-f595-4751-a0aa-bd93d8157aca")
 	)
 	(junction
-		(at 161.29 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6cce84fc-982d-46d7-8bc3-0dff26947697")
-	)
-	(junction
 		(at 226.06 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7064,12 +7058,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a041d0b-5f2a-457b-867a-b6de56d6df62")
-	)
-	(junction
-		(at 161.29 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9c2ed71e-0b32-4822-a8ed-a76a569840a1")
 	)
 	(junction
 		(at 241.3 34.29)
@@ -8017,16 +8005,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 157.48) (xy 163.83 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37e5e3eb-ad37-49ae-810e-517a0ca1a269")
-	)
-	(wire
-		(pts
 			(xy 151.13 67.31) (xy 186.69 67.31)
 		)
 		(stroke
@@ -8437,7 +8415,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 165.1) (xy 161.29 165.1)
+			(xy 156.21 165.1) (xy 163.83 165.1)
 		)
 		(stroke
 			(width 0)
@@ -8507,7 +8485,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 157.48) (xy 161.29 157.48)
+			(xy 156.21 157.48) (xy 163.83 157.48)
 		)
 		(stroke
 			(width 0)
@@ -9094,16 +9072,6 @@
 			(type default)
 		)
 		(uuid "9cba1828-178f-4db9-90fb-63bb6bdbdeb8")
-	)
-	(wire
-		(pts
-			(xy 161.29 165.1) (xy 163.83 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ce30c83-5e09-408a-aff4-d9881a6e1c6d")
 	)
 	(wire
 		(pts
@@ -12045,84 +12013,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 161.29 165.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "21e3a931-afa7-4220-9a66-8e28f87eef94")
-		(property "Reference" "#FLG02"
-			(at 161.29 163.195 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 161.29 160.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 161.29 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cb095ae8-6992-4bc4-9ca4-205240503c63")
-		)
-		(instances
-			(project "PlantWatering_PCB02"
-				(path "/c5f9ebaf-06b2-436d-9d56-c191f4c0635f"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "+3.3V_3")
 		(lib_id "power:+3.3V")
 		(at 262.89 92.71 0)
@@ -13371,84 +13261,6 @@
 			(project "PlantWatering_PCB02"
 				(path "/c5f9ebaf-06b2-436d-9d56-c191f4c0635f"
 					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 161.29 157.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5aabf536-9369-4a3b-8835-eb4789af35f2")
-		(property "Reference" "#FLG01"
-			(at 161.29 155.575 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 161.29 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 161.29 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "28f316f7-5857-443c-a3bd-8c33fe075526")
-		)
-		(instances
-			(project "PlantWatering_PCB02"
-				(path "/c5f9ebaf-06b2-436d-9d56-c191f4c0635f"
-					(reference "#FLG01")
 					(unit 1)
 				)
 			)

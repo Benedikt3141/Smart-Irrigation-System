@@ -8,8 +8,20 @@ C9,0603,1,1uF,C1592
 D6,0805,1,RED,C84256
 D7,0805,1,GREEN,C84260
 D8,D_SMA,1,SS14,C2480
+J1,JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,1,Battery connection,
+"J10, J11",JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,2,I2C Pins,
+J2,PinSocket_1x08_P2.00mm_Vertical,1,AnalogSignals,
+J3,PinSocket_1x02_P2.00mm_Vertical,1,32KHZ/SQW,
+J4,JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,1,Solar Panel,
+J5,PinHeader_1x02_P2.00mm_Vertical,1,Power output,
+J6,PinSocket_1x05_P2.00mm_Vertical,1,Signal Sockets,
+J7,PinHeader_1x06_P2.00mm_Vertical,1,Connector to other Board,
+J8,PinHeader_1x02_P2.00mm_Vertical,1,I2C,
+J9,PinHeader_1x02_P2.00mm_Vertical,1,PWR_Output,
 L1,L_Bourns_SRP7028A_7.3x6.6mm,1,22uH,C2838326
 "R12, R13, R14, R15, R16, R17, R31, R42",1206,8,10k,C1489
+"R20, R22",1206,2,10k,
+R23,1206,1,100k,
 "R29, R30, R32",1206,3,1k,C4410
 R33,0805,1,0R,C17477
 R34,0805,1,100,C17408
@@ -24,5 +36,6 @@ U12,SOIC-8_3.9x4.9mm_P1.27mm,1,AT24CS32-SSHM,C615972
 U14,SOT-23-6,1,MT3608,C84817
 U4,Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering,1,BMP280,C83291
 "U5, U6",TSSOP-10_3x3mm_P0.5mm,2,ADS1115IDGS,C37593
+U7,AMS_LGA-10-1EP_2.7x4mm_P0.6mm,1,CCS811,
 U8,SOT-23-6,1,DW01A,C351410
 U9,SOT-23-6,1,FS8205A,C908265
