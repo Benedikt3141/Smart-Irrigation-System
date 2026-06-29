@@ -42,19 +42,19 @@ enum Button {
 Button decodeButton(int value) {
     if (value > 3800) return BUTTON_NONE;
 
-    if (value > 0 && value < 50) {
+    if (value > 0 && value < 10) {
         return BUTTON_1;
     }
 
-    if (value > 200 && value < 400) {
+    if (value > 300 && value < 400) {
         return BUTTON_2;
     }
 
-    if (value > 500 && value < 720) {
+    if (value > 800 && value < 900) {
         return BUTTON_3;
     }
 
-    if (value > 750 && value < 1000) {
+    if (value > 1100 && value < 1200) {
         return BUTTON_4;
     }
 
@@ -97,7 +97,7 @@ void setup() {
 void loop() {
     Serial.println(analogRead(BUTTONS));
     delay(1000);
-    if (1==2) {
+    if (buttonInterrupt) {
         buttonInterrupt = false;
 
         delay(25); // Entprellen
