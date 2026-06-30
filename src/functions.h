@@ -1,6 +1,9 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
+#include <Arduino.h>
+#include <JPEGDEC.h>
+
 
 // MoistureSensor
 int getMoistureData(int);
@@ -26,5 +29,9 @@ void check_BMP_Sensor(void);
 
 // Buttons
 int readAverage(int, int);
+
+// Screensaver
+int JPEGDraw(JPEGDRAW *pDraw);
+void playVideo(String);
 
 #endif
