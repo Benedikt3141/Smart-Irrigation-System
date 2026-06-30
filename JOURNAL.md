@@ -71,8 +71,12 @@ I modified the schematic of the PCB according to these changes and also complete
 
 Time spent: ~12 h
 
-## June 30 2026
+---
 
-I worked on the Screensaver. Therefore I downloaded a TikTok video as an .mp4 file and converted it using a online converter into a .gif file this file I could parse with a program on my desktop into a .mjpeg file wich was readable for the ESP32. I had to do a lot of research for a system that allows to decode a video from a sdCard. Anyway the Lizard video looks amazing and is exactly what I was looking for and also evrything is already ready for screensaver interrupts. 
+## June 30, 2026
 
-Time spent: ~5h
+I worked on the screensaver feature. For this, I downloaded a short TikTok video as an `.mp4` file and converted it into a `.gif` file using an online converter. I was then able to process this file with a desktop program and convert it into an `.mjpeg` file, which could be read by the ESP32.
+
+I had to do a lot of research to find a suitable system for decoding and playing a video from an SD card on the ESP32. After several tests and adjustments, the lizard video now looks amazing and is exactly what I was looking for. Additionally, everything is already prepared for implementing screensaver interrupts later.
+
+**Time spent:** ~5 h
