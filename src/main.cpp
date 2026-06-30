@@ -76,5 +76,5 @@ void setup() {
 }
 
 void loop() {
-    playVideo("Lizard.mjpeg");
+    Screensaver();
 }

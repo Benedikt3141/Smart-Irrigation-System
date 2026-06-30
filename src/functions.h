@@ -32,6 +32,6 @@ int readAverage(int, int);
 
 // Screensaver
 int JPEGDraw(JPEGDRAW *pDraw);
-void playVideo(String);
+void Screensaver(void);
 
 #endif

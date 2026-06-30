@@ -5,6 +5,8 @@
 #include <JPEGDEC.h>
 #include <SD.h>
 
+// credits: https://github.com/derdacavga/video-Player
+
 
 extern TFT_eSPI tft;
 extern JPEGDEC jpeg;
@@ -26,13 +28,13 @@ int JPEGDraw(JPEGDRAW *pDraw) {
   return 1;
 }
 
-void playVideo(String videoName) {
+void Screensaver(void) {
   if (!mjpeg_buf) {
     Serial.println("MJPEG buffer not allocated!");
     return;
   }
 
-  String path = "/" + videoName;
+  String path = String("/") + SCREENSAVER_VIDEO_FILE_NAME;
   Serial.print("Opening video: ");
   Serial.println(path);
 
