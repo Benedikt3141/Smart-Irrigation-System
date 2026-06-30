@@ -13535,7 +13535,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "62k"
 			(at 181.356 125.984 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13545,7 +13545,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 181.61 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -13578,7 +13578,7 @@
 				)
 			)
 		)
-		(property "LCSC PN" "C1469"
+		(property "LCSC PN" "C17783"
 			(at 181.61 128.27 90)
 			(hide yes)
 			(show_name no)
@@ -14848,7 +14848,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 172.72 125.73 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14858,7 +14858,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 172.72 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -14891,7 +14891,7 @@
 				)
 			)
 		)
-		(property "LCSC PN" "C1469"
+		(property "LCSC PN" "C17414"
 			(at 172.72 128.27 90)
 			(hide yes)
 			(show_name no)
@@ -15759,7 +15759,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 149.86 125.73 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15769,7 +15769,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 149.86 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -15802,7 +15802,7 @@
 				)
 			)
 		)
-		(property "LCSC PN" "C1469"
+		(property "LCSC PN" "C17414"
 			(at 149.86 128.27 90)
 			(hide yes)
 			(show_name no)
@@ -19753,7 +19753,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 161.29 125.73 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19763,7 +19763,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 161.29 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -19796,7 +19796,7 @@
 				)
 			)
 		)
-		(property "LCSC PN" "C1469"
+		(property "LCSC PN" "C17414"
 			(at 161.29 128.27 90)
 			(hide yes)
 			(show_name no)

@@ -102,3 +102,7 @@
 #define NUMBER_LEDS 8
 #endif
 
+// ********** Screensaver Video ********
+#ifndef SCREENSAVER_VIDEO_FILE_NAME
+#define  SCREENSAVER_VIDEO_FILE_NAME "Lizard.mjpeg";
+#endif
