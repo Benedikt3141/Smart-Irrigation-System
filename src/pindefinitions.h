@@ -10,11 +10,11 @@
 #endif
 
 #ifndef ADDR_ADC1
-#define ADDR_ADC1 4B
+#define ADDR_ADC1 0x4B
 #endif
 
 #ifndef ADDR_ADC2
-#define ADDR_ADC2 48
+#define ADDR_ADC2 0x48
 #endif
 
 #ifndef ADDR_CLOCK1
