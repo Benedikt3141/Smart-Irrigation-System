@@ -69,4 +69,14 @@ In addition, I ran into some issues with the analog button wiring, so I had to t
 
 I modified the schematic of the PCB according to these changes and also completely redesigned the PCB layout as a two-layer board (I actually had to do it twice because I forgot to save my changes). This should save about 100 € in manufacturing costs compared to the previous design.
 
-Time spent: ~8 h
+Time spent: ~12 h
+
+---
+
+## June 30, 2026
+
+I worked on the screensaver feature. For this, I downloaded a short TikTok video as an `.mp4` file and converted it into a `.gif` file using an online converter. I was then able to process this file with a desktop program and convert it into an `.mjpeg` file, which could be read by the ESP32.
+
+I had to do a lot of research to find a suitable system for decoding and playing a video from an SD card on the ESP32. After several tests and adjustments, the lizard video now looks amazing and is exactly what I was looking for. Additionally, everything is already prepared for implementing screensaver interrupts later.
+
+**Time spent:** ~5 h

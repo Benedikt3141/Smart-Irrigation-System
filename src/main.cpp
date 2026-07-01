@@ -17,6 +17,7 @@
 #include "MQ2.h" // library: https://github.com/labay11/MQ-2-sensor-library <- Thank you so much!
 #include "Buttons.h" //the button code that would mess up the main code
 #include <JPEGDEC.h>
+#include <Adafruit_ADS1X15.h>
 
 
 
@@ -26,6 +27,11 @@ TFT_eSPI tft = TFT_eSPI();
 Adafruit_NeoPixel leds(NUMBER_LEDS, LED_PIN, NEO_RGB + NEO_KHZ800);
 RTC_DS3231 rtc;
 JPEGDEC jpeg;
+Adafruit_ADS1115 ads1;
+Adafruit_ADS1115 ads2;
+int16_t adc1;
+
+
 
 void setup() {
   Serial.begin(115200);
@@ -38,7 +44,7 @@ void setup() {
   pinMode(MQ2_SENSOR_PIN, INPUT);
   analogReadResolution(12);
 
-  tft.begin();
+  tft.begin(); // begin Display
   #ifdef USE_DMA
     tft.initDMA();
   #endif
@@ -47,7 +53,7 @@ void setup() {
   tft.fillScreen(TFT_BLACK);
   tft.setSwapBytes(true);
 
-  SPI.begin();
+  SPI.begin(); // begin SD Card
 
   if (!SD.begin(CS_SD)) {
       Serial.println("SD card mount failed!");
@@ -60,6 +66,12 @@ void setup() {
 
   Wire.begin(); // Start I2C
   mq2.begin(); // Start MQ2 Sensor
+
+  ads1.begin(ADDR_ADC1); // start analog digital I2C extender
+  ads2.begin(ADDR_ADC2);
+  ads1.setGain(GAIN_ONE);
+  ads2.setGain(GAIN_ONE);
+
 
   jpeg.setPixelType(RGB565_BIG_ENDIAN);
 
@@ -76,5 +88,6 @@ void setup() {
 }
 
 void loop() {
-    Screensaver();
+    Serial.printf("SolarValue: %.2f V\n", getSolarVoltage());
+    delay(1000);
 }

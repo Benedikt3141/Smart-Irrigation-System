@@ -34,4 +34,7 @@ int readAverage(int, int);
 int JPEGDraw(JPEGDRAW *pDraw);
 void Screensaver(void);
 
+// Solar Panel
+float getSolarVoltage(void);
+
 #endif
