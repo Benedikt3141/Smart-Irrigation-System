@@ -2,8 +2,7 @@
 #include "functions.h"
 #include <Wire.h>
 
-void scan_I2C_Addresses(void) {
-    //scan for I2C Addresses and print to Serial Monitor
+void scan_I2C_Addresses(void) { //scan for I2C Addresses and print to Serial Monitor    
     
     int error, address, nDevices=0;
 
