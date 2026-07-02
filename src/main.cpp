@@ -37,48 +37,38 @@ void setup() {
   Serial.begin(115200);
   Serial.println("\nStart Programm: 'PlantWatering BreadBoard_Code'\n");
 
-
-  // ******** GPIO initialization ********
-  pinMode(BUTTONS, INPUT);
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(MQ2_SENSOR_PIN, INPUT);
-  analogReadResolution(12);
-
-  tft.begin(); // begin Display
-  #ifdef USE_DMA
-    tft.initDMA();
-  #endif
-
-  tft.setRotation(1);
-  tft.fillScreen(TFT_BLACK);
-  tft.setSwapBytes(true);
-
-  SPI.begin(); // begin SD Card
-
-  if (!SD.begin(CS_SD)) {
-      Serial.println("SD card mount failed!");
-      return;
-  }
-
-  Serial.println("SD card mounted successfully.");
-
-
-
+  tft.begin(); // start Display
+    tft.setRotation(1);
+    tft.fillScreen(TFT_BLACK);
+    tft.setSwapBytes(true);
+  SPI.begin(); // start SD Card
   Wire.begin(); // Start I2C
-  mq2.begin(); // Start MQ2 Sensor
-
-  ads1.begin(ADDR_ADC1); // start analog digital I2C extender
-  ads2.begin(ADDR_ADC2);
-  ads1.setGain(GAIN_ONE);
-  ads2.setGain(GAIN_ONE);
-
-
-  jpeg.setPixelType(RGB565_BIG_ENDIAN);
-
+  mq2.begin(); // start MQ2 Sensor
+  ads1.begin(ADDR_ADC1); // start analog digital I2C extender 1
+    ads1.setGain(GAIN_ONE);
+  ads2.begin(ADDR_ADC2); // start analog digital I2C extender 2
+    ads2.setGain(GAIN_ONE);
 
   if (!rtc.begin()) { // Start Clock
     Serial.println("Couldn't find RTC!");
   }
+  setTime();
+  Serial.println("RTC initialization successfully");
+
+  if (!SD.begin(CS_SD)) { // Start SD Card
+      Serial.println("SD card mount failed!");
+      return;
+  }
+  Serial.println("SD card mounted successfully.");
+
+
+  // -------------------------- GPIO initialization --------------------------
+  pinMode(BUTTONS, INPUT);
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(MQ2_SENSOR_PIN, INPUT);
+  analogReadResolution(12);  
+
+  jpeg.setPixelType(RGB565_BIG_ENDIAN);
 
   attachInterrupt( // Start Button Interrupt
         digitalPinToInterrupt(BUTTONS),
