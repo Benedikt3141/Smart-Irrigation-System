@@ -1,10 +1,9 @@
 ---
-Title: "Smart Irrigation System - Main Monitoring PCB"
+Title: "Smart Irrigation System"
 Author: "Benedikt 314159" 
-Description: "A PCB for the main monitoring and control unit of a smart irrigation system with soil moisture sensors, environmental sensors, display, buttons and SD logging."
-Created On: "28/06/2026"
+Description: "A monitoring and control unit of a smart irrigation system with soil moisture sensors, environmental sensors, display, buttons and SD logging."
+Created On: "April 2026"
 ---
-
 # Journal
 
 ## April 2026
@@ -118,4 +117,3 @@ I had to do a lot of research to find a suitable system for decoding and playing
 ↑ I got it!
 
 **Time spent:** ~5 h
-
