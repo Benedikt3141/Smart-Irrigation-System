@@ -1,3 +1,10 @@
+---
+Title: "Smart Irrigation System - Main Monitoring PCB"
+Author: "Benedikt 314159" 
+Description: "A PCB for the main monitoring and control unit of a smart irrigation system with soil moisture sensors, environmental sensors, display, buttons and SD logging."
+Created On: "28/06/2026"
+---
+
 # Journal
 
 ## April 2026
@@ -18,7 +25,20 @@ I coded the first basic working version of the system and designed a simple but 
 
 I could not find a good existing library or code example that fitted my use case, so I had to code the CSV logging functionality from scratch.
 
-**Time spent:** \~4 h
+![firstBreadBoard](images/Progress/20260413_204009.jpg)
+![firstBreadBoard](images/Progress/20260416_212346.jpg)
+↑ Images of the first conceptional breadboard setup
+
+![firstData](images/Progress/20260419_100718.jpg)
+↑ this was the first data set I catured with the sensors and is captured as a `.csv` file
+
+![firstCode](images/Progress/ScreenshotCode.png)
+↑ Screenshot of the code. Look at full code [here](images/Progress/main_cpp_old.pdf)
+
+![firstWebInterface](images/Progress/ScreenshotWebInterface.png)
+↑ first WebInteface (already working!!!)
+
+**Time spent:** \~8 h
 
 \---
 
@@ -31,6 +51,9 @@ Because of that, I had to decide whether I should order a different display, con
 I researched different kinds of buses and the capabilities of the built-in chip of the Arduino Uno. I came to the conclusion that no bus would be really suitable for transferring a decent amount of display data reliably and fast enough with the Arduino Uno. The Arduino processor would also be too weak for processing diagrams smoothly. Therefore, the diagrams would have to be processed on the ESP32 before being transferred, which would make the system unnecessarily complicated.
 
 In the end, I decided to wire the display directly to the ESP32 and accept the reduced number of free GPIOs.
+
+![DisplayTest](images/Progress/20260612_181839.jpg)
+↑ First Image on Display. There were still errors like you can see :(
 
 **Time spent:** \~6 h
 This included trial and error, research and consideration of different possible solutions.
@@ -55,6 +78,12 @@ By the end of May, I had created the first PCB design. However, I realized that 
 
 This whole process of getting used to PCB design software, making first attempts, failing, fixing problems and finally achieving some progress took a long time. I did not track the time exactly, but it must have taken much more than 20 hours.
 
+![KicadSetup](images/Progress/20260520_182432.jpg)
+↑ My KiCAD designing setup :)
+
+![PCBSetup](images/Progress/20260520_210820.jpg)
+↑ First time switching to PCB workbench with this project in KiCAD
+
 **Time spent:** >20 h
 
 \---
@@ -69,6 +98,12 @@ In addition, I ran into some issues with the analog button wiring, so I had to t
 
 I modified the schematic of the PCB according to these changes and also completely redesigned the PCB layout as a two-layer board (I actually had to do it twice because I forgot to save my changes). This should save about 100 € in manufacturing costs compared to the previous design.
 
+![breadboard](images/Progress/20260605_221754.jpg)
+↑ The breadboard looked like this from that on
+
+![KiCAD](images/Progress/20260528_220145.jpg)
+↑ Another photo of me editing something in KiCAD
+
 Time spent: ~12 h
 
 ---
@@ -79,4 +114,8 @@ I worked on the screensaver feature. For this, I downloaded a short TikTok video
 
 I had to do a lot of research to find a suitable system for decoding and playing a video from an SD card on the ESP32. After several tests and adjustments, the lizard video now looks amazing and is exactly what I was looking for. Additionally, everything is already prepared for implementing screensaver interrupts later.
 
+[LizardVideo](images/Progress/20260630_183828.mp4)
+↑ I got it!
+
 **Time spent:** ~5 h
+
