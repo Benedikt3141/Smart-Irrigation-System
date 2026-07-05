@@ -2,7 +2,7 @@
 Title: "Smart Irrigation System"
 Author: "Benedikt 314159" 
 Description: "A monitoring and control unit of a smart irrigation system with soil moisture sensors, environmental sensors, display, buttons and SD logging."
-Created On: "April 2026"
+Created On: "13/04/2026"
 ---
 # Journal
 

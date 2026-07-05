@@ -31,16 +31,35 @@ Adafruit_ADS1115 ads1;
 Adafruit_ADS1115 ads2;
 int16_t adc1;
 
-
+uint16_t BLUE = 0x4d13;
+uint16_t GREEN = 0x2e4c;
+#define MARGIN_LEFT 10
 
 void setup() {
   Serial.begin(115200);
   Serial.println("\nStart Programm: 'PlantWatering BreadBoard_Code'\n");
 
-  tft.begin(); // start Display
+  // ---------------------- Initialization prozess ----------------------
+
+  try{
+    tft.begin(); // start Display
     tft.setRotation(1);
     tft.fillScreen(TFT_BLACK);
     tft.setSwapBytes(true);
+
+    tft.setTextColor(BLUE, TFT_BLACK);
+    tft.setTextFont(2);
+    tft.setTextSize(1);
+    String info = "[Info] Initializing Display...";
+    tft.drawString(info , 10, MARGIN_LEFT);
+    tft.setTextColor(GREEN, TFT_BLACK);
+    tft.drawString("[OK]", 10, MARGIN_LEFT + info.length());
+  }
+  catch(int Errorcode) {
+    //
+  }
+  
+    
   SPI.begin(); // start SD Card
   Wire.begin(); // Start I2C
   mq2.begin(); // start MQ2 Sensor
