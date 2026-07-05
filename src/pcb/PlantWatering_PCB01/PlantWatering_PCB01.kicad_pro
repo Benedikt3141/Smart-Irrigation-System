@@ -272,7 +272,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "V1.1"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -558,7 +558,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "vrml": ""
+      "vrml": "PlantWatering_PCB01.wrl"
     },
     "page_layout_descr_file": ""
   },
@@ -716,7 +716,7 @@
         "uuid": "eb098455-f9da-4a79-80d2-79485ad8436c"
       }
     ],
-    "used_designators": "SW5-6,H1-5",
+    "used_designators": "H1-5,SW5-6",
     "variants": []
   },
   "sheets": [
