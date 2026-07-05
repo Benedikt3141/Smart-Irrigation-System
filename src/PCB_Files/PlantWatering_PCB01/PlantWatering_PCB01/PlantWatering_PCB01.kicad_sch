@@ -11771,7 +11771,7 @@
 				)
 			)
 		)
-		(property "LCSC PN" "C221662"
+		(property "LCSC PN" ""
 			(at 177.8 115.57 90)
 			(hide yes)
 			(show_name no)
@@ -12779,7 +12779,7 @@
 				)
 			)
 		)
-		(property "LCSC PN" "C221662"
+		(property "LCSC PN" ""
 			(at 166.37 115.57 90)
 			(hide yes)
 			(show_name no)
@@ -13395,7 +13395,7 @@
 				)
 			)
 		)
-		(property "LCSC PN" "C221662"
+		(property "LCSC PN" ""
 			(at 142.24 115.57 90)
 			(hide yes)
 			(show_name no)
@@ -15642,6 +15642,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" "C221662"
+			(at 194.31 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dd89a352-2c0e-466c-8114-9b359172df9a")
 		)
@@ -17200,7 +17211,7 @@
 				)
 			)
 		)
-		(property "LCSC PN" "C221662"
+		(property "LCSC PN" ""
 			(at 154.94 115.57 90)
 			(hide yes)
 			(show_name no)
