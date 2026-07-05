@@ -123,5 +123,5 @@ I had to do a lot of research to find a suitable system for decoding and playing
 
 After asking in the Hack Club hardware channel, I learned that I can submit both PCBs because they belong to the same project. I reorganized the repository by moving the PlatformIO firmware into `/firmware` and creating a separate `/pcb` folder for the KiCad files and Gerber exports. I also added some features and improved the PCB to the final design. Now everything shold be working fine...
 
-Time spent: ~4 h
+Time spent: ~6 h
 
