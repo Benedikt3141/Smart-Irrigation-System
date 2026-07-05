@@ -13,8 +13,8 @@ This repository contains both the firmware and the PCB design files.
 
 - `/firmware/` contains the PlatformIO firmware project.
 - `/firmware/src/` contains the ESP32 source code.
-- `/pcb/` contains the KiCad PCB design files.
-- `/pcb/gerbers/` contains the exported Gerber files for manufacturing.
+- `/src/pcb/` contains the KiCad PCB design files.
+- `/src/pcb/gerbers/` contains the exported Gerber files for manufacturing.
 - `/src/` contains the KiCad source files required for the Grounded PCB grant submission.
 
 The main monitoring and control unit consists of two stacked custom PCBs. Both PCBs are part of the same project and are required for the complete device.
