@@ -60,9 +60,11 @@ This part of the system is still work in progress.
 * \[ ] web interface
 * \[ ] Push Emails when water is empty/error etc.
 
-![Schematic](src/PCB_Files/Schematic.jpeg)
+![Schematic](src/pcb/ProjectSchematic.jpeg)
 
-![PCB](src/PCB_Files/PCB_Layout.jpeg)
+![PCB](src/pcb/Project_PCB_Layout.jpeg)
+
+![Rendering](src/pcb/PCB_PlantWatering.png)
 
 ## Getting started
 
@@ -89,7 +91,7 @@ Open the project folder in VS Code and build/upload the firmware using PlatformI
 
 You can either use the provided Gerber files or modify the KiCad project and generate new manufacturing files for your preferred PCB supplier.
 
-You can find the gerberfiles [here (PCB01)](src/PCB_Files/PlantWatering_PCB01/PlantWatering_PCB01/production) and [here (PCB02)](src/PCB_Files/PlantWatering_PCB02/PlantWatering_PCB02/production)) or in the project root. The correlating `BOM.csv` and `position.csv` can be found in the same directories.
+You can find the gerberfiles [here (PCB01)](src/pcb/PlantWatering_PCB01/production) and [here (PCB02)](src/pcb/PlantWatering_PCB02/production)) or in the project root. The correlating `BOM.csv` and `position.csv` can be found in the same directories.
 
 ## License
 
