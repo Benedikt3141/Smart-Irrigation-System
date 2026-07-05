@@ -4,6 +4,7 @@ Author: "Benedikt 314159"
 Description: "A monitoring and control unit of a smart irrigation system with soil moisture sensors, environmental sensors, display, buttons and SD logging."
 Created On: "13/04/2026"
 ---
+
 # Journal
 
 ## April 2026
@@ -117,3 +118,10 @@ I had to do a lot of research to find a suitable system for decoding and playing
 ↑ I got it!
 
 **Time spent:** ~5 h
+
+## July 2026
+
+After asking in the Hack Club hardware channel, I learned that I can submit both PCBs because they belong to the same project. I reorganized the repository by moving the PlatformIO firmware into `/firmware` and creating a separate `/pcb` folder for the KiCad files and Gerber exports. I also added some features and improved the PCB to the final design. Now everything shold be working fine...
+
+Time spent: ~6 h
+
