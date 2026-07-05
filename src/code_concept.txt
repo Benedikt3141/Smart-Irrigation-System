@@ -14,13 +14,13 @@ setup {
 }
 
 loop {
-    wait 2.5min <-- with possible interrupt
-    get Values and log to .csv
-    
-    plot graphs
-    show plots
+    is button interrupt/ timer clock etc.
+        get Values and log to .csv/ do task
+
+        plot graphs --> only if asked for
+        show plots
 }
 
 
 
-todo: reset/pwr off button/switch to PCB01
+todo: reset/pwr off button/switch to PCB02
