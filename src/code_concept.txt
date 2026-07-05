@@ -1,0 +1,26 @@
+setup {
+    selfcheck <-- Output auf Display
+        initialization and startup of all objects
+            Display
+            SD Card
+            Soil moisture
+            etc. 
+        I2C addresses ar working?
+        reasonable values of sensors?
+
+        else: Errorhandling
+    wifi initialization
+    web server initialization
+}
+
+loop {
+    wait 2.5min <-- with possible interrupt
+    get Values and log to .csv
+    
+    plot graphs
+    show plots
+}
+
+
+
+todo: reset/pwr off button/switch to PCB01

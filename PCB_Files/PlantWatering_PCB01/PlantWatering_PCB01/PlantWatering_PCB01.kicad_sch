@@ -5768,6 +5768,196 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_SPDT"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPDT"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Switch, single pole double throw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPDT_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 0.254) (xy 1.651 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPDT_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Transistor_BJT:MUN5211DW1"
 			(pin_names
 				(hide yes)
@@ -6628,145 +6818,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VBUS"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VBUS"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VBUS\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VBUS_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VBUS_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "Candidates:\nMUN5211DW1\nUMH3NTN\n"
 		(exclude_from_sim no)
@@ -6829,6 +6880,26 @@
 			(justify left top)
 		)
 		(uuid "3ed7ea12-9330-4137-a828-40341ff0f2a5")
+	)
+	(text_box "Main Switch"
+		(exclude_from_sim no)
+		(at 177.038 152.4 0)
+		(size 36.068 13.208)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "9d4e282e-3f5f-4b17-b9ae-99a9601098ec")
 	)
 	(text_box "PWR-LED"
 		(exclude_from_sim no)
@@ -6999,12 +7070,6 @@
 		(uuid "5a5c756a-5cef-4e9b-a193-dda2c8a76e9c")
 	)
 	(junction
-		(at 55.88 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "67613f5c-61e3-4357-98f1-4650d97fbe8d")
-	)
-	(junction
 		(at 154.94 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7033,12 +7098,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9971677f-1239-4f45-9131-e1ee38ba0228")
-	)
-	(junction
-		(at 55.88 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "99e50ebd-1acd-4396-a7fc-2b7a11eb9176")
 	)
 	(junction
 		(at 166.37 128.27)
@@ -7131,6 +7190,10 @@
 	(no_connect
 		(at 90.17 128.27)
 		(uuid "03c1fd53-1d32-4dbb-891a-18ae6cc03353")
+	)
+	(no_connect
+		(at 199.39 158.75)
+		(uuid "0667c201-d456-4e8d-8468-04a228026d43")
 	)
 	(no_connect
 		(at 90.17 161.29)
@@ -7748,6 +7811,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 184.15) (xy 57.15 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "373c413e-74cb-4c70-886f-782151a7fd32")
+	)
+	(wire
+		(pts
 			(xy 261.62 26.67) (xy 267.97 26.67)
 		)
 		(stroke
@@ -7825,6 +7898,16 @@
 			(type default)
 		)
 		(uuid "3f4f605e-304c-4c46-b115-40d9b169241f")
+	)
+	(wire
+		(pts
+			(xy 52.07 33.02) (xy 52.07 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "419214f3-d059-4c11-a901-89547e8c40c5")
 	)
 	(wire
 		(pts
@@ -8045,6 +8128,16 @@
 			(type default)
 		)
 		(uuid "565e8d29-d792-47b3-919f-d08bb74d77f0")
+	)
+	(wire
+		(pts
+			(xy 180.34 161.29) (xy 189.23 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5754101a-30d4-4db8-88d1-b0aafe9e0626")
 	)
 	(wire
 		(pts
@@ -8558,16 +8651,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 184.15) (xy 57.15 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b4e2d41-abaf-45a2-9523-bed12141551e")
-	)
-	(wire
-		(pts
 			(xy 257.81 44.45) (xy 261.62 44.45)
 		)
 		(stroke
@@ -8758,6 +8841,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 163.83) (xy 203.2 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e342108-54fa-46a8-bd93-fe0171489861")
+	)
+	(wire
+		(pts
 			(xy 90.17 133.35) (xy 99.06 133.35)
 		)
 		(stroke
@@ -8865,16 +8958,6 @@
 			(type default)
 		)
 		(uuid "a7281c32-dca4-45be-a433-173068789ec8")
-	)
-	(wire
-		(pts
-			(xy 52.07 30.48) (xy 55.88 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab148735-2c8e-4b00-b12f-073d47c94f96")
 	)
 	(wire
 		(pts
@@ -9846,6 +9929,16 @@
 		)
 		(uuid "2a07c391-ed32-4821-8fea-64d5b81d8aae")
 	)
+	(label "VBUS_SW"
+		(at 180.34 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c12fa61-d9c6-4ac4-a5db-72c93ab1692b")
+	)
 	(label "DTR"
 		(at 158.75 36.83 180)
 		(effects
@@ -9935,6 +10028,16 @@
 			(justify left bottom)
 		)
 		(uuid "3bf87801-797c-49b6-9102-d47208fc951f")
+	)
+	(label "VBUS_SW"
+		(at 60.96 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "423cc760-8214-4eca-9dcf-6be89068b325")
 	)
 	(label "EN"
 		(at 267.97 26.67 180)
@@ -10076,6 +10179,26 @@
 		)
 		(uuid "579dfcd4-f6d5-41fc-a9d5-828eca5229c7")
 	)
+	(label "VBUS_con"
+		(at 52.07 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "59e01a61-d047-4710-ac53-a5f4ab563633")
+	)
+	(label "VBUS_con"
+		(at 203.2 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a4e33fb-8d33-4ebb-a833-ef311a38d942")
+	)
 	(label "SCL"
 		(at 100.33 158.75 0)
 		(effects
@@ -10165,6 +10288,16 @@
 			(justify right bottom)
 		)
 		(uuid "68e62210-247e-4de3-8485-cc2c7738e35d")
+	)
+	(label "VBUS_SW"
+		(at 55.88 26.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "69953f69-0d9a-4bea-8571-3143ebd539db")
 	)
 	(label "SCL_SPI"
 		(at 99.06 135.89 0)
@@ -10852,83 +10985,6 @@
 			(project "PlantWatering_PCB01"
 				(path "/eb098455-f9da-4a79-80d2-79485ad8436c"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 60.96 62.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1419ef8a-f307-4263-ab6b-1db1b0891ed3")
-		(property "Reference" "#PWR07"
-			(at 60.96 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 65.532 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 60.96 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "643c6503-862e-438f-8828-33236c77f8aa")
-		)
-		(instances
-			(project "PlantWatering_PCB01"
-				(path "/eb098455-f9da-4a79-80d2-79485ad8436c"
-					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -11706,6 +11762,17 @@
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 177.8 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C221662"
+			(at 177.8 115.57 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12712,6 +12779,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" "C221662"
+			(at 166.37 115.57 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "54c77f94-61a5-4b8f-85d7-fff932cdd8c6")
 		)
@@ -13308,6 +13386,17 @@
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 142.24 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C221662"
+			(at 142.24 115.57 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15490,6 +15579,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPDT")
+		(at 194.31 161.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8385cc28-78d3-4922-911a-2dcca2075fd1")
+		(property "Reference" "SW6"
+			(at 194.31 153.924 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 194.31 156.464 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_CK_JS202011AQN_DPDT_Angled"
+			(at 194.31 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 194.31 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dd89a352-2c0e-466c-8114-9b359172df9a")
+		)
+		(pin "1"
+			(uuid "f6013ce7-6215-448a-889e-00e569bf5b0a")
+		)
+		(pin "3"
+			(uuid "b6cc0ef1-7bb9-449c-9a52-9c4d47fd49e9")
+		)
+		(instances
+			(project "PlantWatering_PCB01"
+				(path "/eb098455-f9da-4a79-80d2-79485ad8436c"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 119.38 133.35 90)
 		(unit 1)
@@ -15911,86 +16082,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
-		(at 55.88 24.13 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "93e55e38-f51d-4f1d-9f5c-6255830cde36")
-		(property "Reference" "#PWR04"
-			(at 55.88 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 55.88 19.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 55.88 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cfab5173-ca4b-437b-a0b5-135db4de42d8")
-		)
-		(instances
-			(project "PlantWatering_PCB01"
-				(path "/eb098455-f9da-4a79-80d2-79485ad8436c"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 57.15 187.96 0)
+		(at 57.15 189.23 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15998,10 +16092,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "93f52a2d-d1a0-4bb0-9d10-fd96c8a65ed0")
 		(property "Reference" "#PWR024"
-			(at 57.15 194.31 0)
+			(at 57.15 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16012,17 +16105,18 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 57.15 193.04 0)
+			(at 54.61 190.4999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 187.96 0)
+			(at 57.15 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16033,7 +16127,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 187.96 0)
+			(at 57.15 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16044,7 +16138,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 187.96 0)
+			(at 57.15 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17097,6 +17191,17 @@
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 154.94 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C221662"
+			(at 154.94 115.57 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
