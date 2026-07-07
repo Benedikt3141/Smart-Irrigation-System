@@ -127,3 +127,14 @@ After asking in the Hack Club hardware channel, I learned that I can submit both
 
 Time spent: ~6 h
 
+## July 6/7, 2026
+
+I prepared the mechanical files for the final submission. I exported both
+PCBs individually as STEP files and imported them into FreeCAD.
+
+I then created an assembly of both stacked PCBs to verify their relative
+position and exported the complete assembly as a STEP file. I also updated
+the JLCPCB cart and cleaned up temporary KiCad lock files.
+
+Time spent: ~5 h
+
