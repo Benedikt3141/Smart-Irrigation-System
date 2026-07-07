@@ -16,7 +16,6 @@ This repository contains both the firmware and the PCB design files.
 - `/firmware/src/` contains the ESP32 source code.
 - `/src/pcb/` contains the KiCad PCB design files.
 - `/src/pcb/gerbers/` contains the exported Gerber files for manufacturing.
-- `/src/` contains the KiCad source files required for the Grounded PCB grant submission.
 
 The main monitoring and control unit consists of two stacked custom PCBs. Both PCBs are part of the same project and are required for the complete device.
 
@@ -24,120 +23,21 @@ The main monitoring and control unit consists of two stacked custom PCBs. Both P
 
 ```
 Smart-Irrigation-System/
-│
-├── .gitignore
-├── Concept.jpg
+├── BOM.csv
 ├── JOURNAL.md
 ├── README.md
-├── gerber01.zip
-├── gerber02.zip
-└── schematic.pdf
-│
 ├── firmware/
-│   │
-│   ├── .vscode/
-│   ├── include/
-│   ├── lib/
-│   ├── test/
-│   ├── .gitignore
 │   ├── platformio.ini
-│   │
 │   └── src/
-│       ├── BMP280.cpp
-│       ├── Buttons.h
-│       ├── Display.cpp
-│       ├── LEDs.cpp
-│       ├── MoistureSensors.cpp
-│       ├── RTC.cpp
-│       ├── SD_Card.cpp
-│       ├── Screensaver.cpp
-│       ├── Solarpanel.cpp
-│       ├── code_concept.txt
-│       ├── functions.h
-│       ├── main.cpp
-│       ├── pindefinitions.h
-│       └── scan_I2C_Addresses.cpp
-│
-├── images/
-│   │
-│   ├── Lizard/
-│   │   └── [...]
-│   │
-│   └── Progress/
-│       ├── 20260413_204009.jpg
-│       ├── 20260416_212346.jpg
-│       ├── 20260419_100718.jpg
-│       ├── 20260520_182432.jpg
-│       ├── 20260520_210820.jpg
-│       ├── 20260528_220145.jpg
-│       ├── 20260605_221754.jpg
-│       ├── 20260612_181839.jpg
-│       ├── 20260630_183828.mp4
-│       ├── ScreenshotCode.png
-│       ├── ScreenshotWebInterface.png
-│       └── main_cpp_old.pdf
-│
-└── src/
-    └── pcb/
-        │
-        ├── PCB_PlantWatering/           ← ALTER GESAMTENTWURF
-        │   └── [...]
-        │
-        ├── PlantWatering_PCB01/
-        │   │
-        │   ├── PlantWatering_PCB01-backups/
-        │   ├── production/
-        │   │   └── [...]
-        │   │
-        │   ├── LCD_TFT_Shield.bak
-        │   ├── LCD_TFT_Shield.kicad_sym
-        │   ├── PlantWatering_PCB01.csv
-        │   ├── PlantWatering_PCB01.kicad_pcb
-        │   ├── PlantWatering_PCB01.kicad_prl
-        │   ├── PlantWatering_PCB01.kicad_pro
-        │   ├── PlantWatering_PCB01.kicad_sch
-        │   ├── PlantWatering_PCB01.wrl
-        │   ├── fabrication-toolkit-options.json
-        │   └── schematic01.pdf
-        │
-        ├── PlantWatering_PCB02/
-        │   │
-        │   ├── PlantWatering_PCB02-backups/
-        │   ├── production/
-        │   │   └── [...]
-        │   │
-        │   ├── PlantWatering_PCB02.kicad_pcb
-        │   ├── PlantWatering_PCB02.kicad_prl
-        │   ├── PlantWatering_PCB02.kicad_pro
-        │   ├── PlantWatering_PCB02.kicad_sch
-        │   ├── PlantWatering_PCB02.wrl
-        │   ├── _autosave-PlantWatering_PCB02.kicad_sch
-        │   ├── fabrication-toolkit-options.json
-        │   ├── schematic02.pdf
-        │   ├── ~PlantWatering_PCB02.kicad_pro.lck
-        │   └── ~PlantWatering_PCB02.kicad_sch.lck
-        │
-        ├── gerbers/
-        │   │
-        │   ├── PCB01/
-        │   │   ├── PlantWatering_PCB01_V1.zip
-        │   │   ├── bom.csv
-        │   │   ├── designators.csv
-        │   │   ├── netlist.ipc
-        │   │   └── positions.csv
-        │   │
-        │   └── PCB02/
-        │       ├── PlantWatering_PCB02.zip
-        │       ├── bom.csv
-        │       ├── designators.csv
-        │       ├── netlist.ipc
-        │       └── positions.csv
-        │
-        ├── PCB_PlantWatering.png
-        ├── ProjectSchematic.jpeg
-        ├── ProjectSchematic.pdf
-        ├── Project_PCB_Layout.jpeg
-        └── Project_PCB_Layout.pdf
+├── src/
+│   ├── assembly_and_models/
+│   │   ├── SmartIrrigationSystem-Assembly.step
+│   │   └── SmartIrrigationSystem.FCStd
+│   └── pcb/
+│       ├── PlantWatering_PCB01/
+│       ├── PlantWatering_PCB02/
+│       └── gerbers/
+└── images/
 ```
 
 ## Project Overview
