@@ -26,6 +26,10 @@ The unit should also monitor the water tank level using an ultrasonic sensor.
 
 This part of the system is still work in progress.
 
+![stackedBoards](images/Progress/stackedBoards.png)
+
+![Concept](Concept.jpg)
+
 ## Feature overview
 
 ###### Sensors (Inputs)
@@ -54,9 +58,7 @@ This part of the system is still work in progress.
 
 ![PCB](src/pcb/Project_PCB_Layout.jpeg)
 
-![Concept](Concept.jpg)
 ![Rendering](src/pcb/PCB_PlantWatering.png)
-![stackedBoards](images/Progress/stackedBoards.png)
 
 ## Repository Structure
 
@@ -143,3 +145,4 @@ does not represent the final manufactured hardware.
 
 The PCB design, hardware architecture and most of the firmware were
 created by myself.
+
