@@ -1,4 +1,4 @@
-![AIPreview](images/Progress/Ai_preview.png)
+![AIPreview](images/Progress/AI_preview.png)
 
 # Smart Irrigation System
 
