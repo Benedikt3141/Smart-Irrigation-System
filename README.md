@@ -1,4 +1,4 @@
-![Rendering](src/pcb/PCB_PlantWatering.png)
+![AIPreview](images/Progress/Ai_preview.png)
 
 # Smart Irrigation System
 
@@ -8,6 +8,7 @@ Each plant is monitored by a capacitive soil moisture sensor connected to the ma
 The project currently focuses on the main monitoring and control unit. A separate watering unit is planned but not fully designed yet. Communication between both units is intended to use ESP-NOW.
 
 ![Concept](Concept.jpg)
+![Rendering](src/pcb/PCB_PlantWatering.png)
 ![stackedBoards](images/Progress/stackedBoards.png)
 
 ## Repository Structure
