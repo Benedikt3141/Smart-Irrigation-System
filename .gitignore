@@ -11,9 +11,18 @@
 .history/
 **/.history/
 
-# KiCad temporary and backup files
-*-backups/
-*.bak
+# KiCad temporary files
 *.lck
 ~*.kicad_*
 _autosave-*
+
+# KiCad backups
+*-backups/
+*.bak
+
+# FreeCAD backups
+*.FCBak
+
+# Operating system files
+Thumbs.db
+.DS_Store
