@@ -62,6 +62,8 @@ This included trial and error, research and consideration of different possible 
 
 ## May 2026 until begin of June 2026
 
+*20.05., 28.05., 05.06., 12.06. and dates between*
+
 At this point, I first had to clearly define the goals of the project because I kept getting more and more ideas. I considered adding a battery, a USB-C connection, many different sensors, a small solar panel and several other useful or less useful ideas.
 
 To organize the project, I drew a concept diagram and wrote down which GPIO pin should be used for which device. This took longer than expected because some ESP32 pins were not actually capable of doing what I wanted to use them for. There was also still a lack of analog input pins, so I found an I2C analog input expander and ordered it for breadboard testing.
