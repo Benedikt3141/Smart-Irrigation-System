@@ -1,6 +1,5 @@
 ![Rendering](src/pcb/PCB_PlantWatering.png)
 
-
 # Smart Irrigation System
 
 The Smart Irrigation System is a battery-powered monitoring and control system for watering up to six individual plants.
@@ -9,7 +8,7 @@ Each plant is monitored by a capacitive soil moisture sensor connected to the ma
 The project currently focuses on the main monitoring and control unit. A separate watering unit is planned but not fully designed yet. Communication between both units is intended to use ESP-NOW.
 
 ![Concept](Concept.jpg)
-![stacked boards](images/Progress/StackedBoards.png)
+![stackedBoards](images/Progress/stackedBoards.png)
 
 ## Repository Structure
 
