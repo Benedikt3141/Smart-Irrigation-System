@@ -1,3 +1,5 @@
+[![View PCB on KiCanvas](https://hack.club/pcb-badge)](https://kicanvas.org/?github=https://github.com/Benedikt3141/Smart-Irrigation-System/tree/development/pcb)
+
 # Smart Irrigation System
 
 The Smart Irrigation System is a battery-powered monitoring and control system for watering up to six individual plants.
