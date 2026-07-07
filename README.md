@@ -21,7 +21,7 @@ This repository contains both the firmware and the PCB design files.
 
 The main monitoring and control unit consists of two stacked custom PCBs. Both PCBs are part of the same project and are required for the complete device.
 
-## File Structure![1783430686369](image/README/1783430686369.png)
+## File Structure!
 
 ```
 Smart-Irrigation-System/
