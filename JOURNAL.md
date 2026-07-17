@@ -138,3 +138,15 @@ the JLCPCB cart and cleaned up temporary KiCad lock files.
 
 Time spent: ~5 h
 
+## July 10-15, 2026
+
+I ordered the PCB from JLCPCB and came to some issues with a footprint of the USB CP2102 Chip.  Because I was on travel with school I replaced this part in my order on 16.07.2026.
+
+This was my final cart for the order:
+![cart](images/Progress/cart.png)
+
+
+
+Final BOM:
+![BOM](images/Progress/bom.png)
+

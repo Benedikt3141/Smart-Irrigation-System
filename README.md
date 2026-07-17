@@ -1,6 +1,6 @@
 ![AIPreview](images/Progress/AI_preview.png)
 
--- Preview
+-> AI Preview
 
 # Smart Irrigation System
 
@@ -145,4 +145,3 @@ does not represent the final manufactured hardware.
 
 The PCB design, hardware architecture and most of the firmware were
 created by myself.
-
