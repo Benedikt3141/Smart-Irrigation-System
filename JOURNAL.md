@@ -158,8 +158,15 @@ I unboxed the pcbs and checkt rought dimensions of the existing parts. I realise
 
 ## July 28, 2026
 
-I tested the boards and as soon I as I drawed some current at some parts the cp2102 chip got hot and destroied itself. I first thought of a short circuit due to mismatching package types. Therefore I had to spend the whole day with replacing the chip and wiring the USB-c to the microusb directly.  That didn't work.
+I tested the boards and as soon I as I drawed some current at some parts the cp2102 chip got hot and destroied itself. I first thought of a short circuit due to mismatching package types. Therefore I had to spend the whole day with replacing the chip and wiring the USB-c to the microusb directly.  That didn't work. I also tried to wire it to the exposed pads of the removed cp2102 but that also didn't work. I have been really disappointed.
+
 Time spend at this day and the week before: ~8h
+
+## July 29, 2026
+
+I proceed with yesterdays strategie but I had to start over with a new board I realiesed that the short circuit only appered when I had soldered the MQ2 Sensor to the board. therefore I looked into the schematic again an noticed that all current has to float through the cp2102 chip. I had the solution that I wired a parallel wire to the dcdc converter of the esp32devkit c directly to split the current and prevent it of floating through only one thin wire. That suprisingly worked fantastic! Even the display turned on and every status LED lighted up as intended. Now I only have to test the data transphere...
+
+This struggle took very long: ~5h
 
 
 
