@@ -145,8 +145,10 @@ I ordered the PCB from JLCPCB and came to some issues with a footprint of the US
 This was my final cart for the order:
 ![cart](images/Progress/cart.png)
 
-
-
 Final BOM:
 ![BOM](images/Progress/bom.png)
+
+## July 17-23, 2026
+
+I received an Emails about a mismatching of the audio jack. With some friendly email communication I could solve those Issues and received the boards at July 24. But I were on vacation so I could only inspect the boards when I came back at July 27.
 
