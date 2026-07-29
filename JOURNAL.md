@@ -173,5 +173,7 @@ I proceed with yesterdays strategie but I had to start over with a new board I r
 
 This struggle took very long: ~5h
 
+edit: no success while coding. SD mount failed, USB communication doesn't work. I actually don't want to proceed. Time wasted here: at least 3h
+
 
 

@@ -22,7 +22,10 @@ void setTime(void);
 void printTime(void);
 
 // SD Card
-void initSDCard(void);
+bool initSDCard(void);
+bool testSDCardCommunication(void);
+void listSDRootDirectory(void);
+void handleSDCardSerialCommands(void);
 
 // BMP280
 void check_BMP_Sensor(void);
