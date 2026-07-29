@@ -155,6 +155,8 @@ I received an Emails about a mismatching of the audio jack. With some friendly e
 ## July 27, 2026
 
 I unboxed the pcbs and checkt rought dimensions of the existing parts. I realised that many of the parts I would later assemble doesn't match the dimensions of the board. Therefore I had to think of some solutions for those but I was really disappointed. Eventhough I was too tired to proceed with soldering.
+![boards](images/progress/package.jpg)
+![boards](images/progress/boards.jpg)
 
 ## July 28, 2026
 
@@ -165,6 +167,9 @@ Time spend at this day and the week before: ~8h
 ## July 29, 2026
 
 I proceed with yesterdays strategie but I had to start over with a new board I realiesed that the short circuit only appered when I had soldered the MQ2 Sensor to the board. therefore I looked into the schematic again an noticed that all current has to float through the cp2102 chip. I had the solution that I wired a parallel wire to the dcdc converter of the esp32devkit c directly to split the current and prevent it of floating through only one thin wire. That suprisingly worked fantastic! Even the display turned on and every status LED lighted up as intended. Now I only have to test the data transphere...
+
+![board](images/progress/boardlightup.jpg)
+![board](images/progress/boardlightup2.jpg)
 
 This struggle took very long: ~5h
 
