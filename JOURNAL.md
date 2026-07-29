@@ -152,3 +152,14 @@ Final BOM:
 
 I received an Emails about a mismatching of the audio jack. With some friendly email communication I could solve those Issues and received the boards at July 24. But I were on vacation so I could only inspect the boards when I came back at July 27.
 
+## July 27, 2026
+
+I unboxed the pcbs and checkt rought dimensions of the existing parts. I realised that many of the parts I would later assemble doesn't match the dimensions of the board. Therefore I had to think of some solutions for those but I was really disappointed. Eventhough I was too tired to proceed with soldering.
+
+## July 28, 2026
+
+I tested the boards and as soon I as I drawed some current at some parts the cp2102 chip got hot and destroied itself. I first thought of a short circuit due to mismatching package types. Therefore I had to spend the whole day with replacing the chip and wiring the USB-c to the microusb directly.  That didn't work.
+Time spend at this day and the week before: ~8h
+
+
+
