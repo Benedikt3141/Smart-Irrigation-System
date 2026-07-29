@@ -9,8 +9,7 @@
 
 namespace {
 
-// Für den ersten Hardwaretest bewusst nur 4 MHz.
-// Falls die Karte nicht erkannt wird, testweise 1000000UL verwenden.
+// 4 MHz
 constexpr uint32_t SD_SPI_FREQUENCY = 4000000UL;
 
 constexpr char SD_TEST_FILE[] = "/SIS_TST.TXT";
@@ -20,7 +19,7 @@ bool sdCardMounted = false;
 
 
 // ---------------------------------------------------------
-// Hilfsfunktionen
+// help functions
 // ---------------------------------------------------------
 
 void printTestResult(const char* description, bool successful) {
@@ -113,12 +112,12 @@ bool readTextFile(const char* path, String& content) {
 
 
 // ---------------------------------------------------------
-// SD-Karte initialisieren
+// SD-Card initialization
 // ---------------------------------------------------------
 
 bool initSDCard() {
     Serial.println();
-    Serial.println("Initialisiere SD-Karte ...");
+    Serial.println("Initialize SD-Card...");
 
     sdCardMounted = false;
 
@@ -133,14 +132,14 @@ bool initSDCard() {
     );
 
     if (!SD.begin(CS_SD, SPI, SD_SPI_FREQUENCY)) {
-        Serial.println("[FEHLER] SD-Karte konnte nicht gemountet werden.");
+        Serial.println("[ERROR] SD Mounting failed");
         return false;
     }
 
     const uint8_t cardType = SD.cardType();
 
     if (cardType == CARD_NONE) {
-        Serial.println("[FEHLER] Keine SD-Karte erkannt.");
+        Serial.println("[ERROR] NO SD-Card detected");
         SD.end();
         return false;
     }
@@ -156,21 +155,21 @@ bool initSDCard() {
     const uint64_t usedSpaceMiB =
         SD.usedBytes() / (1024ULL * 1024ULL);
 
-    Serial.println("[OK] SD-Karte erfolgreich initialisiert.");
-    Serial.printf("  Typ:           %s\n", getCardTypeName(cardType));
+    Serial.println("[OK] SD card initialization successful");
+    Serial.printf("  Type:           %s\n", getCardTypeName(cardType));
 
     Serial.printf(
-        "  Kartengroesse: %llu MiB\n",
+        "  Size: %llu MiB\n",
         static_cast<unsigned long long>(cardSizeMiB)
     );
 
     Serial.printf(
-        "  Dateisystem:   %llu MiB\n",
+        "  Filesystem:   %llu MiB\n",
         static_cast<unsigned long long>(totalSpaceMiB)
     );
 
     Serial.printf(
-        "  Belegt:        %llu MiB\n",
+        "  Used:        %llu MiB\n",
         static_cast<unsigned long long>(usedSpaceMiB)
     );
 
@@ -179,12 +178,12 @@ bool initSDCard() {
 
 
 // ---------------------------------------------------------
-// Hauptverzeichnis anzeigen
+// Root directory
 // ---------------------------------------------------------
 
 void listSDRootDirectory() {
     if (!sdCardMounted) {
-        Serial.println("[FEHLER] SD-Karte ist nicht initialisiert.");
+        Serial.println("[ERROR] SD-Card is not initialized");
         return;
     }
 
@@ -192,19 +191,19 @@ void listSDRootDirectory() {
 
     if (!root) {
         Serial.println(
-            "[FEHLER] Hauptverzeichnis konnte nicht geoeffnet werden."
+            "[ERROR] root could not be opened"
         );
         return;
     }
 
     if (!root.isDirectory()) {
-        Serial.println("[FEHLER] '/' ist kein Verzeichnis.");
+        Serial.println("[ERROR] '/' is not a directory");
         root.close();
         return;
     }
 
     Serial.println();
-    Serial.println("Inhalt der SD-Karte:");
+    Serial.println("Content of SD Card");
 
     bool directoryEmpty = true;
 
@@ -219,12 +218,12 @@ void listSDRootDirectory() {
 
         if (entry.isDirectory()) {
             Serial.printf(
-                "  [VERZEICHNIS] %s\n",
+                "  [DIRECTORY] %s\n",
                 entry.name()
             );
         } else {
             Serial.printf(
-                "  [DATEI] %-24s %10llu Byte\n",
+                "  [FILE] %-24s %10llu Byte\n",
                 entry.name(),
                 static_cast<unsigned long long>(entry.size())
             );
@@ -234,7 +233,7 @@ void listSDRootDirectory() {
     }
 
     if (directoryEmpty) {
-        Serial.println("  SD-Karte ist leer.");
+        Serial.println("  SD-Card is empty");
     }
 
     root.close();
@@ -242,20 +241,20 @@ void listSDRootDirectory() {
 
 
 // ---------------------------------------------------------
-// Kommunikationstest
+// Communication test
 // ---------------------------------------------------------
 
 bool testSDCardCommunication() {
     Serial.println();
     Serial.println("==========================================");
-    Serial.println(" SD-KARTEN-KOMMUNIKATIONSTEST");
+    Serial.println(" SD-CARD-COMMUNICATION-TEST");
     Serial.println("==========================================");
 
     if (!sdCardMounted) {
-        Serial.println("SD-Karte ist nicht initialisiert.");
+        Serial.println("SD-Card is not initialized");
 
         if (!initSDCard()) {
-            Serial.println("Test abgebrochen.");
+            Serial.println("test quit");
             return false;
         }
     }
@@ -273,8 +272,7 @@ bool testSDCardCommunication() {
         }
     };
 
-    // Alte Testdateien entfernen.
-    // Normale Dateien auf der SD-Karte werden nicht verändert.
+    // remove testfiles
     SD.remove(SD_TEST_FILE);
     SD.remove(SD_RENAMED_FILE);
 
@@ -288,7 +286,7 @@ bool testSDCardCommunication() {
     bool successful =
         writeTextFile(SD_TEST_FILE, originalContent);
 
-    report("Testdatei schreiben", successful);
+    report("write Testfile", successful);
 
     String receivedContent;
 
@@ -296,12 +294,12 @@ bool testSDCardCommunication() {
         readTextFile(SD_TEST_FILE, receivedContent) &&
         receivedContent == originalContent;
 
-    report("Datei lesen und vergleichen", successful);
+    report("Read file and compare", successful);
 
     successful =
         appendTextFile(SD_TEST_FILE, appendedContent);
 
-    report("Daten an Datei anhaengen", successful);
+    report("append File", successful);
 
     receivedContent = "";
 
@@ -309,20 +307,20 @@ bool testSDCardCommunication() {
         readTextFile(SD_TEST_FILE, receivedContent) &&
         receivedContent == originalContent + appendedContent;
 
-    report("Angehaengte Daten pruefen", successful);
+    report("check wheather content is received", successful);
 
     successful =
         SD.rename(SD_TEST_FILE, SD_RENAMED_FILE) &&
         SD.exists(SD_RENAMED_FILE) &&
         !SD.exists(SD_TEST_FILE);
 
-    report("Testdatei umbenennen", successful);
+    report("rename testfile", successful);
 
     successful =
         SD.remove(SD_RENAMED_FILE) &&
         !SD.exists(SD_RENAMED_FILE);
 
-    report("Testdatei loeschen", successful);
+    report("delete testfile", successful);
 
     // Aufräumen, falls einer der vorherigen Tests fehlgeschlagen ist.
     SD.remove(SD_TEST_FILE);
@@ -330,23 +328,23 @@ bool testSDCardCommunication() {
 
     Serial.println();
     Serial.println("------------------------------------------");
-    Serial.printf("Bestanden:      %u\n", passedTests);
-    Serial.printf("Fehlgeschlagen: %u\n", failedTests);
+    Serial.printf("passed:      %u\n", passedTests);
+    Serial.printf("failed: %u\n", failedTests);
 
     if (failedTests == 0) {
         Serial.println(
-            "ERGEBNIS: SD-KARTENKOMMUNIKATION FUNKTIONIERT"
+            "RESULT: SD-Card communication works"
         );
     } else {
         Serial.println(
-            "ERGEBNIS: FEHLER BEI DER SD-KARTENKOMMUNIKATION"
+            "RESULT: ERROR with SD-Card communication"
         );
     }
 
     Serial.println("------------------------------------------");
-    Serial.println("Befehle im seriellen Monitor:");
-    Serial.println("  T = SD-Test wiederholen");
-    Serial.println("  L = Dateien anzeigen");
+    Serial.println("COMMANDS in the Terminal");
+    Serial.println("  T = SD-test repeat");
+    Serial.println("  L = Show files");
     Serial.println("==========================================");
     Serial.println();
 
@@ -379,7 +377,7 @@ void handleSDCardSerialCommands() {
 
             default:
                 Serial.println(
-                    "Unbekannter Befehl. T = Test, L = Dateien"
+                    "Unknown error. T = Test, L = Dateien"
                 );
                 break;
         }

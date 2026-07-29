@@ -37,25 +37,12 @@ uint16_t GREEN = 0x2e4c;
 
 void setup() {
   Serial.begin(115200);
+  delay(500);
   Serial.println("\nStart Programm: 'PlantWatering BreadBoard_Code'\n");
 
   // ---------------------- Initialization prozess ----------------------
-  pinMode(CS_SD, OUTPUT);
-  digitalWrite(CS_SD, HIGH);
 
-  pinMode(MISO, INPUT_PULLUP);
-  SPI.begin(SCL_SPI, MISO, MOSI, CS_SD);
-
-  delay(100);
-
-  if (!SD.begin(CS_SD)) { // Start SD Card
-      Serial.println("SD card mount failed!");
-      tft.setTextColor(GREEN, TFT_BLACK);
-      //tft.drawString("[Failed]", 20, MARGIN_LEFT + info.length());
-      return;
-  }
-  Serial.println("SD card mounted successfully.");
-
+  // Display
   try{
     tft.begin(); // start Display
     tft.setRotation(1);
@@ -78,6 +65,7 @@ void setup() {
 
   Wire.begin(); // Start I2C
   mq2.begin(); // start MQ2 Sensor
+
   /*
   ads1.begin(ADDR_ADC1); // start analog digital I2C extender 1
     ads1.setGain(GAIN_ONE);
@@ -90,13 +78,40 @@ void setup() {
   setTime();
   Serial.println("RTC initialization successfully");
 
-  */
+  pinMode(CS_SD, OUTPUT);
+  digitalWrite(CS_SD, HIGH);
+
+  pinMode(MISO, INPUT_PULLUP);
+  SPI.begin(SCL_SPI, MISO, MOSI, CS_SD);
+
+  delay(100);
 
   tft.setTextColor(BLUE, TFT_BLACK);
   String info = "[Info] Initializing SD card...";
   tft.drawString(info , 20, MARGIN_LEFT);
-  
 
+  if (!SD.begin(CS_SD)) { // Start SD Card
+      Serial.println("SD card mount failed!");
+      tft.setTextColor(GREEN, TFT_BLACK);
+      //tft.drawString("[Failed]", 20, MARGIN_LEFT + info.length());
+      return;
+  }
+  Serial.println("SD card mounted successfully.");
+
+  */
+
+
+  // SD-Card
+
+  const bool sdCardReady = initSDCard();
+
+  if (sdCardReady) {
+    testSDCardCommunication();
+  } else {
+    Serial.println();
+    Serial.println("System runs without SD Card");
+    Serial.println("Restart testing by pressing T");
+  }
 
   // -------------------------- GPIO initialization --------------------------
   pinMode(BUTTONS, INPUT);
