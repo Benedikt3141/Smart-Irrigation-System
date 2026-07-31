@@ -53,9 +53,9 @@ void setup() {
     tft.setTextFont(2);
     tft.setTextSize(1);
     String info = "[Info] Initializing Display...";
-    tft.drawString(info , 10, MARGIN_LEFT);
+    tft.drawString(info , MARGIN_LEFT, 10);
     tft.setTextColor(GREEN, TFT_BLACK);
-    tft.drawString("[OK]", 10, MARGIN_LEFT + info.length());
+    tft.drawString("[OK]", MARGIN_LEFT, 10 + info.length());
   }
   catch(int Errorcode) {
     //
@@ -77,14 +77,6 @@ void setup() {
   }
   setTime();
   Serial.println("RTC initialization successfully");
-
-  pinMode(CS_SD, OUTPUT);
-  digitalWrite(CS_SD, HIGH);
-
-  pinMode(MISO, INPUT_PULLUP);
-  SPI.begin(SCL_SPI, MISO, MOSI, CS_SD);
-
-  delay(100);
 
   tft.setTextColor(BLUE, TFT_BLACK);
   String info = "[Info] Initializing SD card...";
@@ -126,8 +118,28 @@ void setup() {
         onButtonChange,
         CHANGE
     );
+
+  // clear screen
+  tft.fillScreen(TFT_BLACK);
 }
 
 void loop() {
+  tft.setTextColor(BLUE, TFT_BLACK);
+  char data[32];
+  snprintf(data, sizeof(data), "MQ2: %04d", readAverage(MQ2_SENSOR_PIN, 10));
+  tft.drawString(data , MARGIN_LEFT, 10);
+
+  char buffer[16];
+  snprintf(buffer, sizeof(buffer), "BUTTON: %04d", readAverage(BUTTONS, 10));
+  String button = buffer;
+
+  if (readAverage(BUTTONS, 10) == 0) {
+    tft.fillScreen(TFT_BLACK);
     Screensaver();
+    tft.fillScreen(TFT_BLACK);
+  }
+
+  tft.drawString(button, MARGIN_LEFT, 30);
+  delay(500);
+
 }

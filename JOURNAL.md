@@ -175,5 +175,10 @@ This struggle took very long: ~5h
 
 edit: no success while coding. SD mount failed, USB communication doesn't work. I actually don't want to proceed. Time wasted here: at least 3h
 
+## July 30 - 31, 2026
 
+I fixed SD failures. I succeed by showing up the lizard video on the screen. I am not able to use the USB-C. I forgot to cross the UART cables and end up wiring those manually to the Devkit C. Eventhough the communication didn't worked. I also soldered the buttons directly to the board and tested them. They worked perfect and also the MQ2 Gas sensor worked without any bigger issues.
+I also tested the battery and the boost converter they worked perfect :) Next step is to test the I2C communication and to find out if or how to find around the usb connection issues.
+
+Time spend: 6h
 
