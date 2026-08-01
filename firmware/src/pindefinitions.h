@@ -1,4 +1,10 @@
+// Display constances
+const uint16_t BLUE = 0x4d13;
+const uint16_t GREEN = 0x2e4c;
+const uint16_t RED = 0xfc00;
 
+#define MARGIN_LEFT 10
+const int linespace = 20;
 
 // ********** I2C Pins *********
 #ifndef SCL

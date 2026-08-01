@@ -26,3 +26,4 @@ void testDisplay(void) {
     tft.println("Display funktioniert!");
     return;
 }
+

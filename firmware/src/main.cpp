@@ -31,67 +31,149 @@ Adafruit_ADS1115 ads1;
 Adafruit_ADS1115 ads2;
 int16_t adc1;
 
-uint16_t BLUE = 0x4d13;
-uint16_t GREEN = 0x2e4c;
-#define MARGIN_LEFT 10
+class selfCheckRoutine {
+  String info;
+  char Result[16];
+  int row;
 
-void setup() {
-  Serial.begin(115200);
-  delay(500);
-  Serial.println("\nStart Programm: 'PlantWatering BreadBoard_Code'\n");
+  public:
 
-  // ---------------------- Initialization prozess ----------------------
-
-  // Display
-  try{
-    tft.begin(); // start Display
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
-    tft.setSwapBytes(true);
-
-    tft.setTextColor(BLUE, TFT_BLACK);
-    tft.setTextFont(2);
-    tft.setTextSize(1);
-    String info = "[Info] Initializing Display...";
-    tft.drawString(info , MARGIN_LEFT, 10);
-    tft.setTextColor(GREEN, TFT_BLACK);
-    tft.drawString("[OK]", MARGIN_LEFT, 10 + info.length());
-  }
-  catch(int Errorcode) {
+  void completeSelfCheck(){
     //
   }
-  delay(100);    
 
-
-  Wire.begin(); // Start I2C
-  mq2.begin(); // start MQ2 Sensor
-
-  /*
-  ads1.begin(ADDR_ADC1); // start analog digital I2C extender 1
-    ads1.setGain(GAIN_ONE);
-  ads2.begin(ADDR_ADC2); // start analog digital I2C extender 2
-    ads2.setGain(GAIN_ONE);
-
-  if (!rtc.begin()) { // Start Clock
-    Serial.println("Couldn't find RTC!");
+  void selfCheckInfo(String info){
+    tft.setTextColor(BLUE, TFT_BLACK);
+    tft.drawString(info , MARGIN_LEFT, linespace*row);
   }
-  setTime();
-  Serial.println("RTC initialization successfully");
 
-  tft.setTextColor(BLUE, TFT_BLACK);
-  String info = "[Info] Initializing SD card...";
-  tft.drawString(info , 20, MARGIN_LEFT);
-
-  if (!SD.begin(CS_SD)) { // Start SD Card
-      Serial.println("SD card mount failed!");
-      tft.setTextColor(GREEN, TFT_BLACK);
-      //tft.drawString("[Failed]", 20, MARGIN_LEFT + info.length());
-      return;
+  void selfCheckPositive() {
+    tft.setTextColor(GREEN, TFT_BLACK);
+    tft.drawString("[OK]", MARGIN_LEFT + info.length(), linespace*row);
   }
-  Serial.println("SD card mounted successfully.");
 
-  */
+  void selfCheckNegative(int Errorcode) {
+    tft.setTextColor(RED, TFT_BLACK);
+    snprintf(Result, sizeof(Result), "[FAILED] %06d", Errorcode);
+    tft.drawString(Result, info.length() * 6, row);
+  }
 
+
+  int checkDisplay() {
+    info = "[INFO ] Initializing Display...";
+    try{
+      tft.begin(); // start Display
+      tft.setRotation(1);
+      tft.fillScreen(TFT_BLACK);
+      tft.setSwapBytes(true);
+      tft.setTextFont(2);
+      tft.setTextSize(1);
+
+      selfCheckInfo(info);
+      selfCheckPositive();
+
+      row++;
+      return 0;
+    }
+    catch(int Errorcode) {
+      //
+      return Errorcode;
+    }
+  }
+
+  int checkI2C() {
+    info = "[INFO] Starting I2C communication... ";
+    selfCheckInfo(info);
+    try {
+      Wire.begin();
+      selfCheckPositive();
+      row++;
+      return 0;
+    } 
+    catch(int Errorcode) {
+      selfCheckNegative(Errorcode);
+      row++;
+      return Errorcode;
+    }
+  }
+
+  int checkMQ2() {
+    info = "[INFO] Starting MQ2 communication... ";
+    selfCheckInfo(info);
+    try {
+      mq2.begin();
+      selfCheckPositive();
+      row++;
+      return 0;
+    } catch (int Errorcode) {
+      selfCheckNegative(Errorcode);
+      row++;
+      return Errorcode;
+    }
+  }
+
+  int checkADS() {
+    info = "[INFO] Starting ADC1 communication... ";
+    selfCheckInfo(info);
+    try {
+      ads1.begin(ADDR_ADC1);
+      ads1.setGain(GAIN_ONE);
+      selfCheckPositive();
+      row++;
+      return 0;
+    } catch (int Errorcode) {
+      selfCheckNegative(Errorcode);
+      row++;
+      return Errorcode;
+    }
+
+    info = "[INFO] Statring ADC2 communication... ";
+    selfCheckInfo(info);
+    try {
+      ads2.begin(ADDR_ADC2);
+      ads2.setGain(GAIN_ONE);
+      row++;
+      return 0;
+    } catch (int Errorcode) {
+      selfCheckNegative(Errorcode);
+      row++;
+      return Errorcode;
+    }
+  }
+
+  int checkRTC() {
+    info = "[INFO] Starting RTC communication... ";
+    selfCheckInfo(info);
+    try {
+      rtc.begin();
+      setTime();
+      selfCheckPositive();
+      row++;
+      return 0;
+    } catch (int Errorcode) {
+      selfCheckNegative(Errorcode);
+      row++;
+      return Errorcode;
+    }
+  }
+
+  int checkSD() {
+    info = "[Info] Initializing SD card...";
+    try {
+      SD.begin(CS_SD);
+      selfCheckPositive();
+      row++;
+      return 0;
+    } catch (int Errorcode) {
+      selfCheckNegative(Errorcode);
+      row++;
+      return Errorcode;
+    }
+
+  }
+};
+
+void completeSelfCheck() {
 
   // SD-Card
 
@@ -104,7 +186,16 @@ void setup() {
     Serial.println("System runs without SD Card");
     Serial.println("Restart testing by pressing T");
   }
+}
 
+void setup() {
+  Serial.begin(115200);
+  delay(500);
+  Serial.println("\nStart Programm: 'PlantWatering BreadBoard_Code'\n");
+
+  // ---------------------- Initialization prozess ----------------------
+
+  
   // -------------------------- GPIO initialization --------------------------
   pinMode(BUTTONS, INPUT);
   pinMode(LED_PIN, OUTPUT);
@@ -120,10 +211,11 @@ void setup() {
     );
 
   // clear screen
-  tft.fillScreen(TFT_BLACK);
+  //tft.fillScreen(TFT_BLACK);
 }
 
 void loop() {
+  /*
   tft.setTextColor(BLUE, TFT_BLACK);
   char data[32];
   snprintf(data, sizeof(data), "MQ2: %04d", readAverage(MQ2_SENSOR_PIN, 10));
@@ -141,5 +233,5 @@ void loop() {
 
   tft.drawString(button, MARGIN_LEFT, 30);
   delay(500);
-
+  */
 }

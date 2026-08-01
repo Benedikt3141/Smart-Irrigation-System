@@ -5,11 +5,14 @@
 #include <JPEGDEC.h>
 
 
+
 // MoistureSensor
 int getMoistureData(int);
 
 // Display
 void testDisplay(void);
+void selfCheckInfo(String info, int row);
+void selfCheckResult(String result, int row, int column, bool status);
 
 // LEDs
 void testLEDs(void);
