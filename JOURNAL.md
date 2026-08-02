@@ -182,3 +182,8 @@ I also tested the battery and the boost converter they worked perfect :) Next st
 
 Time spend: 6h
 
+## August 1 2026
+
+I laied the hardware issues to the side and started coding. I coded a selfcheck class that automatically initializes the components of the board. I had to do some debugging but on August 2 the first part of my code all worked fine!
+Time spend: 4h
+

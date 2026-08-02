@@ -34,12 +34,25 @@ int16_t adc1;
 class selfCheckRoutine {
   String info;
   char Result[16];
-  int row;
+  int row = 0;
 
   public:
 
   void completeSelfCheck(){
-    //
+    checkDisplay();
+    delay(100);
+    checkI2C();
+    delay(100);
+    checkMQ2();
+    delay(100);
+    checkADS1();
+    delay(100);
+    checkADS2();
+    delay(100);
+    checkRTC();
+    delay(100);
+    checkSD();
+    delay(1000);
   }
 
   void selfCheckInfo(String info){
@@ -49,7 +62,7 @@ class selfCheckRoutine {
 
   void selfCheckPositive() {
     tft.setTextColor(GREEN, TFT_BLACK);
-    tft.drawString("[OK]", MARGIN_LEFT + info.length(), linespace*row);
+    tft.drawString("[OK]", MARGIN_LEFT + info.length() *6.5, linespace*row);
   }
 
   void selfCheckNegative(int Errorcode) {
@@ -112,7 +125,7 @@ class selfCheckRoutine {
     }
   }
 
-  int checkADS() {
+  int checkADS1() {
     info = "[INFO] Starting ADC1 communication... ";
     selfCheckInfo(info);
     try {
@@ -121,20 +134,25 @@ class selfCheckRoutine {
       selfCheckPositive();
       row++;
       return 0;
-    } catch (int Errorcode) {
-      selfCheckNegative(Errorcode);
-      row++;
-      return Errorcode;
+      }
+      catch (int Errorcode) {
+        selfCheckNegative(Errorcode);
+        row++;
+        return Errorcode;
+      }
     }
-
+  
+  int checkADS2() {
     info = "[INFO] Statring ADC2 communication... ";
     selfCheckInfo(info);
     try {
       ads2.begin(ADDR_ADC2);
       ads2.setGain(GAIN_ONE);
+      selfCheckPositive();
       row++;
       return 0;
-    } catch (int Errorcode) {
+    } 
+    catch (int Errorcode) {
       selfCheckNegative(Errorcode);
       row++;
       return Errorcode;
@@ -158,9 +176,18 @@ class selfCheckRoutine {
   }
 
   int checkSD() {
-    info = "[Info] Initializing SD card...";
+    info = "[INFO] Initializing SD card...";
+    selfCheckInfo(info);
     try {
       SD.begin(CS_SD);
+      const bool sdCardReady = initSDCard();
+      if (sdCardReady) {
+        testSDCardCommunication();
+      } else {
+        selfCheckNegative(1234);
+        row++;
+        return 1234;
+      }
       selfCheckPositive();
       row++;
       return 0;
@@ -173,20 +200,6 @@ class selfCheckRoutine {
   }
 };
 
-void completeSelfCheck() {
-
-  // SD-Card
-
-  const bool sdCardReady = initSDCard();
-
-  if (sdCardReady) {
-    testSDCardCommunication();
-  } else {
-    Serial.println();
-    Serial.println("System runs without SD Card");
-    Serial.println("Restart testing by pressing T");
-  }
-}
 
 void setup() {
   Serial.begin(115200);
@@ -195,6 +208,8 @@ void setup() {
 
   // ---------------------- Initialization prozess ----------------------
 
+  selfCheckRoutine selfCheckRoutine;
+  selfCheckRoutine.completeSelfCheck();
   
   // -------------------------- GPIO initialization --------------------------
   pinMode(BUTTONS, INPUT);
