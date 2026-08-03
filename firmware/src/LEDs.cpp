@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "pindefinitions.h"
 #include "functions.h"
-/*#include <Adafruit_NeoPixel.h>
+#include <Adafruit_NeoPixel.h>
 
 extern Adafruit_NeoPixel leds;
 
@@ -18,4 +18,3 @@ void testLEDs(void) {
         }
     }
 }
-*/

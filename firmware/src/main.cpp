@@ -41,7 +41,7 @@ class selfCheckRoutine {
 
   public:
 
-  void completeSelfCheck(){
+  void completeSelfCheck() {
     Serial.println(checkDisplay());
     delay(100);
     Serial.println(checkI2C());
@@ -60,7 +60,7 @@ class selfCheckRoutine {
     delay(1000);
   }
 
-  void selfCheckInfo(String info){
+  void selfCheckInfo(String info) {
     tft.setTextColor(BLUE, TFT_BLACK);
     tft.drawString(info , MARGIN_LEFT, linespace*row);
   }
@@ -102,14 +102,35 @@ class selfCheckRoutine {
   int checkI2C() {
     info = "[INFO] Starting I2C communication... ";
     selfCheckInfo(info);
-    if (!pingI2C(ADDR_ADC1) &&
-      !pingI2C(ADDR_ADC2) &&
-      !pingI2C(ADDR_RTC)) {
-      selfCheckNegative(101);
-      row++;
-      return 101;
+
+    bool adc1Found = pingI2C(ADDR_ADC1);
+    bool adc2Found = pingI2C(ADDR_ADC2);
+    bool rtcFound  = pingI2C(ADDR_RTC);
+
+    Serial.printf(
+        "ADC1 0x%02X: %s\n",
+        ADDR_ADC1,
+        adc1Found ? "OK" : "FAILED"
+    );
+
+    Serial.printf(
+        "ADC2 0x%02X: %s\n",
+        ADDR_ADC2,
+        adc2Found ? "OK" : "FAILED"
+    );
+
+    Serial.printf(
+        "RTC  0x%02X: %s\n",
+        ADDR_RTC,
+        rtcFound ? "OK" : "FAILED"
+    );
+
+    if (!adc1Found || !adc2Found || !rtcFound) {
+        selfCheckNegative(101);
+        row++;
+        return 101;
     }
-    
+
     selfCheckPositive();
     row++;
     return 0;
@@ -214,70 +235,13 @@ class selfCheckRoutine {
   }
 };
 
-bool initI2C()
-{
-    if (!Wire.setPins(I2C_SDA, I2C_SCL)) {
-        Serial.println("Wire.setPins() fehlgeschlagen");
-        return false;
-    }
 
-    if (!Wire.begin()) {
-        Serial.println("Wire.begin() fehlgeschlagen");
-        return false;
-    }
-
-    Wire.setClock(100000);
-    delay(50);
-    return true;
-}
-
-void scanI2C() {
-  byte error, address;
-  int nDevices;
-
-  Serial.println("Scanning...");
-
-  nDevices = 0;
-  for(address = 1; address < 127; address++ )
-  {
-      // The i2c_scanner uses the return value of
-      // the Write.endTransmisstion to see if
-      // a device did acknowledge to the address.
-      Wire.beginTransmission(address);
-      error = Wire.endTransmission();
-
-      if (error == 0)
-      {
-      Serial.print("I2C device found at address 0x");
-      if (address<16)
-          Serial.print("0");
-      Serial.print(address,HEX);
-      Serial.println("  !");
-
-      nDevices++;
-      }
-      else if (error==4)
-      {
-      Serial.print("Unknown error at address 0x");
-      if (address<16)
-          Serial.print("0");
-      Serial.println(address,HEX);
-      }
-  }
-  if (nDevices == 0)
-      Serial.println("No I2C devices found\n");
-  else
-      Serial.println("done\n");
-}
-
-bool pingI2C(uint8_t address)
-{
+bool pingI2C(uint8_t address) {
     Wire.beginTransmission(address);
     return Wire.endTransmission(true) == 0;
 }
 
-bool testAddress(uint8_t address)
-{
+bool testAddress(uint8_t address) {
     uint32_t start = millis();
 
     Wire.beginTransmission(address);
@@ -288,57 +252,81 @@ bool testAddress(uint8_t address)
         address,
         error,
         millis() - start,
-        digitalRead(I2C_SDA),
-        digitalRead(I2C_SCL)
+        digitalRead(SDA),
+        digitalRead(SCL)
     );
 
     return error == 0;
 }
 
-void setup() {
-  Serial.begin(115200);
-  delay(500);
-  Serial.println("\nStart Programm: 'PlantWatering BreadBoard_Code'\n");
+bool initI2C() {
+  Wire.end();
+  delay(100);
 
-  if (!initI2C()) {
-    Serial.println("I2C konnte nicht initialisiert werden");
-    while (true) {
-        delay(1000);
-    }
+  if (!Wire.begin()) {
+      Serial.println("Wire.begin() fehlgeschlagen");
+      return false;
   }
-  //scanI2C();
 
-  // ---------------------- Initialization prozess ----------------------
+  Wire.setClock(100000);
+  Wire.setTimeOut(20);
 
-  selfCheckRoutine check;
-  //check.completeSelfCheck();
-  //Serial.println(selfCheckRoutine.checkI2C());
-  //Serial.println(selfCheckRoutine.checkADS1());
-  //Serial.println(selfCheckRoutine.checkADS2());
-  //Serial.println(selfCheckRoutine.checkRTC());
+  Serial.printf("SDA: %d, SCL: %d\n", SDA, SCL);
+  Serial.printf("Clock: %lu Hz\n", Wire.getClock());
+  Serial.printf("Timeout: %u ms\n", Wire.getTimeOut());
 
-  // -------------------------- GPIO initialization --------------------------
-  pinMode(BUTTONS, INPUT);
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(MQ2_SENSOR_PIN, INPUT);
-  analogReadResolution(12);  
+  delay(100);
+  return true;
+}
 
-  jpeg.setPixelType(RGB565_BIG_ENDIAN);
+void setup() {
+    Serial.begin(115200);
+    delay(500);
 
-  attachInterrupt( // Start Button Interrupt
+    Serial.println();
+    Serial.println("Start Programm: 'PlantWatering BreadBoard_Code'");
+    Serial.println();
+
+    
+    if (!initI2C()) {
+        Serial.println("Error with I2C");
+
+        while (true) {
+            delay(1000);
+        }
+    }
+
+    Serial.println("before tft.begin()");
+    testAddress(0x48);
+    testAddress(0x49);
+    testAddress(0x68);
+
+    Serial.println("start Display");
+    tft.begin();
+
+    Serial.println("after tft.begin()");
+    testAddress(0x48);
+    testAddress(0x49);
+    testAddress(0x68);
+
+
+    // GPIO
+    pinMode(BUTTONS, INPUT);
+    pinMode(LED_PIN, OUTPUT);
+    pinMode(MQ2_SENSOR_PIN, INPUT);
+
+    analogReadResolution(12);
+
+    jpeg.setPixelType(RGB565_BIG_ENDIAN);
+
+    attachInterrupt(
         digitalPinToInterrupt(BUTTONS),
         onButtonChange,
         CHANGE
     );
-
-  // clear screen
-  //tft.fillScreen(TFT_BLACK);
-
-  //scanI2C();
 }
 
-// ***************** LEDs still don't work... *****************
 
-void loop() {
-  
+void loop()
+{
 }
