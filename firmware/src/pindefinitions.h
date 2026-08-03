@@ -7,20 +7,20 @@ const uint16_t RED = 0xfc00;
 const int linespace = 20;
 
 // ********** I2C Pins *********
-#ifndef SCL
-#define SCL 22
+#ifndef I2C_SCL
+#define I2C_SCL 22
 #endif
 
-#ifndef SDA
-#define SDA 21
+#ifndef I2C_SDA
+#define I2C_SDA 21
 #endif
 
 #ifndef ADDR_ADC1
-#define ADDR_ADC1 0x4B
+#define ADDR_ADC1 0x48
 #endif
 
 #ifndef ADDR_ADC2
-#define ADDR_ADC2 0x48
+#define ADDR_ADC2 0x49
 #endif
 
 #ifndef ADDR_CLOCK1
@@ -28,7 +28,7 @@ const int linespace = 20;
 #endif
 
 #ifndef ADDR_CLOCK2
-#define ADDR_CLOCK2 0x68 
+#define ADDR_RTC 0x68 
 #endif
 
 #ifndef ADDR_BMP280

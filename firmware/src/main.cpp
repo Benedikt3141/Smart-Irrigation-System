@@ -17,11 +17,11 @@
 #include "Buttons.h" //the button code that would mess up the main code
 #include <JPEGDEC.h>
 #include <Adafruit_ADS1X15.h>
-#include <lvgl.h>
+//#include <lvgl.h>
 #include <FastLED.h>
 #include <Adafruit_NeoPixel.h>
 
-
+#define WIRE Wire
 
 Adafruit_BMP280 bmp; // use I2C interface
 MQ2 mq2(MQ2_SENSOR_PIN);
@@ -102,11 +102,14 @@ class selfCheckRoutine {
   int checkI2C() {
     info = "[INFO] Starting I2C communication... ";
     selfCheckInfo(info);
-    if (!Wire.begin()){
+    if (!pingI2C(ADDR_ADC1) &&
+      !pingI2C(ADDR_ADC2) &&
+      !pingI2C(ADDR_RTC)) {
       selfCheckNegative(101);
       row++;
       return 101;
-    } 
+    }
+    
     selfCheckPositive();
     row++;
     return 0;
@@ -124,7 +127,8 @@ class selfCheckRoutine {
   int checkADS1() {
     info = "[INFO] Starting ADC1 communication... ";
     selfCheckInfo(info);
-    if (!ads1.begin(ADDR_ADC1)) {
+    Serial.printf("Ping 0x48 vor ads1.begin(): %s\n", pingI2C(0x48) ? "OK" : "FAILED");
+    if (!ads1.begin(ADDR_ADC1, &Wire)) {
       
       selfCheckNegative(103);
       row++;
@@ -139,7 +143,8 @@ class selfCheckRoutine {
   int checkADS2() {
     info = "[INFO] Statring ADC2 communication... ";
     selfCheckInfo(info);
-    if (!ads2.begin(ADDR_ADC2)) {
+    Serial.printf("Ping 0x49 vor ads1.begin(): %s\n", pingI2C(0x49) ? "OK" : "FAILED");
+    if (!ads2.begin(ADDR_ADC2, &Wire)) {
       selfCheckNegative(104);
       row++;
       return 104;
@@ -153,7 +158,8 @@ class selfCheckRoutine {
   int checkRTC() {
     info = "[INFO] Starting RTC communication... ";
     selfCheckInfo(info);
-    if (!rtc.begin()) {
+    Serial.printf("Ping 0x68 vor ads1.begin(): %s\n", pingI2C(0x68) ? "OK" : "FAILED");
+    if (!rtc.begin(&Wire)) {
       selfCheckNegative(105);
       row++;
       return 105;
@@ -208,17 +214,109 @@ class selfCheckRoutine {
   }
 };
 
+bool initI2C()
+{
+    if (!Wire.setPins(I2C_SDA, I2C_SCL)) {
+        Serial.println("Wire.setPins() fehlgeschlagen");
+        return false;
+    }
+
+    if (!Wire.begin()) {
+        Serial.println("Wire.begin() fehlgeschlagen");
+        return false;
+    }
+
+    Wire.setClock(100000);
+    delay(50);
+    return true;
+}
+
+void scanI2C() {
+  byte error, address;
+  int nDevices;
+
+  Serial.println("Scanning...");
+
+  nDevices = 0;
+  for(address = 1; address < 127; address++ )
+  {
+      // The i2c_scanner uses the return value of
+      // the Write.endTransmisstion to see if
+      // a device did acknowledge to the address.
+      Wire.beginTransmission(address);
+      error = Wire.endTransmission();
+
+      if (error == 0)
+      {
+      Serial.print("I2C device found at address 0x");
+      if (address<16)
+          Serial.print("0");
+      Serial.print(address,HEX);
+      Serial.println("  !");
+
+      nDevices++;
+      }
+      else if (error==4)
+      {
+      Serial.print("Unknown error at address 0x");
+      if (address<16)
+          Serial.print("0");
+      Serial.println(address,HEX);
+      }
+  }
+  if (nDevices == 0)
+      Serial.println("No I2C devices found\n");
+  else
+      Serial.println("done\n");
+}
+
+bool pingI2C(uint8_t address)
+{
+    Wire.beginTransmission(address);
+    return Wire.endTransmission(true) == 0;
+}
+
+bool testAddress(uint8_t address)
+{
+    uint32_t start = millis();
+
+    Wire.beginTransmission(address);
+    uint8_t error = Wire.endTransmission(true);
+
+    Serial.printf(
+        "Adresse 0x%02X: Fehler=%u, Zeit=%lu ms, SDA=%d, SCL=%d\n",
+        address,
+        error,
+        millis() - start,
+        digitalRead(I2C_SDA),
+        digitalRead(I2C_SCL)
+    );
+
+    return error == 0;
+}
 
 void setup() {
   Serial.begin(115200);
   delay(500);
   Serial.println("\nStart Programm: 'PlantWatering BreadBoard_Code'\n");
 
+  if (!initI2C()) {
+    Serial.println("I2C konnte nicht initialisiert werden");
+    while (true) {
+        delay(1000);
+    }
+  }
+  //scanI2C();
+
   // ---------------------- Initialization prozess ----------------------
 
-  selfCheckRoutine selfCheckRoutine;
-  selfCheckRoutine.completeSelfCheck();
-  
+  selfCheckRoutine check;
+  //check.completeSelfCheck();
+  //Serial.println(selfCheckRoutine.checkI2C());
+  //Serial.println(selfCheckRoutine.checkADS1());
+  //Serial.println(selfCheckRoutine.checkADS2());
+  //Serial.println(selfCheckRoutine.checkRTC());
+
   // -------------------------- GPIO initialization --------------------------
   pinMode(BUTTONS, INPUT);
   pinMode(LED_PIN, OUTPUT);
@@ -235,22 +333,12 @@ void setup() {
 
   // clear screen
   //tft.fillScreen(TFT_BLACK);
+
+  //scanI2C();
 }
 
 // ***************** LEDs still don't work... *****************
 
 void loop() {
-  char data[64];
-  int sen1 = ads1.readADC_SingleEnded(0);
-  int sen2 = ads1.readADC_SingleEnded(1);
-  int sen3 = ads1.readADC_SingleEnded(2);
-  int sen4 = ads1.readADC_SingleEnded(3);
-  int sen5 = ads2.readADC_SingleEnded(0);
-  int sen6 = ads2.readADC_SingleEnded(1);
-  int sen7 = ads2.readADC_SingleEnded(2);
-  int sen8 = ads2.readADC_SingleEnded(3);
-
-  snprintf(data, sizeof(data), "S1: %d", sen1);
-  tft.setTextColor(TFT_BLACK, TFT_WHITE);
-  tft.drawString(data, MARGIN_LEFT, 10);
+  
 }

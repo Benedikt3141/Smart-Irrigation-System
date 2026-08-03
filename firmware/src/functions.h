@@ -3,7 +3,7 @@
 
 #include <Arduino.h>
 #include <JPEGDEC.h>
-
+#include <Wire.h>
 
 
 // MoistureSensor
@@ -42,5 +42,12 @@ void Screensaver(void);
 
 // Solar Panel
 float getSolarVoltage(void);
+
+
+//I2C
+bool initI2C();
+void scanI2C();
+bool pingI2C(uint8_t address);
+
 
 #endif
