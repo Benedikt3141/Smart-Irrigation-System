@@ -1,27 +1,30 @@
 #define ESP32_WIFI_TOUCH
 
+// General
 #include <Arduino.h>
-#include <SPI.h>
-#include <SD.h>
+#include <Wire.h>
+// Repository specific headers
 #include "pindefinitions.h"
 #include "functions.h"
-#include <TFT_eSPI.h>
-#include "RTClib.h"
-#include <Wire.h>
-#include <TouchScreen.h>
-#include <Adafruit_BMP280.h>
-#include "FS.h"
-#include "SD.h"
-#include "SPI.h"
-#include "MQ2.h" // library: https://github.com/labay11/MQ-2-sensor-library <- Thank you so much!
 #include "Buttons.h" //the button code that would mess up the main code
+// SD-Card
+#include <SPI.h>
+#include <SD.h>
+#include "FS.h"
+// Display
+#include <TFT_eSPI.h>
+#include <TouchScreen.h>
 #include <JPEGDEC.h>
+#include <lvgl.h>
+//Sensors
+#include "RTClib.h"
+#include <Adafruit_BMP280.h>
+#include "MQ2.h" // library: https://github.com/labay11/MQ-2-sensor-library <- Thank you so much!
 #include <Adafruit_ADS1X15.h>
-//#include <lvgl.h>
+//LEDs
 #include <FastLED.h>
 #include <Adafruit_NeoPixel.h>
 
-#define WIRE Wire
 
 Adafruit_BMP280 bmp; // use I2C interface
 MQ2 mq2(MQ2_SENSOR_PIN);
@@ -45,8 +48,8 @@ class selfCheckRoutine {
     Serial.println(checkDisplay());
     delay(100);
     Serial.println(checkI2C());
-    delay(100);
-    Serial.println(checkMQ2());
+    //delay(100);
+    //Serial.println(checkMQ2());
     delay(100);
     Serial.println(checkADS1());
     delay(100);
@@ -103,6 +106,17 @@ class selfCheckRoutine {
     info = "[INFO] Starting I2C communication... ";
     selfCheckInfo(info);
 
+    bool started = Wire.begin();
+
+    if(!started) {
+      selfCheckNegative(101);
+      row++;
+      return 101;
+    }
+
+    Wire.setClock(100000);
+    Wire.setTimeOut(20);
+
     bool adc1Found = pingI2C(ADDR_ADC1);
     bool adc2Found = pingI2C(ADDR_ADC2);
     bool rtcFound  = pingI2C(ADDR_RTC);
@@ -130,7 +144,19 @@ class selfCheckRoutine {
         row++;
         return 101;
     }
+    
 
+    Serial.printf("Wire.begin(): %s\n", started ? "OK" : "FAILED");
+    Serial.printf("SDA=%d SCL=%d\n", SDA, SCL);
+    Serial.printf("Clock=%lu\n", Wire.getClock());
+    Serial.printf("Timeout=%u\n\n", Wire.getTimeOut());
+
+    testAddress(0x48);
+    testAddress(0x49);
+    testAddress(0x50);
+    testAddress(0x58);
+    testAddress(0x68);
+    
     selfCheckPositive();
     row++;
     return 0;
@@ -164,7 +190,7 @@ class selfCheckRoutine {
   int checkADS2() {
     info = "[INFO] Statring ADC2 communication... ";
     selfCheckInfo(info);
-    Serial.printf("Ping 0x49 vor ads1.begin(): %s\n", pingI2C(0x49) ? "OK" : "FAILED");
+    Serial.printf("Ping 0x49 vor ads2.begin(): %s\n", pingI2C(0x49) ? "OK" : "FAILED");
     if (!ads2.begin(ADDR_ADC2, &Wire)) {
       selfCheckNegative(104);
       row++;
@@ -179,7 +205,7 @@ class selfCheckRoutine {
   int checkRTC() {
     info = "[INFO] Starting RTC communication... ";
     selfCheckInfo(info);
-    Serial.printf("Ping 0x68 vor ads1.begin(): %s\n", pingI2C(0x68) ? "OK" : "FAILED");
+    Serial.printf("Ping 0x68 vor rtc.begin(): %s\n", pingI2C(0x68) ? "OK" : "FAILED");
     if (!rtc.begin(&Wire)) {
       selfCheckNegative(105);
       row++;
@@ -194,7 +220,8 @@ class selfCheckRoutine {
   int checkSD() {
     info = "[INFO] Initializing SD card...";
     selfCheckInfo(info);
-    if (!SD.begin(CS_SD)) {
+    
+    if (!initSDCard()) {
       selfCheckNegative(106);
       row++;
       return 106;
@@ -216,11 +243,7 @@ class selfCheckRoutine {
   int checkLEDs() {
     info = "[INFO] Initializing LEDs...";
     selfCheckInfo(info);
-    if (!leds.begin()){
-      selfCheckNegative(107);
-      row++;
-      return 107;
-    }
+    leds.begin();
     leds.setPin(LED_PIN);
     leds.clear();
     leds.setPixelColor(1,200,200,200);
@@ -236,48 +259,8 @@ class selfCheckRoutine {
 };
 
 
-bool pingI2C(uint8_t address) {
-    Wire.beginTransmission(address);
-    return Wire.endTransmission(true) == 0;
-}
 
-bool testAddress(uint8_t address) {
-    uint32_t start = millis();
 
-    Wire.beginTransmission(address);
-    uint8_t error = Wire.endTransmission(true);
-
-    Serial.printf(
-        "Adresse 0x%02X: Fehler=%u, Zeit=%lu ms, SDA=%d, SCL=%d\n",
-        address,
-        error,
-        millis() - start,
-        digitalRead(SDA),
-        digitalRead(SCL)
-    );
-
-    return error == 0;
-}
-
-bool initI2C() {
-  Wire.end();
-  delay(100);
-
-  if (!Wire.begin()) {
-      Serial.println("Wire.begin() fehlgeschlagen");
-      return false;
-  }
-
-  Wire.setClock(100000);
-  Wire.setTimeOut(20);
-
-  Serial.printf("SDA: %d, SCL: %d\n", SDA, SCL);
-  Serial.printf("Clock: %lu Hz\n", Wire.getClock());
-  Serial.printf("Timeout: %u ms\n", Wire.getTimeOut());
-
-  delay(100);
-  return true;
-}
 
 void setup() {
     Serial.begin(115200);
@@ -287,27 +270,8 @@ void setup() {
     Serial.println("Start Programm: 'PlantWatering BreadBoard_Code'");
     Serial.println();
 
-    
-    if (!initI2C()) {
-        Serial.println("Error with I2C");
-
-        while (true) {
-            delay(1000);
-        }
-    }
-
-    Serial.println("before tft.begin()");
-    testAddress(0x48);
-    testAddress(0x49);
-    testAddress(0x68);
-
-    Serial.println("start Display");
-    tft.begin();
-
-    Serial.println("after tft.begin()");
-    testAddress(0x48);
-    testAddress(0x49);
-    testAddress(0x68);
+    selfCheckRoutine check;
+    check.completeSelfCheck();
 
 
     // GPIO
@@ -316,17 +280,11 @@ void setup() {
     pinMode(MQ2_SENSOR_PIN, INPUT);
 
     analogReadResolution(12);
-
+    
     jpeg.setPixelType(RGB565_BIG_ENDIAN);
-
-    attachInterrupt(
-        digitalPinToInterrupt(BUTTONS),
-        onButtonChange,
-        CHANGE
-    );
 }
 
 
-void loop()
-{
+void loop() {
+
 }

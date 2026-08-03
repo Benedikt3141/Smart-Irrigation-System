@@ -17,9 +17,6 @@ void selfCheckResult(String result, int row, int column, bool status);
 // LEDs
 void testLEDs(void);
 
-// I2C
-void scan_I2C_Addresses(void);
-
 // RTC
 void setTime(void);
 void printTime(void);
@@ -45,9 +42,8 @@ float getSolarVoltage(void);
 
 
 //I2C
-bool initI2C();
-void scanI2C();
+void testAddress(uint8_t address);
+void scan_I2C_Addresses(void);
 bool pingI2C(uint8_t address);
-
 
 #endif

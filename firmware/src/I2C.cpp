@@ -41,3 +41,23 @@ void scan_I2C_Addresses(void) { //scan for I2C Addresses and print to Serial Mon
 
     delay(5000);           // wait 5 seconds for next scan
 }
+
+void testAddress(uint8_t address)
+{
+    uint32_t start = millis();
+
+    Wire.beginTransmission(address);
+    uint8_t error = Wire.endTransmission(true);
+
+    Serial.printf(
+        "0x%02X: error=%u, duration=%lu ms\n",
+        address,
+        error,
+        millis() - start
+    );
+}
+
+bool pingI2C(uint8_t address) {
+    Wire.beginTransmission(address);
+    return Wire.endTransmission(true) == 0;
+}
