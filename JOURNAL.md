@@ -187,3 +187,17 @@ Time spend: 6h
 I laied the hardware issues to the side and started coding. I coded a selfcheck class that automatically initializes the components of the board. I had to do some debugging but on August 2 the first part of my code all worked fine!
 Time spend: 4h
 
+## August 2 2026
+
+I tried to use functilns of board 2 but after quite a bit of software bugs and some new functions nobody ever asked for I found out that the wire to board 2 were broken and the board wasn't even supplied by power.
+I soldered new connectors to the board and reached the state of August 1. But I also did some research on GUI engines.
+Time spend: ~ 2h
+
+## August 3 2026
+
+My goal for today was to get the LEDs working properly And to address the ADCs. But before I could start I had to realise that again some connectors didn't properly connect. So again soldering of wires that don't want to stick in the holes they're supposed to.
+Finally everything was connected I asked AI to find software bugs. My self check class couldn't have worked or thrown an error because the begin functions don't throw an error but return non-zero values so I had to modify the complete class. In the end it worked so it thrower errors. But I didn't want to get those errors. It started with simple Errors that the ADCs and the clock couldn't be addressed or called by their begin functions. I tried a lot but that didn't worked. I got even more cable broken at their connectors, my Laptop was constantly throwing errors because the connected device was pulling too much power from the USB port because I probably miswired the MQ2 so it heated up to more than 60°C... Anyway I had a successful I2C scan. but as I wanted to repeat it it didn't work. I thought it would have been a software bug but it turned out to be another hardware problem.
+It took me hours until I decided to turn all over. Until then I had already tried to throw away all files aren't necessary needed. 
+But then I started wir a new board. I learned from my mistakes with board 1 and 2 and tried to connect everything using connectors then can easily be removed. Finally after I had soldered alle components except for the buttons and the MQ2 I could successfully use the I2C of the ESP32 Devkit c. It took me again a lot of time until I reached the state of August 1. Eventough the LEDs still don't light up and the SD card doesn't work I had wasted around 8.5 hours of my life here and still don't really know what the error was. It was one of my least successful and enjoyable days this year. I think it was the last bigger project in my life.
+
+Time spend: 8.5h
