@@ -108,6 +108,18 @@ const int linespace = 20;
 #define NUMBER_LEDS 8
 #endif
 
+#ifndef LED_TYPE
+#define LED_TYPE WS2812B
+#endif
+
+#ifndef COLOR_ORDER
+#define COLOR_ORDER RGB
+#endif
+
+#ifndef BRIGHTNESS
+#define BRIGHTNESS 255
+#endif
+
 // ********** Screensaver Video ********
 #ifndef SCREENSAVER_VIDEO_FILE_NAME
 #define  SCREENSAVER_VIDEO_FILE_NAME "Lizard.mjpeg";
