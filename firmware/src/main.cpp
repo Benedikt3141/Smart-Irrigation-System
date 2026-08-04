@@ -33,9 +33,9 @@ Adafruit_NeoPixel leds(NUMBER_LEDS, LED_PIN, NEO_RGB + NEO_KHZ800);
 //CRGB leds[NUMBER_LEDS];
 RTC_DS3231 rtc;
 JPEGDEC jpeg;
-Adafruit_ADS1115 ads1;
-Adafruit_ADS1115 ads2;
-int16_t adc1;
+Adafruit_ADS1115 adc1;
+Adafruit_ADS1115 adc2;
+
 
 class selfCheckRoutine {
   String info;
@@ -51,9 +51,9 @@ class selfCheckRoutine {
     //delay(100);
     //Serial.println(checkMQ2());
     delay(100);
-    Serial.println(checkADS1());
+    Serial.println(checkADC1());
     delay(100);
-    Serial.println(checkADS2());
+    Serial.println(checkADC2());
     delay(100);
     Serial.println(checkRTC());
     delay(100);
@@ -171,32 +171,32 @@ class selfCheckRoutine {
     return 0;
   }
 
-  int checkADS1() {
+  int checkADC1() {
     info = "[INFO] Starting ADC1 communication... ";
     selfCheckInfo(info);
     Serial.printf("Ping 0x48 vor ads1.begin(): %s\n", pingI2C(0x48) ? "OK" : "FAILED");
-    if (!ads1.begin(ADDR_ADC1, &Wire)) {
+    if (!adc1.begin(ADDR_ADC1, &Wire)) {
       
       selfCheckNegative(103);
       row++;
       return 103;
     }
-    ads1.setGain(GAIN_ONE);
+    adc1.setGain(GAIN_ONE);
     selfCheckPositive();
     row++;
     return 0;
   }
   
-  int checkADS2() {
+  int checkADC2() {
     info = "[INFO] Statring ADC2 communication... ";
     selfCheckInfo(info);
     Serial.printf("Ping 0x49 vor ads2.begin(): %s\n", pingI2C(0x49) ? "OK" : "FAILED");
-    if (!ads2.begin(ADDR_ADC2, &Wire)) {
+    if (!adc2.begin(ADDR_ADC2, &Wire)) {
       selfCheckNegative(104);
       row++;
       return 104;
     }
-    ads2.setGain(GAIN_ONE);
+    adc2.setGain(GAIN_ONE);
     selfCheckPositive();
     row++;
     return 0;
@@ -293,5 +293,10 @@ void setup() {
 
 
 void loop() {
+  for (int i= 0; i<4; i++) {
+    Serial.printf("ADC1 %02d: %04d \n", i, adc1.readADC_SingleEnded(i));
+    Serial.printf("ADC2 %02d: %04d \n", i+4, adc2.readADC_SingleEnded(i));
+  }
+  delay(1000);
 
 }
