@@ -260,10 +260,52 @@ class selfCheckRoutine {
   }
 };
 
+class MoistureSensor{
+    private:
 
+    public:
+    int getSensorValue(int SensorID) {
+        int value;
+        switch(SensorID) {
+            case 0:
+                value = adc1.readADC_SingleEnded(0);
+                return value;
+            case 1:
+                value = adc1.readADC_SingleEnded(1);
+                return value;
+            case 2:
+                value = adc1.readADC_SingleEnded(2);
+                return value;
+            case 3:
+                value = adc1.readADC_SingleEnded(3);
+                return value;
+            case 4:
+                value = adc2.readADC_SingleEnded(0);
+                return value;
+            case 5:
+                value = adc2.readADC_SingleEnded(1);
+                return value;
+            default:
+                Serial.println("SensorID out of Range");
+                return 120;
+        }
+    }
 
+    void printSensorData(int SensorID) {
+        Serial.printf("Sensor-%d Value: %4d \n", SensorID+1, getSensorValue(SensorID));
+    }
 
+    void printSensorData(void) {
+        for (int i = 0; i<6; i++) {
+            Serial.printf("Sensor-%d Value: %4d \n", i+1, getSensorValue(i));
+            delay(100);
+        }
+    }
 
+};
+
+selfCheckRoutine check;
+MoistureSensor sensors;
 void setup() {
     Serial.begin(115200);
     delay(500);
@@ -283,8 +325,10 @@ void setup() {
     pinMode(TFT_CS, OUTPUT);
     digitalWrite(TFT_CS, HIGH);
 
-    selfCheckRoutine check;
+    
     check.completeSelfCheck();
+
+    
     
     analogReadResolution(12);
     
@@ -293,10 +337,5 @@ void setup() {
 
 
 void loop() {
-  for (int i= 0; i<4; i++) {
-    Serial.printf("ADC1 %02d: %04d \n", i, adc1.readADC_SingleEnded(i));
-    Serial.printf("ADC2 %02d: %04d \n", i+4, adc2.readADC_SingleEnded(i));
-  }
-  delay(1000);
-
+  sensors.printSensorData();
 }
