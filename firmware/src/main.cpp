@@ -220,21 +220,23 @@ class selfCheckRoutine {
   int checkSD() {
     info = "[INFO] Initializing SD card...";
     selfCheckInfo(info);
+
+    const bool sdCardReady = initSDCard();
     
-    if (!initSDCard()) {
+    if (!sdCardReady) {
       selfCheckNegative(106);
       row++;
       return 106;
     } 
-    const bool sdCardReady = initSDCard();
-    if (sdCardReady) {
-      testSDCardCommunication();
-    } 
-    else {
+    
+    const bool communicationOK = testSDCardCommunication();
+
+    if(!communicationOK) {
       selfCheckNegative(107);
       row++;
       return 107;
     }
+    
     selfCheckPositive();
     row++;
     return 0;
@@ -270,15 +272,20 @@ void setup() {
     Serial.println("Start Programm: 'PlantWatering BreadBoard_Code'");
     Serial.println();
 
-    selfCheckRoutine check;
-    check.completeSelfCheck();
-
-
     // GPIO
     pinMode(BUTTONS, INPUT);
     pinMode(LED_PIN, OUTPUT);
     pinMode(MQ2_SENSOR_PIN, INPUT);
 
+    pinMode(CS_SD, OUTPUT);
+    digitalWrite(CS_SD, HIGH);
+
+    pinMode(TFT_CS, OUTPUT);
+    digitalWrite(TFT_CS, HIGH);
+
+    selfCheckRoutine check;
+    check.completeSelfCheck();
+    
     analogReadResolution(12);
     
     jpeg.setPixelType(RGB565_BIG_ENDIAN);
