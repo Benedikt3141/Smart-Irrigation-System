@@ -4,10 +4,38 @@
 #include <Arduino.h>
 #include <JPEGDEC.h>
 #include <Wire.h>
+#pragma once
 
+// SelfCheck
+class SelfCheckRoutine {
+    private:
+    String info;
+    char Result[16];
+    int row = 0;
+
+    public:
+    void completeSelfCheck();
+    void selfCheckInfo(String info);
+    void selfCheckPositive();
+    void selfCheckNegative(int Errorcode);
+    int checkDisplay();
+    int checkI2C();
+    int checkMQ2();
+    int checkADC1();
+    int checkADC2();
+    int checkRTC();
+    int checkSD();
+    int checkLEDs();
+};
 
 // MoistureSensor
-int getMoistureData(int);
+class MoistureSensor{
+    private:
+    public:
+    int getSensorValue(int SensorID);
+    void printSensorData(int SensorID);
+    void printSensorData(void);
+};
 
 // Display
 void testDisplay(void);
