@@ -3,6 +3,9 @@
 #include "pindefinitions.h"
 #include <SD.h>
 #include <FS.h>
+#include <Adafruit_BMP280.h>
+extern MoistureSensor sensors;
+extern Adafruit_BMP280 bmp;
 
 void CSV_Logger::initSDCard(int CsPinInput){
     // begin SD Card
@@ -54,7 +57,7 @@ void CSV_Logger::addMoistureData() {
     int wetSensorData = 0; // Number of wet sensors
 
     for (int sensor = 0; sensor < 6; sensor++){
-      int moistureData = sensors[sensor].getMoistureSensorData();
+      int moistureData = sensors.getSensorValue(sensor);
 
       if (moistureData <= wateringValue) { // if any sensor is too dry
         watering = true;
@@ -88,8 +91,7 @@ void CSV_Logger::addWateringStatus() {
 
 
 void CSV_Logger::addTemperature() {
-    float temperature;
-    bmp.getTemperature(&temperature);
+    float temperature = bmp.readTemperature();
 
     offset += snprintf(lineBuffer + offset, sizeof(lineBuffer) - offset, "%.2f;", temperature);
 }
@@ -97,7 +99,7 @@ void CSV_Logger::addTemperature() {
 
 void CSV_Logger::addPreasure() {
     float preasure;
-    preasure = event.pressure;
+    preasure = bmp.readPressure();
 
     offset += snprintf(lineBuffer + offset, sizeof(lineBuffer) - offset, "%.2f;", preasure);
 }

@@ -4,7 +4,6 @@
 #include <Arduino.h>
 #include <JPEGDEC.h>
 #include <Wire.h>
-#pragma once
 
 // SelfCheck
 class SelfCheckRoutine {
@@ -93,5 +92,8 @@ float getSolarVoltage(void);
 void testAddress(uint8_t address);
 void scan_I2C_Addresses(void);
 bool pingI2C(uint8_t address);
+
+//Waterstation --> functions for later on
+int getDistance(void) {return 0;};
 
 #endif

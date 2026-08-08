@@ -22,7 +22,6 @@
 #include "MQ2.h" // library: https://github.com/labay11/MQ-2-sensor-library <- Thank you so much!
 #include <Adafruit_ADS1X15.h>
 //LEDs
-#include <FastLED.h>
 #include <Adafruit_NeoPixel.h>
 
 
