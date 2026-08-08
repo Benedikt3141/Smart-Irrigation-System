@@ -22,7 +22,6 @@
 #include "MQ2.h" // library: https://github.com/labay11/MQ-2-sensor-library <- Thank you so much!
 #include <Adafruit_ADS1X15.h>
 //LEDs
-#include <FastLED.h>
 #include <Adafruit_NeoPixel.h>
 
 
@@ -37,6 +36,12 @@ Adafruit_ADS1115 adc1;
 Adafruit_ADS1115 adc2;
 MoistureSensor sensors;
 SelfCheckRoutine check;
+
+// WateringVariables
+const int wateringValue = 40;
+bool watering = false;
+
+
 
 void setup() {
     Serial.begin(115200);

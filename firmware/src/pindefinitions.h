@@ -1,3 +1,6 @@
+#ifndef PIN_DEFINITIONS
+#define PIN_DEFINITIONS
+
 // Display constances
 const uint16_t BLUE = 0x4d13;
 const uint16_t GREEN = 0x2e4c;
@@ -5,6 +8,14 @@ const uint16_t RED = 0xfc00;
 
 #define MARGIN_LEFT 10
 const int linespace = 20;
+
+
+// Time Info
+/*
+const char* ntpServer = "pool.ntp.org";
+const long  gmtOffset_sec = 3600;
+const int   daylightOffset_sec = 3600;
+*/
 
 // ********** I2C Pins *********
 #ifndef I2C_SCL
@@ -123,4 +134,7 @@ const int linespace = 20;
 // ********** Screensaver Video ********
 #ifndef SCREENSAVER_VIDEO_FILE_NAME
 #define  SCREENSAVER_VIDEO_FILE_NAME "Lizard.mjpeg";
+#endif
+
+
 #endif
