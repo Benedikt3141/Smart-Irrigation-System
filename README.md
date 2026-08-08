@@ -1,12 +1,64 @@
-# Smart Irrigation System
+![AIPreview](images/Progress/AI_preview.png)
 
+-> AI Preview
+
+# Smart Irrigation System
 
 The Smart Irrigation System is a battery-powered monitoring and control system for watering up to six individual plants.
 Each plant is monitored by a capacitive soil moisture sensor connected to the main control unit.
 
 The project currently focuses on the main monitoring and control unit. A separate watering unit is planned but not fully designed yet. Communication between both units is intended to use ESP-NOW.
 
+## Project Overview
+
+The system consists of two main parts:
+
+### Main Monitoring and Control Unit
+
+The main unit collects sensor data, displays current measurements on a TFT screen, logs data to an SD card and indicates the system status using an LED strip.
+
+Each soil moisture sensor is connected individually using an audio jack connector.
+
+### Watering Unit
+
+The watering unit is planned as a separate module. It will receive commands from the main control unit via ESP-NOW and control the water flow using a solenoid valve.
+The unit should also monitor the water tank level using an ultrasonic sensor.
+
+This part of the system is still work in progress.
+
+![stackedBoards](images/Progress/stackedBoards.png)
+
 ![Concept](Concept.jpg)
+
+## Feature overview
+
+###### Sensors (Inputs)
+
+- **Soil mositure monitoring** for individual plants
+- **Temperature**
+- Humidity
+- Air pressure
+- Air Quality
+- CO2 concentration
+- Solar intensity
+- 4 Buttons
+- *Tank fill state sensor*
+
+###### Other features and outputs
+
+- **Battery powered**
+- 2.4" TFT LCD Screen with resistive touch
+- SD log with data saved as .csv
+- LED-Strip status indicator
+- magnetic valve for watering Control
+- *web interface*
+- *Push Emails when water is empty/error etc.*
+
+![Schematic](src/pcb/ProjectSchematic.jpeg)
+
+![PCB](src/pcb/Project_PCB_Layout.jpeg)
+
+![Rendering](src/pcb/PCB_PlantWatering.png)
 
 ## Repository Structure
 
@@ -19,7 +71,7 @@ This repository contains both the firmware and the PCB design files.
 
 The main monitoring and control unit consists of two stacked custom PCBs. Both PCBs are part of the same project and are required for the complete device.
 
-## File Structure!
+## File Structure
 
 ```
 Smart-Irrigation-System/
@@ -39,53 +91,6 @@ Smart-Irrigation-System/
 │       └── gerbers/
 └── images/
 ```
-
-## Project Overview
-
-The system consists of two main parts:
-
-### Main Monitoring and Control Unit
-
-The main unit collects sensor data, displays current measurements on a TFT screen, logs data to an SD card and indicates the system status using an LED strip.
-
-Each soil moisture sensor is connected individually using an audio jack connector.
-
-### Watering Unit
-
-The watering unit is planned as a separate module. It will receive commands from the main control unit via ESP-NOW and control the water flow using a solenoid valve.
-The unit should also monitor the water tank level using an ultrasonic sensor.
-
-This part of the system is still work in progress.
-
-## Feature overview
-
-###### Sensors (Inputs)
-
-* \[x] **Soil mositure monitoring** for individual plants
-* \[x] **Temperature**
-* \[x] Humidity
-* \[x] Air pressure
-* \[x] Air Quality
-* \[x] CO2 concentration
-* \[x] Solar intensity
-* \[x] 4 Buttons
-* \[ ] Tank fill state sensor
-
-###### Other features and outputs
-
-* \[x] **Battery powered**
-* \[x] 2.4" TFT LCD Screen with resistive touch
-* \[x] SD log with data saved as .csv
-* \[x] LED-Strip status indicator
-* \[ ] magnetic valve for watering Control
-* \[ ] web interface
-* \[ ] Push Emails when water is empty/error etc.
-
-![Schematic](src/pcb/ProjectSchematic.jpeg)
-
-![PCB](src/pcb/Project_PCB_Layout.jpeg)
-
-![Rendering](src/pcb/PCB_PlantWatering.png)
 
 ## Getting started
 
@@ -131,6 +136,12 @@ The main monitoring unit is mostly implemented. The watering unit, web interface
 
 ## AI Usage
 
-I only used AI for debugging, spelling correction and research.
 Most of the code was written by myself. Since this is a work in progress, the code may still contain bugs or parts that could be improved.
 
+I used AI for debugging assistance, spelling correction, research and for generating the concept visualization shown at the top of this README.
+
+The visualization is intended only as a preview of the planned device and
+does not represent the final manufactured hardware.
+
+The PCB design, hardware architecture and most of the firmware were
+created by myself.

@@ -138,3 +138,66 @@ the JLCPCB cart and cleaned up temporary KiCad lock files.
 
 Time spent: ~5 h
 
+## July 10-15, 2026
+
+I ordered the PCB from JLCPCB and came to some issues with a footprint of the USB CP2102 Chip.  Because I was on travel with school I replaced this part in my order on 16.07.2026.
+
+This was my final cart for the order:
+![cart](images/Progress/cart.png)
+
+Final BOM:
+![BOM](images/Progress/bom.png)
+
+## July 17-23, 2026
+
+I received an Emails about a mismatching of the audio jack. With some friendly email communication I could solve those Issues and received the boards at July 24. But I were on vacation so I could only inspect the boards when I came back at July 27.
+
+## July 27, 2026
+
+I unboxed the pcbs and checkt rought dimensions of the existing parts. I realised that many of the parts I would later assemble doesn't match the dimensions of the board. Therefore I had to think of some solutions for those but I was really disappointed. Eventhough I was too tired to proceed with soldering.
+![boards](images/Progress/package.jpg)
+![boards](images/Progress/boards.jpg)
+
+## July 28, 2026
+
+I tested the boards and as soon I as I drawed some current at some parts the cp2102 chip got hot and destroied itself. I first thought of a short circuit due to mismatching package types. Therefore I had to spend the whole day with replacing the chip and wiring the USB-c to the microusb directly.  That didn't work. I also tried to wire it to the exposed pads of the removed cp2102 but that also didn't work. I have been really disappointed.
+
+Time spend at this day and the week before: ~8h
+
+## July 29, 2026
+
+I proceed with yesterdays strategie but I had to start over with a new board I realiesed that the short circuit only appered when I had soldered the MQ2 Sensor to the board. therefore I looked into the schematic again an noticed that all current has to float through the cp2102 chip. I had the solution that I wired a parallel wire to the dcdc converter of the esp32devkit c directly to split the current and prevent it of floating through only one thin wire. That suprisingly worked fantastic! Even the display turned on and every status LED lighted up as intended. Now I only have to test the data transphere...
+
+![board](images/Progress/boardlightup.jpg)
+![board](images/Progress/boardlightup2.jpg)
+
+This struggle took very long: ~5h
+
+edit: no success while coding. SD mount failed, USB communication doesn't work. I actually don't want to proceed. Time wasted here: at least 3h
+
+## July 30 - 31, 2026
+
+I fixed SD failures. I succeed by showing up the lizard video on the screen. I am not able to use the USB-C. I forgot to cross the UART cables and end up wiring those manually to the Devkit C. Eventhough the communication didn't worked. I also soldered the buttons directly to the board and tested them. They worked perfect and also the MQ2 Gas sensor worked without any bigger issues.
+I also tested the battery and the boost converter they worked perfect :) Next step is to test the I2C communication and to find out if or how to find around the usb connection issues.
+
+Time spend: 6h
+
+## August 1 2026
+
+I laied the hardware issues to the side and started coding. I coded a selfcheck class that automatically initializes the components of the board. I had to do some debugging but on August 2 the first part of my code all worked fine!
+Time spend: 4h
+
+## August 2 2026
+
+I tried to use functilns of board 2 but after quite a bit of software bugs and some new functions nobody ever asked for I found out that the wire to board 2 were broken and the board wasn't even supplied by power.
+I soldered new connectors to the board and reached the state of August 1. But I also did some research on GUI engines.
+Time spend: ~ 2h
+
+## August 3 2026
+
+My goal for today was to get the LEDs working properly And to address the ADCs. But before I could start I had to realise that again some connectors didn't properly connect. So again soldering of wires that don't want to stick in the holes they're supposed to.
+Finally everything was connected I asked AI to find software bugs. My self check class couldn't have worked or thrown an error because the begin functions don't throw an error but return non-zero values so I had to modify the complete class. In the end it worked so it thrower errors. But I didn't want to get those errors. It started with simple Errors that the ADCs and the clock couldn't be addressed or called by their begin functions. I tried a lot but that didn't worked. I got even more cable broken at their connectors, my Laptop was constantly throwing errors because the connected device was pulling too much power from the USB port because I probably miswired the MQ2 so it heated up to more than 60°C... Anyway I had a successful I2C scan. but as I wanted to repeat it it didn't work. I thought it would have been a software bug but it turned out to be another hardware problem.
+It took me hours until I decided to turn all over. Until then I had already tried to throw away all files aren't necessary needed. 
+But then I started wir a new board. I learned from my mistakes with board 1 and 2 and tried to connect everything using connectors then can easily be removed. Finally after I had soldered alle components except for the buttons and the MQ2 I could successfully use the I2C of the ESP32 Devkit c. It took me again a lot of time until I reached the state of August 1. Eventough the LEDs still don't light up and the SD card doesn't work I had wasted around 8.5 hours of my life here and still don't really know what the error was. It was one of my least successful and enjoyable days this year. I think it was the last bigger project in my life.
+
+Time spend: 8.5h

@@ -2,6 +2,7 @@
 #include "pindefinitions.h"
 #include "functions.h"
 #include <TFT_eSPI.h>
+//#include <lvgl.h>
 
 extern TFT_eSPI tft;
 
@@ -26,3 +27,4 @@ void testDisplay(void) {
     tft.println("Display funktioniert!");
     return;
 }
+

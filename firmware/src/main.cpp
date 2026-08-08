@@ -1,102 +1,73 @@
 #define ESP32_WIFI_TOUCH
 
+// General
 #include <Arduino.h>
-#include <SPI.h>
-#include <SD.h>
+#include <Wire.h>
+// Repository specific headers
 #include "pindefinitions.h"
 #include "functions.h"
-#include <TFT_eSPI.h>
-#include <Adafruit_NeoPixel.h>
-#include "RTClib.h"
-#include <Wire.h>
-#include <TouchScreen.h>
-#include <Adafruit_BMP280.h>
-#include "FS.h"
-#include "SD.h"
-#include "SPI.h"
-#include "MQ2.h" // library: https://github.com/labay11/MQ-2-sensor-library <- Thank you so much!
 #include "Buttons.h" //the button code that would mess up the main code
+// SD-Card
+#include <SPI.h>
+#include <SD.h>
+#include "FS.h"
+// Display
+#include <TFT_eSPI.h>
+#include <TouchScreen.h>
 #include <JPEGDEC.h>
+#include <lvgl.h>
+//Sensors
+#include <RTClib.h>
+#include <Adafruit_BMP280.h>
+#include "MQ2.h" // library: https://github.com/labay11/MQ-2-sensor-library <- Thank you so much!
 #include <Adafruit_ADS1X15.h>
-
+//LEDs
+#include <FastLED.h>
+#include <Adafruit_NeoPixel.h>
 
 
 Adafruit_BMP280 bmp; // use I2C interface
 MQ2 mq2(MQ2_SENSOR_PIN);
 TFT_eSPI tft = TFT_eSPI();
 Adafruit_NeoPixel leds(NUMBER_LEDS, LED_PIN, NEO_RGB + NEO_KHZ800);
+//CRGB leds[NUMBER_LEDS];
 RTC_DS3231 rtc;
 JPEGDEC jpeg;
-Adafruit_ADS1115 ads1;
-Adafruit_ADS1115 ads2;
-int16_t adc1;
-
-uint16_t BLUE = 0x4d13;
-uint16_t GREEN = 0x2e4c;
-#define MARGIN_LEFT 10
+Adafruit_ADS1115 adc1;
+Adafruit_ADS1115 adc2;
+MoistureSensor sensors;
+SelfCheckRoutine check;
 
 void setup() {
-  Serial.begin(115200);
-  Serial.println("\nStart Programm: 'PlantWatering BreadBoard_Code'\n");
+    Serial.begin(115200);
+    delay(500);
 
-  // ---------------------- Initialization prozess ----------------------
+    Serial.println();
+    Serial.println("Start Programm: 'PlantWatering BreadBoard_Code'");
+    Serial.println();
 
-  try{
-    tft.begin(); // start Display
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
-    tft.setSwapBytes(true);
+    // GPIO
+    pinMode(BUTTONS, INPUT);
+    pinMode(LED_PIN, OUTPUT);
+    pinMode(MQ2_SENSOR_PIN, INPUT);
 
-    tft.setTextColor(BLUE, TFT_BLACK);
-    tft.setTextFont(2);
-    tft.setTextSize(1);
-    String info = "[Info] Initializing Display...";
-    tft.drawString(info , 10, MARGIN_LEFT);
-    tft.setTextColor(GREEN, TFT_BLACK);
-    tft.drawString("[OK]", 10, MARGIN_LEFT + info.length());
-  }
-  catch(int Errorcode) {
-    //
-  }
-  
+    pinMode(CS_SD, OUTPUT);
+    digitalWrite(CS_SD, HIGH);
+
+    pinMode(TFT_CS, OUTPUT);
+    digitalWrite(TFT_CS, HIGH);
+
     
-  SPI.begin(); // start SD Card
-  Wire.begin(); // Start I2C
-  mq2.begin(); // start MQ2 Sensor
-  ads1.begin(ADDR_ADC1); // start analog digital I2C extender 1
-    ads1.setGain(GAIN_ONE);
-  ads2.begin(ADDR_ADC2); // start analog digital I2C extender 2
-    ads2.setGain(GAIN_ONE);
+    check.completeSelfCheck();
 
-  if (!rtc.begin()) { // Start Clock
-    Serial.println("Couldn't find RTC!");
-  }
-  setTime();
-  Serial.println("RTC initialization successfully");
-
-  if (!SD.begin(CS_SD)) { // Start SD Card
-      Serial.println("SD card mount failed!");
-      return;
-  }
-  Serial.println("SD card mounted successfully.");
-
-
-  // -------------------------- GPIO initialization --------------------------
-  pinMode(BUTTONS, INPUT);
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(MQ2_SENSOR_PIN, INPUT);
-  analogReadResolution(12);  
-
-  jpeg.setPixelType(RGB565_BIG_ENDIAN);
-
-  attachInterrupt( // Start Button Interrupt
-        digitalPinToInterrupt(BUTTONS),
-        onButtonChange,
-        CHANGE
-    );
+    
+    
+    analogReadResolution(12);
+    
+    jpeg.setPixelType(RGB565_BIG_ENDIAN);
 }
 
+
 void loop() {
-    Serial.printf("SolarValue: %.2f V\n", getSolarVoltage());
-    delay(1000);
+  
 }
