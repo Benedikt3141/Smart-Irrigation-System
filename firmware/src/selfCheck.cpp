@@ -251,7 +251,7 @@ int SelfCheckRoutine::checkLEDs() {
 int SelfCheckRoutine::checkBMP() {
   info = "[INFO] Initializing BMP280...";
   selfCheckInfo(info);
-  if (!bmp.begin(&Wire)){
+  if (!bmp.begin(ADDR_BMP280)){
     selfCheckNegative(109);
     row++;
     return 109;
