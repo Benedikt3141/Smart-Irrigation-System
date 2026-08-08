@@ -37,6 +37,26 @@ class MoistureSensor{
     void printSensorData(void);
 };
 
+//CSV_logger
+class CSV_Logger {
+    private: 
+    char lineBuffer[255];
+    int offset = 0;
+    
+    public:
+    void initSDCard(int CsPinInput);
+    void sendBuffer(fs::FS &fs, const char * path);
+    void addTimeStamp();
+    void addMoistureData();
+    void addWaterLevel();
+    void addWateringStatus();
+    void addTemperature();
+    void addPreasure();
+    void endLine();
+    void clearBuffer();
+    void appendSensorData();
+};
+
 // Display
 void testDisplay(void);
 void selfCheckInfo(String info, int row);

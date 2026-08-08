@@ -69,5 +69,5 @@ void setup() {
 
 
 void loop() {
-  sensors.printSensorData();
+  
 }
