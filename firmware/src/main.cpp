@@ -37,6 +37,8 @@ Adafruit_ADS1115 adc2;
 MoistureSensor sensors;
 SelfCheckRoutine check;
 
+// WateringVariables
+const int wateringValue = 40;
 bool watering = false;
 
 

@@ -9,9 +9,6 @@ const uint16_t RED = 0xfc00;
 #define MARGIN_LEFT 10
 const int linespace = 20;
 
-// WateringVariables
-const int wateringValue = 40;
-
 
 // Time Info
 /*
