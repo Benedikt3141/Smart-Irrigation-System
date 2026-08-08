@@ -37,6 +37,10 @@ Adafruit_ADS1115 adc2;
 MoistureSensor sensors;
 SelfCheckRoutine check;
 
+bool watering = false;
+
+
+
 void setup() {
     Serial.begin(115200);
     delay(500);

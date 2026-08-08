@@ -6,6 +6,7 @@
 #include <Adafruit_BMP280.h>
 extern MoistureSensor sensors;
 extern Adafruit_BMP280 bmp;
+extern bool watering;
 
 void CSV_Logger::initSDCard(int CsPinInput){
     // begin SD Card
@@ -76,7 +77,7 @@ void CSV_Logger::addWaterLevel() {
     int counter = 0; // Counter for attempts to measure water depth
 
     do {
-      distance = getDistance(); // as long as the value is not valid
+      distance = 0; //getDistance(); // as long as the value is not valid
       counter++;
     } while(distance == -1 && counter<10); // try 10 times
 
@@ -122,6 +123,6 @@ void CSV_Logger::appendSensorData(void) {
     addMoistureData();
     addWaterLevel();
     addWateringStatus();
-    endLine();  
+    endLine();
     sendBuffer(SD, "/data.csv");
 }

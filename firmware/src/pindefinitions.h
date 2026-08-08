@@ -11,13 +11,14 @@ const int linespace = 20;
 
 // WateringVariables
 const int wateringValue = 40;
-bool watering = false;
+
 
 // Time Info
+/*
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec = 3600;
 const int   daylightOffset_sec = 3600;
-
+*/
 
 // ********** I2C Pins *********
 #ifndef I2C_SCL

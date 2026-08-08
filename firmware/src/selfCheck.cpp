@@ -18,7 +18,6 @@
 #include "MQ2.h" // library: https://github.com/labay11/MQ-2-sensor-library <- Thank you so much!
 #include <Adafruit_ADS1X15.h>
 //LEDs
-#include <FastLED.h>
 #include <Adafruit_NeoPixel.h>
 
 extern Adafruit_BMP280 bmp; // use I2C interface
@@ -48,6 +47,8 @@ void SelfCheckRoutine::completeSelfCheck() {
     Serial.println(checkSD());
     delay(100);
     Serial.println(checkLEDs());
+    delay(100);
+    Serial.println(checkBMP());
     delay(1000);
   }
 
@@ -247,4 +248,16 @@ int SelfCheckRoutine::checkLEDs() {
     return 0;
   }
 
+int SelfCheckRoutine::checkBMP() {
+  info = "[INFO] Initializing BMP280...";
+  selfCheckInfo(info);
+  if (!bmp.begin(&Wire)){
+    selfCheckNegative(109);
+    row++;
+    return 109;
+  }
+  selfCheckPositive();
+  row++;
+  return 0;
+}
 

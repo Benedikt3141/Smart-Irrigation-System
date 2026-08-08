@@ -25,6 +25,7 @@ class SelfCheckRoutine {
     int checkRTC();
     int checkSD();
     int checkLEDs();
+    int checkBMP();
 };
 
 // MoistureSensor
@@ -94,6 +95,6 @@ void scan_I2C_Addresses(void);
 bool pingI2C(uint8_t address);
 
 //Waterstation --> functions for later on
-int getDistance(void) {return 0;};
+int getDistance(void);
 
 #endif
