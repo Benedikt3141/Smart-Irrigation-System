@@ -31,6 +31,10 @@ extern Adafruit_ADS1115 adc1;
 extern Adafruit_ADS1115 adc2;
 extern Touch_PCB01 touch;
 
+// Display Variables
+extern const uint16_t SCREEN_WIDTH;
+extern const uint16_t SCREEN_HEIGHT;
+
 
 void SelfCheckRoutine::completeSelfCheck() {
     Serial.println(checkDisplay());
@@ -63,6 +67,8 @@ void SelfCheckRoutine::selfCheck_wo_I2C() {
   Serial.println(checkLEDs());
   delay(100);
   Serial.println(checkTouch());
+  delay(100);
+  Serial.println(checkLVGL());
   delay(1000);
 }
 
@@ -290,3 +296,41 @@ int SelfCheckRoutine::checkBMP() {
   return 0;
 }
 
+int SelfCheckRoutine::checkLVGL() {
+    Serial.println("[LVGL] init");
+
+    lv_init();
+
+    lv_disp_draw_buf_init(
+        &drawBuffer,
+        lvBuffer,
+        nullptr,
+        SCREEN_WIDTH * 20
+    );
+
+    lv_disp_drv_init(&displayDriver);
+
+    displayDriver.hor_res = SCREEN_WIDTH;
+    displayDriver.ver_res = SCREEN_HEIGHT;
+
+    displayDriver.flush_cb = lvglDisplayFlush;
+    displayDriver.draw_buf = &drawBuffer;
+
+    lv_disp_drv_register(&displayDriver);
+
+
+    // Touch
+    lv_indev_drv_init(&touchDriver);
+
+    touchDriver.type = LV_INDEV_TYPE_POINTER;
+    touchDriver.read_cb = lvglTouchRead;
+
+    lv_indev_drv_register(&touchDriver);
+
+    Serial.println("[LVGL] driver registered");
+
+    
+
+    Serial.println("[LVGL] GUI created");
+    return 0;
+}

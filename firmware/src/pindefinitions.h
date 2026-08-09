@@ -1,3 +1,4 @@
+#include "lvgl.h"
 #ifndef PIN_DEFINITIONS
 #define PIN_DEFINITIONS
 
@@ -10,9 +11,20 @@ const uint16_t RED = 0xfc00;
 const int linespace = 20;
 
 
-// WateringVariables
+// Watering Variables
 extern const int wateringValue;
 extern bool watering;
+
+// Display Variables
+extern const uint16_t SCREEN_WIDTH;
+extern const uint16_t SCREEN_HEIGHT;
+
+extern lv_color_t lvBuffer[];
+extern lv_disp_draw_buf_t drawBuffer;
+extern lv_disp_drv_t displayDriver;
+extern lv_indev_drv_t touchDriver;
+extern lv_obj_t* counterLabel;
+
 
 // Time Info
 /*
@@ -99,7 +111,7 @@ const int   daylightOffset_sec = 3600;
     #define TFT_DC   15   // LCD_RS
     #define TFT_RST  -1
     #define TFT_WR    4
-    #define TFT_RD    2
+    #define TFT_RD   -1
 
     // 8-Bit-Databus
     #define TFT_D0   12
