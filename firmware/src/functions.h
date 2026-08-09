@@ -4,6 +4,7 @@
 #include <Arduino.h>
 #include <JPEGDEC.h>
 #include <Wire.h>
+#include <lvgl.h>
 
 // SelfCheck
 class SelfCheckRoutine {
@@ -28,6 +29,7 @@ class SelfCheckRoutine {
     int checkSD();
     int checkLEDs();
     int checkBMP();
+    int checkLVGL();
 };
 
 // MoistureSensor
@@ -61,8 +63,10 @@ class CSV_Logger {
 
 // Display
 void testDisplay(void);
-void selfCheckInfo(String info, int row);
-void selfCheckResult(String result, int row, int column, bool status);
+void lvglDisplayFlush(lv_disp_drv_t*, const lv_area_t*, lv_color_t*);
+void lvglTouchRead(lv_indev_drv_t* indev, lv_indev_data_t* data);
+void buttonEvent(lv_event_t*);
+void createGUI();
 
 // LEDs
 void testLEDs(void);

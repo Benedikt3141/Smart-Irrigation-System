@@ -31,6 +31,10 @@ extern Adafruit_ADS1115 adc1;
 extern Adafruit_ADS1115 adc2;
 extern Touch_PCB01 touch;
 
+// Display Variables
+extern const uint16_t SCREEN_WIDTH;
+extern const uint16_t SCREEN_HEIGHT;
+
 
 void SelfCheckRoutine::completeSelfCheck() {
     Serial.println(checkDisplay());
@@ -290,3 +294,39 @@ int SelfCheckRoutine::checkBMP() {
   return 0;
 }
 
+int SelfCheckRoutine::checkLVGL() {
+  info = "[INFO] Initializing LVGL Display...";
+  selfCheckInfo(info);
+  
+  lv_init();
+
+  lv_disp_draw_buf_init(
+      &drawBuffer,
+      lvBuffer,
+      nullptr,
+      SCREEN_WIDTH * 20
+  );
+
+  lv_disp_drv_init(
+      &displayDriver
+  );
+
+  displayDriver.hor_res =
+      SCREEN_WIDTH;
+
+  displayDriver.ver_res =
+      SCREEN_HEIGHT;
+
+  displayDriver.flush_cb =
+      lvglDisplayFlush;
+
+  displayDriver.draw_buf =
+      &drawBuffer;
+
+  lv_disp_drv_register(
+      &displayDriver
+  );
+
+  createGUI();
+  return 0;
+}
