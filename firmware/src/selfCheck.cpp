@@ -52,6 +52,15 @@ void SelfCheckRoutine::completeSelfCheck() {
     delay(1000);
   }
 
+void SelfCheckRoutine::selfCheck_wo_I2C() {
+  Serial.println(checkDisplay());
+  delay(100);
+  Serial.println(checkSD());
+  delay(100);
+  Serial.println(checkLEDs());
+  delay(1000);
+}
+
 void SelfCheckRoutine::selfCheckInfo(String info) {
     tft.setTextColor(BLUE, TFT_BLACK);
     tft.drawString(info , MARGIN_LEFT, linespace*row);

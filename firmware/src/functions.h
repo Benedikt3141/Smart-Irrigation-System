@@ -14,6 +14,7 @@ class SelfCheckRoutine {
 
     public:
     void completeSelfCheck();
+    void selfCheck_wo_I2C();
     void selfCheckInfo(String info);
     void selfCheckPositive();
     void selfCheckNegative(int Errorcode);

@@ -42,7 +42,6 @@ const int wateringValue = 40;
 bool watering = false;
 
 
-
 void setup() {
     Serial.begin(115200);
     delay(500);
@@ -61,14 +60,11 @@ void setup() {
 
     pinMode(TFT_CS, OUTPUT);
     digitalWrite(TFT_CS, HIGH);
-
-    
-    check.completeSelfCheck();
-
-    
-    
     analogReadResolution(12);
-    
+
+    //check.completeSelfCheck();
+    check.selfCheck_wo_I2C();
+
     jpeg.setPixelType(RGB565_BIG_ENDIAN);
 }
 
