@@ -4,6 +4,8 @@
 #include <SD.h>
 #include <FS.h>
 #include <Adafruit_BMP280.h>
+
+
 extern MoistureSensor sensors;
 extern Adafruit_BMP280 bmp;
 extern bool watering;
@@ -124,5 +126,5 @@ void CSV_Logger::appendSensorData(void) {
     addWaterLevel();
     addWateringStatus();
     endLine();
-    sendBuffer(SD, "/data.csv");
+    sendBuffer(SD, "/Data/data.csv");
 }

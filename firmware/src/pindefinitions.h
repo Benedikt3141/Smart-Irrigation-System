@@ -10,6 +10,10 @@ const uint16_t RED = 0xfc00;
 const int linespace = 20;
 
 
+// WateringVariables
+extern const int wateringValue;
+extern bool watering;
+
 // Time Info
 /*
 const char* ntpServer = "pool.ntp.org";
@@ -133,7 +137,7 @@ const int   daylightOffset_sec = 3600;
 
 // ********** Screensaver Video ********
 #ifndef SCREENSAVER_VIDEO_FILE_NAME
-#define  SCREENSAVER_VIDEO_FILE_NAME "Lizard.mjpeg";
+#define  SCREENSAVER_VIDEO_FILE_NAME "/Images/Lizard.mjpeg";
 #endif
 
 

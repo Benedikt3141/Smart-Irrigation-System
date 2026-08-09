@@ -9,7 +9,7 @@
 #define TFT_DC   15   // LCD_RS
 #define TFT_RST  -1
 #define TFT_WR    4
-#define TFT_RD    2
+#define TFT_RD    -1
 
 // 8-Bit-Databus
 #define TFT_D0   12

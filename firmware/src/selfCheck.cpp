@@ -3,6 +3,7 @@
 // Repository specific headers
 #include "pindefinitions.h"
 #include "functions.h"
+#include "Touch_PCB01.h"
 // SD-Card
 #include <SPI.h>
 #include <SD.h>
@@ -28,11 +29,13 @@ extern RTC_DS3231 rtc;
 extern JPEGDEC jpeg;
 extern Adafruit_ADS1115 adc1;
 extern Adafruit_ADS1115 adc2;
-
+extern Touch_PCB01 touch;
 
 
 void SelfCheckRoutine::completeSelfCheck() {
     Serial.println(checkDisplay());
+    delay(100);
+    Serial.println(checkTouch());
     delay(100);
     Serial.println(checkI2C());
     //delay(100);
@@ -51,6 +54,17 @@ void SelfCheckRoutine::completeSelfCheck() {
     Serial.println(checkBMP());
     delay(1000);
   }
+
+void SelfCheckRoutine::selfCheck_wo_I2C() {
+  Serial.println(checkDisplay());
+  delay(100);
+  Serial.println(checkSD());
+  delay(100);
+  Serial.println(checkLEDs());
+  delay(100);
+  Serial.println(checkTouch());
+  delay(1000);
+}
 
 void SelfCheckRoutine::selfCheckInfo(String info) {
     tft.setTextColor(BLUE, TFT_BLACK);
@@ -90,6 +104,21 @@ int SelfCheckRoutine::checkDisplay() {
       return Errorcode;
     }
   }
+
+int SelfCheckRoutine::checkTouch() {
+  info = "[INFO] Starting Touch display...";
+  selfCheckInfo(info);
+  touch.begin(1);
+  touch.setPressureThreshold(200);
+  if (!touch.loadCalibration()) {
+    if (touch.calibrate(tft, Serial)) {
+      touch.saveCalibration();
+    }
+  }
+  selfCheckPositive();
+  row++;
+  return 0;
+}
 
 int SelfCheckRoutine::checkI2C() {
     info = "[INFO] Starting I2C communication... ";

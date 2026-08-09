@@ -7,6 +7,7 @@
 #include "pindefinitions.h"
 #include "functions.h"
 #include "Buttons.h" //the button code that would mess up the main code
+#include "Touch_PCB01.h"
 // SD-Card
 #include <SPI.h>
 #include <SD.h>
@@ -28,6 +29,7 @@
 Adafruit_BMP280 bmp; // use I2C interface
 MQ2 mq2(MQ2_SENSOR_PIN);
 TFT_eSPI tft = TFT_eSPI();
+Touch_PCB01 touch;
 Adafruit_NeoPixel leds(NUMBER_LEDS, LED_PIN, NEO_RGB + NEO_KHZ800);
 //CRGB leds[NUMBER_LEDS];
 RTC_DS3231 rtc;
@@ -40,7 +42,6 @@ SelfCheckRoutine check;
 // WateringVariables
 const int wateringValue = 40;
 bool watering = false;
-
 
 
 void setup() {
@@ -61,18 +62,21 @@ void setup() {
 
     pinMode(TFT_CS, OUTPUT);
     digitalWrite(TFT_CS, HIGH);
+    analogReadResolution(10);
 
-    
-    check.completeSelfCheck();
+    //check.completeSelfCheck();
+    check.selfCheck_wo_I2C();
 
-    
-    
-    analogReadResolution(12);
-    
     jpeg.setPixelType(RGB565_BIG_ENDIAN);
 }
 
 
 void loop() {
-  
+  Touch_PCB01::Point p;
+
+    if (touch.getPoint(p)) {
+        Screensaver();
+    }
+
+    delay(10);
 }
