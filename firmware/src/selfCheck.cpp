@@ -67,6 +67,8 @@ void SelfCheckRoutine::selfCheck_wo_I2C() {
   Serial.println(checkLEDs());
   delay(100);
   Serial.println(checkTouch());
+  delay(100);
+  Serial.println(checkLVGL());
   delay(1000);
 }
 
@@ -295,38 +297,40 @@ int SelfCheckRoutine::checkBMP() {
 }
 
 int SelfCheckRoutine::checkLVGL() {
-  info = "[INFO] Initializing LVGL Display...";
-  selfCheckInfo(info);
-  
-  lv_init();
+    Serial.println("[LVGL] init");
 
-  lv_disp_draw_buf_init(
-      &drawBuffer,
-      lvBuffer,
-      nullptr,
-      SCREEN_WIDTH * 20
-  );
+    lv_init();
 
-  lv_disp_drv_init(
-      &displayDriver
-  );
+    lv_disp_draw_buf_init(
+        &drawBuffer,
+        lvBuffer,
+        nullptr,
+        SCREEN_WIDTH * 20
+    );
 
-  displayDriver.hor_res =
-      SCREEN_WIDTH;
+    lv_disp_drv_init(&displayDriver);
 
-  displayDriver.ver_res =
-      SCREEN_HEIGHT;
+    displayDriver.hor_res = SCREEN_WIDTH;
+    displayDriver.ver_res = SCREEN_HEIGHT;
 
-  displayDriver.flush_cb =
-      lvglDisplayFlush;
+    displayDriver.flush_cb = lvglDisplayFlush;
+    displayDriver.draw_buf = &drawBuffer;
 
-  displayDriver.draw_buf =
-      &drawBuffer;
+    lv_disp_drv_register(&displayDriver);
 
-  lv_disp_drv_register(
-      &displayDriver
-  );
 
-  createGUI();
-  return 0;
+    // Touch
+    lv_indev_drv_init(&touchDriver);
+
+    touchDriver.type = LV_INDEV_TYPE_POINTER;
+    touchDriver.read_cb = lvglTouchRead;
+
+    lv_indev_drv_register(&touchDriver);
+
+    Serial.println("[LVGL] driver registered");
+
+    
+
+    Serial.println("[LVGL] GUI created");
+    return 0;
 }

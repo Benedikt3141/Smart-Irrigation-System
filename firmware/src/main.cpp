@@ -81,6 +81,8 @@ void setup() {
     check.selfCheck_wo_I2C();
 
     jpeg.setPixelType(RGB565_BIG_ENDIAN);
+
+    createGUI();
 }
 
 

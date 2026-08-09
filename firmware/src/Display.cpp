@@ -114,70 +114,45 @@ void buttonEvent(lv_event_t* event)
 
 void createGUI()
 {
-    // ------------------------------------------
-    // Hintergrund
-    // ------------------------------------------
+    Serial.println("createGUI() wurde aufgerufen");
 
     lv_obj_t* screen = lv_scr_act();
 
+    // Hintergrund deutlich rot
     lv_obj_set_style_bg_color(
         screen,
-        lv_color_hex(0x202020),
+        lv_color_hex(0x800000),
         LV_PART_MAIN
     );
 
-
-    // ------------------------------------------
-    // Überschrift
-    // ------------------------------------------
-
-    lv_obj_t* title =
-        lv_label_create(screen);
-
-    lv_label_set_text(
-        title,
-        "Smart Irrigation"
-    );
-
-    lv_obj_align(
-        title,
-        LV_ALIGN_TOP_MID,
-        0,
-        25
-    );
-
-
-    // ------------------------------------------
-    // Counter Label
-    // ------------------------------------------
-
-    counterLabel =
-        lv_label_create(screen);
+    // Counter
+    counterLabel = lv_label_create(screen);
 
     lv_label_set_text(
         counterLabel,
-        "Counter: 0"
+        "COUNTER: 0"
+    );
+
+    lv_obj_set_style_text_color(
+        counterLabel,
+        lv_color_hex(0xFFFFFF),
+        LV_PART_MAIN
     );
 
     lv_obj_align(
         counterLabel,
         LV_ALIGN_CENTER,
         0,
-        -30
+        -40
     );
 
-
-    // ------------------------------------------
     // Button
-    // ------------------------------------------
-
-    lv_obj_t* button =
-        lv_btn_create(screen);
+    lv_obj_t* button = lv_btn_create(screen);
 
     lv_obj_set_size(
         button,
-        140,
-        60
+        160,
+        70
     );
 
     lv_obj_align(
@@ -194,18 +169,11 @@ void createGUI()
         nullptr
     );
 
+    lv_obj_t* label = lv_label_create(button);
 
-    // ------------------------------------------
-    // Text innerhalb des Buttons
-    // ------------------------------------------
+    lv_label_set_text(label, "+1");
 
-    lv_obj_t* buttonLabel =
-        lv_label_create(button);
+    lv_obj_center(label);
 
-    lv_label_set_text(
-        buttonLabel,
-        "+1"
-    );
-
-    lv_obj_center(buttonLabel);
+    Serial.println("Counter und Button erstellt");
 }

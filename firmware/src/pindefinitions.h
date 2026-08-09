@@ -22,6 +22,7 @@ extern const uint16_t SCREEN_HEIGHT;
 extern lv_color_t lvBuffer[];
 extern lv_disp_draw_buf_t drawBuffer;
 extern lv_disp_drv_t displayDriver;
+extern lv_indev_drv_t touchDriver;
 extern lv_obj_t* counterLabel;
 
 
