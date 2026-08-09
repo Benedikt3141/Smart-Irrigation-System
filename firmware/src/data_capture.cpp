@@ -126,5 +126,5 @@ void CSV_Logger::appendSensorData(void) {
     addWaterLevel();
     addWateringStatus();
     endLine();
-    sendBuffer(SD, "/data.csv");
+    sendBuffer(SD, "/Data/data.csv");
 }

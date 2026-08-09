@@ -19,6 +19,7 @@ class SelfCheckRoutine {
     void selfCheckPositive();
     void selfCheckNegative(int Errorcode);
     int checkDisplay();
+    int checkTouch();
     int checkI2C();
     int checkMQ2();
     int checkADC1();

@@ -4,16 +4,19 @@
 #include <TFT_eSPI.h>
 #include <JPEGDEC.h>
 #include <SD.h>
+#include "Touch_PCB01.h"
 
 // credits: https://github.com/derdacavga/video-Player
 
 
 extern TFT_eSPI tft;
 extern JPEGDEC jpeg;
+extern Touch_PCB01 touch; 
 
 
 bool isPlaying;
 File videoFile;
+Touch_PCB01::Point p;
 
 #define MJPEG_BUFFER_SIZE (1024 * 40)
 uint8_t mjpeg_buf[MJPEG_BUFFER_SIZE];
@@ -73,7 +76,7 @@ void Screensaver(void) {
 
         while (millis() - lastFrameTime < frameDelay) {
           // ---------------------------------- later place interrupt --------------------
-          if (readAverage(BUTTONS, 1) == 0) {
+          if (touch.getPoint(p)) {
             break;
           }
         }
@@ -112,11 +115,12 @@ void Screensaver(void) {
 
       // ---------------------------------- later place interrupt --------------------
       //e.g.
-      if (readAverage(BUTTONS, 1) == 0) {
+      if (touch.getPoint(p)) {
         break;
       }
     }
 
     videoFile.close();
-  
+    tft.fillScreen(TFT_BLACK);
+    delay(100);
 }
