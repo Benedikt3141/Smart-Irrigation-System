@@ -90,7 +90,7 @@ void SelfCheckRoutine::selfCheckNegative(int Errorcode) {
 
 
 int SelfCheckRoutine::checkDisplay() {
-    info = "[INFO ] Initializing Display...";
+    info = "[INFO] Initializing Display...";
     try{
       tft.begin(); // start Display
       tft.setRotation(1);
@@ -301,36 +301,14 @@ int SelfCheckRoutine::checkLVGL() {
 
     lv_init();
 
-    lv_disp_draw_buf_init(
-        &drawBuffer,
-        lvBuffer,
-        nullptr,
-        SCREEN_WIDTH * 20
-    );
-
-    lv_disp_drv_init(&displayDriver);
-
-    displayDriver.hor_res = SCREEN_WIDTH;
-    displayDriver.ver_res = SCREEN_HEIGHT;
-
-    displayDriver.flush_cb = lvglDisplayFlush;
-    displayDriver.draw_buf = &drawBuffer;
-
-    lv_disp_drv_register(&displayDriver);
-
-
-    // Touch
-    lv_indev_drv_init(&touchDriver);
-
-    touchDriver.type = LV_INDEV_TYPE_POINTER;
-    touchDriver.read_cb = lvglTouchRead;
-
-    lv_indev_drv_register(&touchDriver);
-
-    Serial.println("[LVGL] driver registered");
-
     
 
-    Serial.println("[LVGL] GUI created");
+    // Error messages into Serial Monitor:
+    #if LV_USE_LOG != 0 
+      lv_log_register_print_cb(print_error);
+    #endif
+
+
+    
     return 0;
 }

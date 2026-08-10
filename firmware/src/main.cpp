@@ -43,19 +43,6 @@ SelfCheckRoutine check;
 const int wateringValue = 40;
 bool watering = false;
 
-// Display Variables
-constexpr uint16_t SCREEN_WIDTH  = 320;
-constexpr uint16_t SCREEN_HEIGHT = 240;
-
-lv_color_t lvBuffer[SCREEN_WIDTH * 20]; // Buffer
-
-lv_disp_draw_buf_t drawBuffer;
-lv_disp_drv_t displayDriver;
-
-lv_indev_drv_t touchDriver; // Touch Driver
-
-lv_obj_t* counterLabel = nullptr;
-
 
 void setup() {
     Serial.begin(115200);
@@ -81,8 +68,6 @@ void setup() {
     check.selfCheck_wo_I2C();
 
     jpeg.setPixelType(RGB565_BIG_ENDIAN);
-
-    createGUI();
 }
 
 
