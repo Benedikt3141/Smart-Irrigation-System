@@ -62,8 +62,11 @@ class CSV_Logger {
 };
 
 // Display
-void testDisplay(void);
 void print_error(lv_log_level_t level, const char *buf);
+void my_disp_flush(lv_display_t * disp, const lv_area_t * area, uint8_t * px_map);
+uint32_t my_get_millis(void);
+void my_touch_read(lv_indev_t * indev, lv_indev_data_t * data);
+void create_ui();
 
 // LEDs
 void testLEDs(void);
