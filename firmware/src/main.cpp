@@ -87,13 +87,7 @@ void setup() {
 
 
 void loop() {
-  /*Touch_PCB01::Point p;
-
-    if (touch.getPoint(p)) {
-        Screensaver();
-    }
-
-    delay(10);*/
+  
   static uint32_t lastTick = millis();
 
   uint32_t now = millis();
