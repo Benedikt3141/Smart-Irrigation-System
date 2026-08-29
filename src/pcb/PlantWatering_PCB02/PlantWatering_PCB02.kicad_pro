@@ -606,6 +606,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "",
       "vrml": "PlantWatering_PCB02.wrl"
     },
     "page_layout_descr_file": ""
@@ -746,7 +747,7 @@
         "uuid": "c5f9ebaf-06b2-436d-9d56-c191f4c0635f"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J13",
     "variants": []
   },
   "sheets": [
