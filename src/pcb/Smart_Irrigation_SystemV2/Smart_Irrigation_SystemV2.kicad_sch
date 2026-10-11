@@ -7,7 +7,7 @@
 	(title_block
 		(title "Smart Irrigation System")
 		(date "2026-10-11")
-		(rev "V2")
+		(rev "V2.1")
 		(company "benedikt314159")
 	)
 	(lib_symbols
@@ -722,6 +722,273 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:Conn_01x04_Socket"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x04_Socket"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x04, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x04_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -0.508 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10713,6 +10980,12 @@
 		(uuid "30280183-6036-44b8-9ae4-d4ccecbdceb4")
 	)
 	(junction
+		(at 63.5 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30740771-cc70-4a03-8d38-a00c27d07812")
+	)
+	(junction
 		(at 233.68 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10771,6 +11044,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4be89a86-ef6b-4fc5-8e17-0ca205a3b113")
+	)
+	(junction
+		(at 194.31 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4bf5f716-e6ec-4a68-9866-44f1674f01c7")
 	)
 	(junction
 		(at 20.32 119.38)
@@ -11299,6 +11578,16 @@
 			(type default)
 		)
 		(uuid "040be871-62d1-459d-b382-61c5b7ac68a1")
+	)
+	(wire
+		(pts
+			(xy 210.82 92.71) (xy 210.82 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04a888c5-e70a-4225-95d4-f99983a714f8")
 	)
 	(wire
 		(pts
@@ -12272,6 +12561,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 76.2) (xy 66.04 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fec6aee-b63c-4c2a-be97-49d4b6e4f09a")
+	)
+	(wire
+		(pts
 			(xy 24.13 160.02) (xy 24.13 156.21)
 		)
 		(stroke
@@ -12439,6 +12738,16 @@
 			(type default)
 		)
 		(uuid "5dc3c067-33d6-444d-a54f-8142b6e4d431")
+	)
+	(wire
+		(pts
+			(xy 220.98 74.93) (xy 220.98 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dc9494c-75c1-4144-bddb-887d737bef6a")
 	)
 	(wire
 		(pts
@@ -13542,7 +13851,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 76.2) (xy 66.04 76.2)
+			(xy 62.23 76.2) (xy 63.5 76.2)
 		)
 		(stroke
 			(width 0)
@@ -13852,6 +14161,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 74.93) (xy 223.52 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be54a53f-ccee-4291-8ba7-eeb1e11eb545")
+	)
+	(wire
+		(pts
 			(xy 124.46 50.8) (xy 125.73 50.8)
 		)
 		(stroke
@@ -13889,6 +14208,16 @@
 			(type default)
 		)
 		(uuid "c308aadc-5911-4078-b82c-b3e4ce5c758a")
+	)
+	(wire
+		(pts
+			(xy 208.28 102.87) (xy 208.28 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c310258c-ac49-4cdf-9a98-32850b904eae")
 	)
 	(wire
 		(pts
@@ -14122,6 +14451,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 92.71) (xy 208.28 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d26594a1-2a0e-4628-ae35-3fafa144d39d")
+	)
+	(wire
+		(pts
 			(xy 207.01 55.88) (xy 209.55 55.88)
 		)
 		(stroke
@@ -14322,6 +14661,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 154.94) (xy 194.31 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4ee8f19-ca3a-4cd0-a883-a96f341cb30e")
+	)
+	(wire
+		(pts
 			(xy 16.51 119.38) (xy 20.32 119.38)
 		)
 		(stroke
@@ -14432,7 +14781,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 151.13) (xy 194.31 157.48)
+			(xy 194.31 151.13) (xy 194.31 154.94)
 		)
 		(stroke
 			(width 0)
@@ -14519,6 +14868,16 @@
 			(type default)
 		)
 		(uuid "f4512cf9-2c2a-4261-9cc8-5f6c433fb762")
+	)
+	(wire
+		(pts
+			(xy 210.82 102.87) (xy 210.82 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f55aeda3-9c34-40f4-8d27-c88a631d74b7")
 	)
 	(wire
 		(pts
@@ -14850,6 +15209,16 @@
 		)
 		(uuid "25a866a9-195f-4596-82b0-6096ee4b6c7e")
 	)
+	(label "SCL"
+		(at 220.98 77.47 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "303f5285-8f0e-4041-8a8d-ba03cc227491")
+	)
 	(label "GPIO39"
 		(at 168.91 30.48 0)
 		(effects
@@ -14919,6 +15288,16 @@
 			(justify left bottom)
 		)
 		(uuid "4a93f771-de28-4270-b0cb-50950f5e2f87")
+	)
+	(label "SDA"
+		(at 210.82 95.25 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4af98a18-f32c-43e4-927b-1478c6c4fed2")
 	)
 	(label "GPIO27"
 		(at 209.55 71.12 0)
@@ -15089,6 +15468,16 @@
 			(justify left bottom)
 		)
 		(uuid "8396aa60-9aaf-4e7f-af21-f7ef2b1d4927")
+	)
+	(label "SCL"
+		(at 208.28 95.25 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "83dca750-3d66-491e-aa4a-d4f48c880811")
 	)
 	(label "GPIO27"
 		(at 224.79 85.09 0)
@@ -15280,6 +15669,16 @@
 		)
 		(uuid "afdc139b-02a0-4259-a243-77b401f0a108")
 	)
+	(label "SDA"
+		(at 223.52 77.47 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2827d8e-d65d-4f19-b245-7825f0739568")
+	)
 	(label "GPIO27"
 		(at 262.89 135.89 0)
 		(effects
@@ -15339,6 +15738,16 @@
 			(justify left bottom)
 		)
 		(uuid "bad41830-0ca2-411c-b764-2866f4f39cee")
+	)
+	(label "SDA"
+		(at 210.82 105.41 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc3110ba-901d-4010-920e-177a50553340")
 	)
 	(label "GPIO15"
 		(at 209.55 45.72 0)
@@ -15419,6 +15828,16 @@
 			(justify left bottom)
 		)
 		(uuid "e971a24b-79c1-4cc1-baee-448953112729")
+	)
+	(label "SCL"
+		(at 208.28 105.41 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ecaf9d92-3f44-4b3a-b4b7-d56556b6fb0f")
 	)
 	(label "GPIO13"
 		(at 224.79 97.79 0)
@@ -15513,7 +15932,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_DRC0010J_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 21.59 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -15546,6 +15965,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C17414"
+			(at 21.59 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f50c041d-e8f2-4270-b2f7-8ec4ff5e6c90")
 		)
@@ -15556,6 +15986,91 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 210.82 87.63 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "072a46b6-13ac-497d-8ae9-16d0346a1324")
+		(property "Reference" "J6"
+			(at 218.44 89.662 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "I2C"
+			(at 218.44 92.202 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 210.82 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 210.82 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "8de53fde-aee0-4de4-9f7e-5fb5f5d963a4")
+		)
+		(pin "3"
+			(uuid "ad2aa78c-633b-47c8-8ff7-cab50646a254")
+		)
+		(pin "1"
+			(uuid "b2b12358-0cbf-4177-8f94-bcef8015f156")
+		)
+		(pin "2"
+			(uuid "454cbeb3-e58a-4787-9807-bb37958d2b6e")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -15618,6 +16133,17 @@
 			)
 		)
 		(property "Description" "±5ppm, I2C Real-Time Clock SOIC-8"
+			(at 114.3 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C107410"
 			(at 114.3 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -15861,6 +16387,17 @@
 				(justify bottom)
 			)
 		)
+		(property "JLCPCB Part Number" "C5274290"
+			(at 49.53 19.05 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "088a7361-ad11-42f6-aa23-788e0ad67dcd")
 		)
@@ -15987,7 +16524,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_DRC0010J_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 85.09 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -16011,6 +16548,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 85.09 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17604"
+			(at 85.09 176.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16337,6 +16885,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C152507"
+			(at 149.86 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "ba0ca404-b489-4ad1-9f27-52fe0b52942c")
 		)
@@ -16395,7 +16954,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 118.11 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -16419,6 +16978,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 118.11 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17477"
+			(at 118.11 25.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16475,7 +17045,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
+		(property "Footprint" ""
 			(at 181.61 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -16498,6 +17068,17 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
+			(at 181.61 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
 			(at 181.61 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -16717,7 +17298,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_QFP:TQFP-144_20x20mm_P0.5mm"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 96.52 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -16800,7 +17381,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:Maple_Mini"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 175.26 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -17204,6 +17785,17 @@
 				(justify bottom)
 			)
 		)
+		(property "JLCPCB Part Number" "C5274290"
+			(at 66.04 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ca473853-e7df-4396-80d3-c4ce976ee82d")
 		)
@@ -17418,6 +18010,17 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
+		(property "JLCPCB Part Number" "C5274290"
+			(at 50.8 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -17861,7 +18464,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 90.17 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -17985,6 +18588,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 223.52 69.85 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "266d6a2a-959c-4bd4-8f90-a31c03744398")
+		(property "Reference" "J11"
+			(at 231.14 71.882 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "I2C"
+			(at 231.14 74.422 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 223.52 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 223.52 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "5cdcc4c0-0125-49a2-b632-713935f547de")
+		)
+		(pin "3"
+			(uuid "29d1609d-9a2c-4936-bcad-da7e1784abb9")
+		)
+		(pin "1"
+			(uuid "6ecdeae4-59ea-4ee1-b35f-e14257b1c949")
+		)
+		(pin "2"
+			(uuid "86c19e7f-7558-4bb9-bb23-be9dcd75fe0d")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 80.01 27.94 0)
 		(unit 1)
@@ -18018,7 +18706,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 80.01 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -18042,6 +18730,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 80.01 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C28233"
+			(at 80.01 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18177,7 +18876,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
+		(property "Footprint" ""
 			(at 181.61 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -18200,6 +18899,17 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
+			(at 181.61 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
 			(at 181.61 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -18337,7 +19047,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 119.38 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -18361,6 +19071,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 129.54 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C28233"
+			(at 119.38 173.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18496,7 +19217,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 156.21 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -18728,7 +19449,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_Cree-XHP50_3V_HighDensity"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 238.76 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -18762,6 +19483,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 238.76 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C2286"
 			(at 238.76 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -18976,7 +19708,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" ""
 			(at 240.03 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -18999,6 +19731,17 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 240.03 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C49234238"
 			(at 240.03 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -19055,7 +19798,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 27.94 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -19079,6 +19822,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 38.1 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C28233"
+			(at 27.94 184.15 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19213,7 +19967,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 121.92 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -19237,6 +19991,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 121.92 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17513"
+			(at 121.92 55.88 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19454,7 +20219,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:Maple_Mini"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 198.12 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -19533,7 +20298,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 121.92 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -19557,6 +20322,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 121.92 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C15850"
+			(at 121.92 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19691,7 +20467,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_Cree-XHP50_3V_HighDensity"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 129.54 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -19725,6 +20501,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 129.54 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C2286"
 			(at 129.54 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -19783,7 +20570,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_DRC0010J_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 58.42 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -19807,6 +20594,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 58.42 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17604"
+			(at 58.42 171.45 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19832,6 +20630,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 215.9 102.87 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "39f1fbb4-e70a-4222-b7c1-4a2e85af0244")
+		(property "Reference" "#PWR097"
+			(at 215.9 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 214.884 104.648 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 215.9 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f62193a6-71dd-4f4e-a86b-65af41303e79")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 222.25 58.42 270)
 		(unit 1)
@@ -19843,7 +20718,7 @@
 		(dnp no)
 		(uuid "3b2bced2-9f96-4ed3-92f9-65749e60d8b4")
 		(property "Reference" "R18"
-			(at 219.71 58.42 90)
+			(at 221.996 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19862,7 +20737,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 222.25 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -19895,6 +20770,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C17673"
+			(at 222.25 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4ea729e8-10f8-42f7-a975-0cb437a9e5b3")
 		)
@@ -19905,6 +20791,85 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 63.5 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e31a31d-eb87-4d13-b0f1-bb42ebbbb021")
+		(property "Reference" "TP16"
+			(at 66.04 71.6279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 66.04 74.1679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+			(at 68.58 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "505d5681-07ed-44a5-a5f1-d3a1ae97e70e")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "TP16")
 					(unit 1)
 				)
 			)
@@ -19942,7 +20907,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 118.11 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -19966,6 +20931,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 118.11 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17477"
+			(at 118.11 27.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20102,7 +21078,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 233.68 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -20125,6 +21101,17 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 233.68 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17513"
 			(at 233.68 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -20208,6 +21195,17 @@
 		)
 		(property "Description" "1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)"
 			(at 72.898 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C16581"
+			(at 72.39 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20310,6 +21308,17 @@
 			)
 		)
 		(property "Description" "Ultra-Small, Low-Power, I2C-Compatible, 860-SPS, 16-Bit ADCs With Internal Reference, Oscillator, and Programmable Comparator, VSSOP-10"
+			(at 149.86 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C37593"
 			(at 149.86 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -20426,23 +21435,34 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C152507"
+			(at 139.7 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
-			(uuid "ba0ca404-b489-4ad1-9f27-52fe0b52942c")
+			(uuid "ba0ca404-b489-4ad1-9f27-52fe0b52942d")
 		)
 		(pin "2"
-			(uuid "02c72205-8c14-4f1e-aa9d-d8362926854a")
+			(uuid "02c72205-8c14-4f1e-aa9d-d8362926854b")
 		)
 		(pin "5"
-			(uuid "f1aefba4-7873-4789-807c-c4b3cde140a1")
+			(uuid "f1aefba4-7873-4789-807c-c4b3cde140a2")
 		)
 		(pin "4"
-			(uuid "b7bd5839-252e-4690-9d00-85138f49f429")
+			(uuid "b7bd5839-252e-4690-9d00-85138f49f42a")
 		)
 		(pin "3"
-			(uuid "8ce5a87b-6929-465b-873e-449d2354f880")
+			(uuid "8ce5a87b-6929-465b-873e-449d2354f881")
 		)
 		(pin "1"
-			(uuid "b9be7494-68a6-499d-bc4c-ca5cf5bffd41")
+			(uuid "b9be7494-68a6-499d-bc4c-ca5cf5bffd42")
 		)
 		(instances
 			(project "Smart_Irrigation_SystemV2"
@@ -20487,7 +21507,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 165.1 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -20566,7 +21586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 129.54 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -20590,6 +21610,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 129.54 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C28233"
+			(at 129.54 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20723,7 +21754,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 156.21 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -20747,6 +21778,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 156.21 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17414"
+			(at 156.21 133.35 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20907,6 +21949,17 @@
 			)
 		)
 		(property "Description" "USB to UART master bridge, QFN-28"
+			(at 102.87 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C964632 "
 			(at 102.87 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -21362,7 +22415,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_DRC0010J_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 104.14 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -21385,6 +22438,17 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 104.14 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C25611"
 			(at 104.14 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -21519,7 +22583,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 267.97 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -21543,6 +22607,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 267.97 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17415"
+			(at 267.97 29.21 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21759,7 +22834,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 139.7 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -21783,6 +22858,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 139.7 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C1779"
+			(at 139.7 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21920,7 +23006,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 165.1 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -21978,7 +23064,7 @@
 		(dnp no)
 		(uuid "566e68c0-8819-4e5a-ae60-c481f59e4eb0")
 		(property "Reference" "R19"
-			(at 219.71 60.96 90)
+			(at 222.25 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21997,7 +23083,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 222.25 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -22021,6 +23107,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 222.25 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17673"
+			(at 222.25 60.96 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22080,7 +23177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:Maple_Mini"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 182.88 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -22156,7 +23253,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 29.21 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -22180,6 +23277,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 39.37 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C28233"
+			(at 29.21 160.02 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22396,7 +23504,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 215.9 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -22629,7 +23737,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 267.97 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -22653,6 +23761,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 267.97 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17415"
+			(at 267.97 143.51 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22708,7 +23827,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 267.97 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -22732,6 +23851,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 267.97 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17415"
+			(at 267.97 140.97 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22789,7 +23919,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_DRC0010J_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 13.97 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -22813,6 +23943,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 13.97 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17414"
+			(at 13.97 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22869,7 +24010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
+		(property "Footprint" ""
 			(at 200.66 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -22892,6 +24033,17 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
+			(at 200.66 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
 			(at 200.66 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -22954,7 +24106,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 215.9 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -23109,7 +24261,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 267.97 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -23133,6 +24285,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 267.97 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17414"
+			(at 267.97 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23268,7 +24431,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 233.68 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -23291,6 +24454,17 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 233.68 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17513"
 			(at 233.68 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -23351,7 +24525,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:Maple_Mini"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 190.5 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -23585,7 +24759,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -23609,6 +24783,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 50.8 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C26023"
+			(at 50.8 31.75 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23666,7 +24851,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 233.68 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -23689,6 +24874,17 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 233.68 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17513"
 			(at 233.68 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -23781,6 +24977,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C87122"
+			(at 30.48 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "855653bf-ef0d-42bb-b614-b2c63b91a6c5")
 		)
@@ -23842,7 +25049,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 129.54 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -23866,6 +25073,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 129.54 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C28233"
+			(at 129.54 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24156,7 +25374,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 121.92 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -24180,6 +25398,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 121.92 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17513"
+			(at 121.92 58.42 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24235,7 +25464,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 121.92 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -24259,6 +25488,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 121.92 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17414"
+			(at 121.92 50.8 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24317,7 +25557,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 30.48 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -24395,7 +25635,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 233.68 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -24418,6 +25658,17 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 233.68 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17513"
 			(at 233.68 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -24477,7 +25728,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 138.43 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -24880,6 +26131,17 @@
 				(justify bottom)
 			)
 		)
+		(property "JLCPCB Part Number" "C5274290"
+			(at 19.05 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0bc3829b-a2b4-41ae-9c1b-b4651d52c7cf")
 		)
@@ -24927,7 +26189,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 87.63 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -24951,6 +26213,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 87.63 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17673"
+			(at 87.63 25.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25007,7 +26280,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+		(property "Footprint" "Diode_SMD:D_SOD-323F"
 			(at 60.96 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -25030,6 +26303,17 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 60.96 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C27636120"
 			(at 60.96 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -25089,7 +26373,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 149.86 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -25113,6 +26397,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 149.86 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C15850"
+			(at 149.86 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25169,7 +26464,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_Cree-XHP50_3V_HighDensity"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 52.07 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -25203,6 +26498,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 52.07 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C2287"
 			(at 52.07 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -25262,7 +26568,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 224.79 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -25366,6 +26672,17 @@
 		)
 		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 			(at 248.92 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C20917"
+			(at 248.92 24.13 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25539,6 +26856,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C615972"
+			(at 85.09 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "9550dda9-8076-4f01-8b21-68eaaacd458d")
 		)
@@ -25684,7 +27012,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 260.35 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -25994,7 +27322,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 267.97 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -26018,6 +27346,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 267.97 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17415"
+			(at 267.97 24.13 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26151,7 +27490,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_Cree-XHP50_3V_HighDensity"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 129.54 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -26185,6 +27524,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 129.54 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C2286"
 			(at 129.54 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -26320,7 +27670,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" ""
 			(at 240.03 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -26343,6 +27693,17 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 240.03 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C49234238"
 			(at 240.03 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -26425,6 +27786,17 @@
 			)
 		)
 		(property "Description" "RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD"
+			(at 191.77 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C701343"
 			(at 191.77 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -26556,6 +27928,83 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 228.6 74.93 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8e3d370e-1ca6-427d-a441-318a649124da")
+		(property "Reference" "#PWR099"
+			(at 228.6 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 227.584 76.708 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 228.6 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7aff26ed-9eec-48a4-acef-1a922ab96f91")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -26839,6 +28288,17 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
+		(property "JLCPCB Part Number" "C5274290"
+			(at 16.51 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -27125,7 +28585,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 20.32 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -27149,6 +28609,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 20.32 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C1779"
+			(at 20.32 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27285,7 +28756,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 46.99 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -27318,6 +28789,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C17702"
+			(at 46.99 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7a9579f7-afc9-4434-a8a4-c75155d266b0")
 		)
@@ -27328,6 +28810,83 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 213.36 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9d6d4fdb-96dc-4ac1-80dc-ae4336cb71ff")
+		(property "Reference" "#PWR096"
+			(at 213.36 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 212.344 103.886 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 213.36 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb1e3550-747c-47d7-962a-6a1997ae2396")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -27365,7 +28924,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" ""
 			(at 27.94 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -27388,6 +28947,17 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 27.94 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C83206"
 			(at 27.94 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -27444,7 +29014,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 267.97 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -27468,6 +29038,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 267.97 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17415"
+			(at 267.97 26.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27850,6 +29431,17 @@
 				(justify bottom)
 			)
 		)
+		(property "JLCPCB Part Number" "C5274290"
+			(at 13.97 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0300fe8b-6ee8-419d-a5fe-976338e5febd")
 		)
@@ -27977,7 +29569,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 139.7 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -28001,6 +29593,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 139.7 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C1779"
+			(at 139.7 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28104,6 +29707,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 213.36 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a858400e-bb7d-4e48-ab20-f8ac3ed78bd3")
+		(property "Reference" "#PWR094"
+			(at 213.36 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 212.344 93.726 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 213.36 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3a5bf0ad-9c26-4de5-9bcb-2d60ef2e01db")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "#PWR094")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 209.55 123.19 180)
 		(unit 1)
@@ -28137,7 +29817,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 204.47 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -28489,6 +30169,17 @@
 				(justify bottom)
 			)
 		)
+		(property "JLCPCB Part Number" "C91145"
+			(at 44.45 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "6cbf5ae9-4cda-466a-96b5-5ed639538921")
 		)
@@ -28648,7 +30339,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 			(at 34.29 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -28671,6 +30362,17 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 30.48 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C5337088"
 			(at 30.48 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -28852,7 +30554,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_QFP:TQFP-144_20x20mm_P0.5mm"
+		(property "Footprint" "5051105091:CON_5051105091_MOL"
 			(at 275.59 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -28875,6 +30577,17 @@
 			)
 		)
 		(property "Description" "\"Generic connector, single row, 01x50, script generated\""
+			(at 275.59 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C779387"
 			(at 275.59 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -29346,6 +31059,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C5355496"
+			(at 109.22 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "750bb6d7-5540-48e4-9eb4-2ba9760369dc")
 		)
@@ -29474,7 +31198,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 165.1 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -29553,7 +31277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 62.23 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -29577,6 +31301,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 62.23 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C28233"
+			(at 62.23 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29836,6 +31571,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 194.31 154.94 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bca04398-d8cc-4371-b062-9514532068bd")
+		(property "Reference" "TP15"
+			(at 199.39 153.6699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 199.39 156.2099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.5x2.5mm"
+			(at 194.31 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 194.31 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d91a521-37e5-4da7-8102-656d58297cf6")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "TP15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 46.99 129.54 0)
 		(unit 1)
@@ -29869,7 +31683,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 46.99 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -29892,6 +31706,17 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 46.99 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C25611"
 			(at 46.99 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -29949,7 +31774,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
+		(property "Footprint" "Inductor_SMD:L_7.3x7.3_H3.5"
 			(at 41.91 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -29973,6 +31798,17 @@
 		)
 		(property "Description" "Inductor, small symbol"
 			(at 41.91 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C726315"
+			(at 41.91 119.38 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30030,7 +31866,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_DRC0010J_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 29.21 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -30054,6 +31890,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 29.21 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17414"
+			(at 29.21 95.25 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30110,7 +31957,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 238.76 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -30134,6 +31981,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 238.76 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17520"
+			(at 238.76 46.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30380,6 +32238,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C28060"
+			(at 135.89 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2c44ee02-4775-4fde-8e2e-e1ce3135cd07")
 		)
@@ -30579,6 +32448,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 226.06 74.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c8ca9f8d-183b-4a76-8355-85ca7df99bb2")
+		(property "Reference" "#PWR098"
+			(at 226.06 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 225.044 75.946 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 226.06 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb8b3d5f-9918-4d1a-8c6f-6c1c2cb41c0e")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "#PWR098")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 248.92 31.75 180)
 		(unit 1)
@@ -30601,7 +32547,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "GPIO32"
 			(at 251.46 36.3219 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30612,7 +32558,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 243.84 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -30689,7 +32635,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_Cree-XHP50_3V_HighDensity"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 52.07 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -30723,6 +32669,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 52.07 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C12624"
 			(at 52.07 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -31027,6 +32984,17 @@
 				(justify bottom)
 			)
 		)
+		(property "JLCPCB Part Number" "C5274290"
+			(at 54.61 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e62b1d16-5bfe-4afc-8ca0-7fea2251ccf0")
 		)
@@ -31074,7 +33042,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" ""
 			(at 29.21 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -31097,6 +33065,17 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 29.21 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C83206"
 			(at 29.21 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -31323,6 +33302,17 @@
 				(justify bottom)
 			)
 		)
+		(property "JLCPCB Part Number" "C5274290"
+			(at 26.67 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cd0fb77b-4a4a-4ec8-83b7-bc0669c3a7cc")
 		)
@@ -31369,7 +33359,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 267.97 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -31393,6 +33383,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 267.97 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17415"
+			(at 267.97 31.75 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31451,7 +33452,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 160.02 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -31475,6 +33476,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 160.02 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C15850"
+			(at 160.02 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31533,7 +33545,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 204.47 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -31845,7 +33857,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -31869,6 +33881,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 50.8 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C26023"
+			(at 50.8 29.21 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31924,7 +33947,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 267.97 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -31948,6 +33971,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 267.97 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17477"
+			(at 267.97 44.45 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32239,7 +34273,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
+		(property "Footprint" ""
 			(at 181.61 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -32262,6 +34296,17 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
+			(at 181.61 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
 			(at 181.61 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -32479,7 +34524,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_DRC0010J_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 121.92 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -32503,6 +34548,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 121.92 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17408"
+			(at 121.92 170.18 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32673,6 +34729,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C7848"
+			(at 245.11 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "19"
 			(uuid "718056da-6eff-49a1-a0fc-04d8a866d2fa")
 		)
@@ -32810,6 +34877,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C347510"
+			(at 104.14 168.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "eafd789f-318b-4724-a046-426ed7ea96fe")
 		)
@@ -32938,7 +35016,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
+		(property "Footprint" ""
 			(at 200.66 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -32971,6 +35049,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 200.66 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "S"
 			(uuid "a63dc277-c710-4bd7-954c-14be23887af6")
 		)
@@ -32984,6 +35073,168 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 215.9 92.71 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ed097320-33bf-443a-ae98-642f5d19fb12")
+		(property "Reference" "#PWR095"
+			(at 215.9 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 214.884 94.488 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 215.9 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07594344-8c62-46a2-be44-7b31ef169ee9")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "#PWR095")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 210.82 97.79 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ee37db92-8f71-4f88-aba5-3854361e569a")
+		(property "Reference" "J10"
+			(at 218.44 99.822 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "I2C"
+			(at 218.44 102.362 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 210.82 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 210.82 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "8dbbffe3-342e-4666-a3b7-4f2840864825")
+		)
+		(pin "3"
+			(uuid "7fd425d1-cf81-4021-a11b-6a65e11b7258")
+		)
+		(pin "1"
+			(uuid "52accdd8-27e0-4f99-a5de-00561ea06476")
+		)
+		(pin "2"
+			(uuid "76f4310c-7a00-4164-bfdc-017c869a40c6")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -33180,7 +35431,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 57.15 127 0)
 			(hide yes)
 			(show_name no)
@@ -33204,6 +35455,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 57.15 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C45783"
+			(at 57.15 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33260,7 +35522,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" ""
 			(at 240.03 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -33283,6 +35545,17 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 240.03 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C49234238"
 			(at 240.03 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -33419,7 +35692,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" ""
 			(at 240.03 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -33442,6 +35715,17 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 240.03 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C49234238"
 			(at 240.03 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -33657,7 +35941,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Finder_30.22"
+		(property "Footprint" "Inductor_SMD:L_7.3x7.3_H3.5"
 			(at 125.73 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -33680,6 +35964,17 @@
 			)
 		)
 		(property "Description" "Inductor, small symbol"
+			(at 125.73 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C128686"
 			(at 125.73 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -33818,7 +36113,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_DRC0010J_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 58.42 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -33842,6 +36137,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 58.42 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17604"
+			(at 58.42 173.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
