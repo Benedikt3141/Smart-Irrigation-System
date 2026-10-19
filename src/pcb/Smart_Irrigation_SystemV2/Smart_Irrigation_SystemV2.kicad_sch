@@ -11124,6 +11124,12 @@
 		(uuid "692cc7af-ba7f-4160-955f-8f680c0777a6")
 	)
 	(junction
+		(at 196.85 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "696396ad-7afc-4a4b-936b-8689bdce9194")
+	)
+	(junction
 		(at 16.51 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11236,6 +11242,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2ffc96b-a08e-4895-8aa7-9df5277908d7")
+	)
+	(junction
+		(at 266.7 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3491385-25ba-40ff-bc98-b7f978569047")
+	)
+	(junction
+		(at 196.85 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3d02697-0f2b-41a2-91c6-4c616f004113")
 	)
 	(junction
 		(at 138.43 86.36)
@@ -12114,6 +12132,16 @@
 			(type default)
 		)
 		(uuid "235a2480-cb0d-42d8-8021-65476c1285aa")
+	)
+	(wire
+		(pts
+			(xy 196.85 170.18) (xy 207.01 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2370dc1c-0f5a-4a6d-b5ee-93ccd8f7cb80")
 	)
 	(wire
 		(pts
@@ -13307,6 +13335,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 172.72) (xy 191.77 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78b192e5-1a16-4bce-bed2-8e7f5cc2fe4c")
+	)
+	(wire
+		(pts
 			(xy 255.27 130.81) (xy 270.51 130.81)
 		)
 		(stroke
@@ -13577,6 +13615,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 175.26) (xy 196.85 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89fe446a-8c45-4801-a9e6-97c33c35a01f")
+	)
+	(wire
+		(pts
 			(xy 115.57 38.1) (xy 118.11 38.1)
 		)
 		(stroke
@@ -13614,6 +13662,26 @@
 			(type default)
 		)
 		(uuid "8dfd3597-90fd-4fad-82bc-17c99c1c184b")
+	)
+	(wire
+		(pts
+			(xy 266.7 21.59) (xy 270.51 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e0e3a87-4c8d-40ff-9ee5-53167e150130")
+	)
+	(wire
+		(pts
+			(xy 189.23 170.18) (xy 190.5 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e138a89-1242-4cb2-a06d-825a4f3d0f62")
 	)
 	(wire
 		(pts
@@ -13784,6 +13852,16 @@
 			(type default)
 		)
 		(uuid "97c90a2f-ebfa-406b-afbc-a823022a5a18")
+	)
+	(wire
+		(pts
+			(xy 189.23 172.72) (xy 191.77 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98a36f7e-7af8-4a57-b59f-504b91846913")
 	)
 	(wire
 		(pts
@@ -13967,6 +14045,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 170.18) (xy 257.81 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1e0e726-c8fc-4bce-9b17-c3b9c55a8057")
+	)
+	(wire
+		(pts
 			(xy 207.01 22.86) (xy 209.55 22.86)
 		)
 		(stroke
@@ -14057,7 +14145,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 21.59) (xy 270.51 21.59)
+			(xy 255.27 21.59) (xy 266.7 21.59)
 		)
 		(stroke
 			(width 0)
@@ -14074,6 +14162,16 @@
 			(type default)
 		)
 		(uuid "a77e0ea0-4fe0-4111-8176-fda157c7a04b")
+	)
+	(wire
+		(pts
+			(xy 196.85 175.26) (xy 200.66 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8f733ec-09e4-4a24-bc7a-2b217b4ddb8f")
 	)
 	(wire
 		(pts
@@ -14654,16 +14752,6 @@
 			(type default)
 		)
 		(uuid "d0902902-d2ef-4fde-aafc-8ea42939e09f")
-	)
-	(wire
-		(pts
-			(xy 256.54 170.18) (xy 257.81 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0ca46ed-410e-4a13-be10-d4453b40ebc9")
 	)
 	(wire
 		(pts
@@ -15267,6 +15355,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 170.18) (xy 196.85 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb3a28c0-585a-4f42-b784-2a717cef9bdd")
+	)
+	(wire
+		(pts
 			(xy 191.77 125.73) (xy 195.58 125.73)
 		)
 		(stroke
@@ -15494,6 +15592,16 @@
 			(justify left bottom)
 		)
 		(uuid "1d549bdb-c014-45bd-ab8e-1ae6dc22fa71")
+	)
+	(label "SolarPanel"
+		(at 207.01 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f8afe61-5cc9-46bf-9efb-64d542831f25")
 	)
 	(label "MOSI"
 		(at 16.51 78.74 0)
@@ -16075,6 +16183,16 @@
 		)
 		(uuid "b98fbd17-7676-44d7-ad2c-c3166f50e7d8")
 	)
+	(label "SolarPanel"
+		(at 247.65 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9e69de8-5003-419c-8660-f0547a61170a")
+	)
 	(label "MOSI"
 		(at 209.55 63.5 0)
 		(effects
@@ -16427,6 +16545,88 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 266.7 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "072ab866-5276-4589-a415-a52b7815eb5f")
+		(property "Reference" "R38"
+			(at 269.24 17.7799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 269.24 20.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 266.7 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 266.7 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a1e100e-b48f-4f41-8ed2-f3c8eaccc088")
+		)
+		(pin "2"
+			(uuid "43f6b54e-694f-42a6-ab0d-158a1558416b")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -18631,6 +18831,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 196.85 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d12d52c-b8ba-4d5f-9aa0-d47a6c4bf37a")
+		(property "Reference" "C16"
+			(at 199.39 171.4499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 199.39 173.9899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 196.85 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "42668d16-0b46-426c-aa70-e7b88db27211")
+		)
+		(pin "1"
+			(uuid "784352f1-f318-4dd3-8bd7-f3a7172aba8f")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 134.62 20.32 180)
 		(unit 1)
@@ -18703,6 +18985,84 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2224917e-a639-40cd-82ad-cc29349c0ea0")
+		(property "Reference" "#PWR0103"
+			(at 200.66 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bcead886-4de8-40b8-8c4f-1f838541c416")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -27436,7 +27796,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7f8b1518-3ad1-407d-915f-38b7ec909dc7")
 		(property "Reference" "TP10"
 			(at 257.81 17.0179 0)
@@ -27450,7 +27809,7 @@
 			)
 		)
 		(property "Value" "LED-Kathode"
-			(at 257.81 19.5579 0)
+			(at 251.968 14.986 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30496,85 +30855,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 251.46 172.72 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a8de7943-36a8-42e1-a925-8300ed102b77")
-		(property "Reference" "J13"
-			(at 249.682 171.196 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Analog-Input"
-			(at 255.778 174.498 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 251.46 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 251.46 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 251.46 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0f74e0d4-864c-4486-b37b-0f4d142abe84")
-		)
-		(pin "2"
-			(uuid "6385acca-36d7-4fc5-b441-120bedb3c035")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "J13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 209.55 123.19 180)
 		(unit 1)
@@ -32375,6 +32655,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 184.15 170.18 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b8ad5b5f-d7e5-4675-a9ac-403c2ac8293d")
+		(property "Reference" "J14"
+			(at 182.88 170.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SolarPanel"
+			(at 182.88 172.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 184.15 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e3e02016-4d7c-493f-9142-a0aeea094790")
+		)
+		(pin "1"
+			(uuid "42000da3-4d00-4c90-9f24-40b061c0c132")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 121.92 158.75 180)
 		(unit 1)
@@ -33597,6 +33959,84 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 266.7 16.51 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c77457cb-fc9f-4a00-82bc-d54b2cf7f180")
+		(property "Reference" "#PWR0102"
+			(at 266.7 10.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 266.7 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "69e7af15-de4d-410d-a6b9-5daeb6b95eed")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -35325,6 +35765,85 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 193.04 170.18 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e04dc1be-9492-46b2-8663-ec672a2f5424")
+		(property "Reference" "R39"
+			(at 193.04 170.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 193.04 167.64 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+			(at 193.04 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 193.04 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d733bb66-9766-45c8-b69d-b9a51b97e204")
+		)
+		(pin "1"
+			(uuid "8c395d4c-5ba7-47be-8e20-38b7fcacc7a4")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "R39")
 					(unit 1)
 				)
 			)
