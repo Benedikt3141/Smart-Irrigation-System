@@ -4034,205 +4034,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Audio:AudioJack3"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AudioJack3"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Jack*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "AudioJack3_0_1"
-				(rectangle
-					(start -5.08 -5.08)
-					(end -6.35 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -2.54) (xy -1.27 -3.175) (xy -0.635 -2.54) (xy -0.635 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.54 3.81)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "AudioJack3_1_1"
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "T"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -10354,6 +10155,226 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "easyeda2kicad:PJ-3136-3A"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CN"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PJ-3136-3A"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "easyeda2kicad:AUDIO-TH_PJ-3136-3A"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "韩国韩荣"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "PJ-3136-3A"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C707248"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Audio Connectors"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PJ-3136-3A_0_1"
+				(rectangle
+					(start -5.84 0.51)
+					(end -4.32 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.78 -5.08) (xy -2.03 -4.06)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -5.08 2.54) (xy -5.08 0.51) (xy -5.08 0.51)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy -1.78 -2.54) (xy -1.78 -5.08) (xy -1.52 -4.06)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -5.08) (xy -3.3 -5.08) (xy -3.56 -4.06) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 -5.08 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -10963,26 +10984,6 @@
 		)
 		(uuid "5c795e82-dbc9-4850-bbd8-21bcb6ef8386")
 	)
-	(text_box "Moisture Sensors"
-		(exclude_from_sim no)
-		(at 168.656 110.49 0)
-		(size 46.736 54.864)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "7d1a137c-6ff7-47b9-a578-825d163140dd")
-	)
 	(text_box "Buck-Boost Converter"
 		(exclude_from_sim no)
 		(at 114.3 143.256 0)
@@ -11062,6 +11063,26 @@
 			(justify left top)
 		)
 		(uuid "c4ad8580-c705-4be3-8acf-1a8a1fefe916")
+	)
+	(text_box "Moisture Sensors"
+		(exclude_from_sim no)
+		(at 171.45 111.252 0)
+		(size 42.926 54.102)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c67f9d40-0115-4ed6-b814-039ceb631d6b")
 	)
 	(text_box "Load Charing"
 		(exclude_from_sim no)
@@ -11160,12 +11181,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1a08294c-130f-4648-b631-11da76733be9")
-	)
-	(junction
-		(at 242.57 173.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1be2b7e0-4f2b-4f1e-b841-bec32065a6b6")
 	)
 	(junction
 		(at 233.68 138.43)
@@ -11336,12 +11351,6 @@
 		(uuid "5c19cf0e-5e4f-4133-9deb-e5e71d0b5866")
 	)
 	(junction
-		(at 191.77 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5cbb1d2f-adf7-438d-980b-58ff942607f3")
-	)
-	(junction
 		(at 106.68 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11352,6 +11361,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f9c77a5-3196-43ea-820e-73e02d97d816")
+	)
+	(junction
+		(at 191.77 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "632d538a-775e-46eb-b851-d9748038e599")
 	)
 	(junction
 		(at 16.51 85.09)
@@ -11486,12 +11501,6 @@
 		(uuid "9dab1307-97b8-4ce4-8f81-048bfc7146d5")
 	)
 	(junction
-		(at 191.77 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9e10b862-5c69-40fa-a1ee-91b4cf09f741")
-	)
-	(junction
 		(at 26.67 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11558,6 +11567,12 @@
 		(uuid "bb92783e-8ef4-422a-a5ba-1fb55cd16c8a")
 	)
 	(junction
+		(at 191.77 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfa8e806-de1d-4741-8872-29c421c93896")
+	)
+	(junction
 		(at 34.29 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11574,12 +11589,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c45e2390-4f39-4cbc-991b-15f76289064a")
-	)
-	(junction
-		(at 191.77 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c6039f80-b1df-4444-958a-191241406c0f")
 	)
 	(junction
 		(at 267.97 154.94)
@@ -11672,6 +11681,12 @@
 		(uuid "e7aa57c8-9b77-494e-9d22-d14e0f8a37f3")
 	)
 	(junction
+		(at 191.77 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb2f851f-b172-4408-a1a8-be3b4b64a3c4")
+	)
+	(junction
 		(at 129.54 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11702,7 +11717,7 @@
 		(uuid "f7f1ac21-c0b9-43e1-9663-b5194e263214")
 	)
 	(junction
-		(at 194.31 158.75)
+		(at 194.31 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd79d265-a701-4b6a-a571-065f4e759612")
@@ -11872,6 +11887,16 @@
 			(type default)
 		)
 		(uuid "01475678-5dc3-4a92-bf69-5706f7736760")
+	)
+	(wire
+		(pts
+			(xy 194.31 151.13) (xy 194.31 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "019577e5-8b07-4ba0-a26c-23941ce7bfdb")
 	)
 	(wire
 		(pts
@@ -12045,16 +12070,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 125.73) (xy 191.77 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c8a2796-2829-4b83-9baa-e531416e7ef0")
-	)
-	(wire
-		(pts
 			(xy 194.31 120.65) (xy 195.58 120.65)
 		)
 		(stroke
@@ -12082,16 +12097,6 @@
 			(type default)
 		)
 		(uuid "0d25c9ee-7841-4358-88c0-18e3580def00")
-	)
-	(wire
-		(pts
-			(xy 186.69 135.89) (xy 194.31 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0df3eaed-76af-4702-add2-a33bc079064b")
 	)
 	(wire
 		(pts
@@ -12245,26 +12250,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 153.67) (xy 186.69 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b144d9d-87ed-417a-a6a3-aa51d6abc4d6")
-	)
-	(wire
-		(pts
-			(xy 191.77 156.21) (xy 195.58 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b5fa195-4233-4467-9aae-aea45fbc2116")
-	)
-	(wire
-		(pts
 			(xy 93.98 166.37) (xy 93.98 175.26)
 		)
 		(stroke
@@ -12272,6 +12257,16 @@
 			(type default)
 		)
 		(uuid "1bca76c3-b682-427b-bc06-d1dcf05bbd1f")
+	)
+	(wire
+		(pts
+			(xy 115.57 27.94) (xy 118.11 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bce947a-6816-496e-b107-853c49f521dd")
 	)
 	(wire
 		(pts
@@ -12292,16 +12287,6 @@
 			(type default)
 		)
 		(uuid "1c37898a-90ca-4b4f-aee1-49b7e739c9aa")
-	)
-	(wire
-		(pts
-			(xy 199.39 161.29) (xy 199.39 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d54e8ca-1a3c-4779-b932-b247dac18706")
 	)
 	(wire
 		(pts
@@ -13155,16 +13140,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 151.13) (xy 194.31 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58e3af0e-07cd-4d44-b2c4-e0823849d8d5")
-	)
-	(wire
-		(pts
 			(xy 29.21 100.33) (xy 24.13 100.33)
 		)
 		(stroke
@@ -13182,16 +13157,6 @@
 			(type default)
 		)
 		(uuid "5c93143e-11ad-494a-83bd-e42828c3a469")
-	)
-	(wire
-		(pts
-			(xy 170.18 123.19) (xy 186.69 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cb07832-4e5c-4ffe-ac7c-3022b558933b")
 	)
 	(wire
 		(pts
@@ -13222,6 +13187,16 @@
 			(type default)
 		)
 		(uuid "5dc9494c-75c1-4144-bddb-887d737bef6a")
+	)
+	(wire
+		(pts
+			(xy 185.42 143.51) (xy 191.77 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dcff633-6f11-49af-8f76-5d5282172be1")
 	)
 	(wire
 		(pts
@@ -13475,16 +13450,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 153.67) (xy 208.28 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6eb7b5f8-291f-4d1e-a8d1-b5a88467159b")
-	)
-	(wire
-		(pts
 			(xy 62.23 91.44) (xy 63.5 91.44)
 		)
 		(stroke
@@ -13722,16 +13687,6 @@
 			(type default)
 		)
 		(uuid "7d041536-4078-4ded-90ec-00a96105c339")
-	)
-	(wire
-		(pts
-			(xy 186.69 156.21) (xy 191.77 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d454c4d-f0d4-44fb-b7f0-3813c83262b5")
 	)
 	(wire
 		(pts
@@ -14045,13 +14000,13 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 123.19) (xy 209.55 123.19)
+			(xy 191.77 143.51) (xy 191.77 158.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8fb5347f-be21-4d03-944c-e234aaddff7e")
+		(uuid "8fc9bd73-d14c-40c1-a685-c66d3f576784")
 	)
 	(wire
 		(pts
@@ -14102,16 +14057,6 @@
 			(type default)
 		)
 		(uuid "9153c5f4-fbf8-41af-93ad-81cd3d94a22d")
-	)
-	(wire
-		(pts
-			(xy 242.57 171.45) (xy 242.57 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "927765f6-21de-47f8-839d-a614298e1cc0")
 	)
 	(wire
 		(pts
@@ -14215,16 +14160,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 140.97) (xy 191.77 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98f4a200-6019-48e0-832b-e9e3ccbf58af")
-	)
-	(wire
-		(pts
 			(xy 20.32 102.87) (xy 26.67 102.87)
 		)
 		(stroke
@@ -14242,6 +14177,16 @@
 			(type default)
 		)
 		(uuid "9af42e3a-ad51-486f-a06c-2f25c996849f")
+	)
+	(wire
+		(pts
+			(xy 191.77 128.27) (xy 195.58 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b08ede1-8106-426a-bf7c-e28d21d1d53d")
 	)
 	(wire
 		(pts
@@ -14502,6 +14447,16 @@
 			(type default)
 		)
 		(uuid "a5e81631-7e95-451c-81d8-be4eb3150039")
+	)
+	(wire
+		(pts
+			(xy 186.69 128.27) (xy 191.77 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a630ce4a-b643-47e1-a42a-15238b4f4f3d")
 	)
 	(wire
 		(pts
@@ -14885,6 +14840,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 135.89) (xy 194.31 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be8e058e-249e-4865-a912-ac4526cd063e")
+	)
+	(wire
+		(pts
 			(xy 124.46 50.8) (xy 125.73 50.8)
 		)
 		(stroke
@@ -14905,16 +14870,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 125.73) (xy 191.77 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1c0fa38-3c81-4e03-b1b9-802b9e9799bb")
-	)
-	(wire
-		(pts
 			(xy 96.52 185.42) (xy 97.79 185.42)
 		)
 		(stroke
@@ -14922,16 +14877,6 @@
 			(type default)
 		)
 		(uuid "c1cbbcad-f954-451f-94b6-e9ee5a21a3a9")
-	)
-	(wire
-		(pts
-			(xy 191.77 140.97) (xy 195.58 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c308aadc-5911-4078-b82c-b3e4ce5c758a")
 	)
 	(wire
 		(pts
@@ -15012,16 +14957,6 @@
 			(type default)
 		)
 		(uuid "caa5c360-c426-43ad-872c-8527acd2de75")
-	)
-	(wire
-		(pts
-			(xy 170.18 138.43) (xy 186.69 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb59636d-7e62-4673-b795-32bc599a23d3")
 	)
 	(wire
 		(pts
@@ -15245,7 +15180,17 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 158.75) (xy 194.31 158.75)
+			(xy 115.57 25.4) (xy 118.11 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d825abf1-586e-4ffa-b3e1-55b86625df29")
+	)
+	(wire
+		(pts
+			(xy 199.39 161.29) (xy 194.31 161.29)
 		)
 		(stroke
 			(width 0)
@@ -15282,6 +15227,16 @@
 			(type default)
 		)
 		(uuid "da0cd89f-1384-48f1-8095-76e982ba99e5")
+	)
+	(wire
+		(pts
+			(xy 191.77 158.75) (xy 186.69 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da9126ed-2695-433a-ac69-cf75cee9d799")
 	)
 	(wire
 		(pts
@@ -15445,7 +15400,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 140.97) (xy 191.77 156.21)
+			(xy 191.77 128.27) (xy 191.77 143.51)
 		)
 		(stroke
 			(width 0)
@@ -15585,6 +15540,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 143.51) (xy 195.58 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eedfdf97-3313-4e56-a677-6c6423f2f2e8")
+	)
+	(wire
+		(pts
 			(xy 48.26 38.1) (xy 48.26 39.37)
 		)
 		(stroke
@@ -15605,7 +15570,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 118.11) (xy 191.77 125.73)
+			(xy 191.77 118.11) (xy 191.77 128.27)
 		)
 		(stroke
 			(width 0)
@@ -15675,16 +15640,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 138.43) (xy 209.55 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f58e46b0-9fa3-4d65-be23-bf185d42f6ab")
-	)
-	(wire
-		(pts
 			(xy 62.23 157.48) (xy 72.39 157.48)
 		)
 		(stroke
@@ -15725,6 +15680,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 158.75) (xy 195.58 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f93dec70-2a1e-4115-99c7-f040672ada20")
+	)
+	(wire
+		(pts
 			(xy 251.46 167.64) (xy 257.81 167.64)
 		)
 		(stroke
@@ -15762,16 +15727,6 @@
 			(type default)
 		)
 		(uuid "fb3a28c0-585a-4f42-b784-2a717cef9bdd")
-	)
-	(wire
-		(pts
-			(xy 191.77 125.73) (xy 195.58 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb7c1e7b-be9d-446f-8391-b7d71dc2d611")
 	)
 	(wire
 		(pts
@@ -15853,6 +15808,16 @@
 		)
 		(uuid "007c7aba-ce30-4bd8-bc51-a16604648640")
 	)
+	(label "MS1"
+		(at 186.69 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "011db473-796a-478f-942a-709914307728")
+	)
 	(label "MS4"
 		(at 123.19 129.54 0)
 		(effects
@@ -15904,7 +15869,7 @@
 		(uuid "0cb47855-4477-4165-8810-67c60f0cef38")
 	)
 	(label "RXD"
-		(at 120.65 27.94 0)
+		(at 118.11 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16093,26 +16058,6 @@
 		)
 		(uuid "352f63cd-1eca-47b0-8782-d3574547e8d3")
 	)
-	(label "MS1"
-		(at 170.18 153.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "37b23f2c-b288-4ce1-b131-5708f54681ae")
-	)
-	(label "MS5"
-		(at 209.55 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3cb5fd58-8bf1-4f76-824d-7a1c19f01100")
-	)
 	(label "GPIO39"
 		(at 255.27 138.43 0)
 		(effects
@@ -16132,16 +16077,6 @@
 			(justify left bottom)
 		)
 		(uuid "40f9888c-3565-476b-b7f3-25639272fd01")
-	)
-	(label "MS6"
-		(at 208.28 153.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "42401e22-87d6-4d5a-b76b-bfd7a8d83137")
 	)
 	(label "GPIO25"
 		(at 224.79 92.71 0)
@@ -16323,6 +16258,16 @@
 		)
 		(uuid "78c56a7a-e5fc-424a-8e41-6696fd3c1a25")
 	)
+	(label "MS5"
+		(at 195.58 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7fa37804-96c6-4514-a1ac-b0a027b2aa9e")
+	)
 	(label "GPIO36"
 		(at 168.91 27.94 0)
 		(effects
@@ -16483,8 +16428,18 @@
 		)
 		(uuid "92eb6c42-b522-417a-8122-654dfc5b4889")
 	)
+	(label "MS3"
+		(at 186.69 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9445f5ee-dae6-4e51-b1eb-03fd9333a8c6")
+	)
 	(label "MS2"
-		(at 170.18 138.43 0)
+		(at 185.42 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16534,7 +16489,7 @@
 		(uuid "a360e486-a147-4fa8-bfe0-0aa7d50d4257")
 	)
 	(label "TXD"
-		(at 120.65 25.4 0)
+		(at 118.11 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16653,6 +16608,26 @@
 		)
 		(uuid "bad41830-0ca2-411c-b764-2866f4f39cee")
 	)
+	(label "MS4"
+		(at 195.58 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bada786a-5241-4a0d-93aa-7bad3ef4fcc2")
+	)
+	(label "MS6"
+		(at 195.58 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0ce72d0-f11f-4c8f-b568-d23d4c9bd15f")
+	)
 	(label "SDA"
 		(at 157.48 139.7 90)
 		(effects
@@ -16713,16 +16688,6 @@
 		)
 		(uuid "da255879-a8ff-478c-a5e3-3ad9d2cb99d0")
 	)
-	(label "MS3"
-		(at 170.18 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "deba3fd9-7f78-4ee4-b8cc-54d1d681ff5e")
-	)
 	(label "GPIO2"
 		(at 209.55 27.94 0)
 		(effects
@@ -16732,16 +16697,6 @@
 			(justify left bottom)
 		)
 		(uuid "e1985545-f65a-4039-8596-68827bea9415")
-	)
-	(label "MS4"
-		(at 209.55 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e54311df-244d-4409-a47a-bd8798720247")
 	)
 	(label "MS1"
 		(at 123.19 121.92 0)
@@ -17441,6 +17396,122 @@
 		)
 	)
 	(symbol
+		(lib_id "easyeda2kicad:PJ-3136-3A")
+		(at 181.61 153.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0946dd54-f9f5-41c6-82cf-04fdaab4d5b9")
+		(property "Reference" "CN3"
+			(at 179.96 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 179.96 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
+			(at 181.61 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 181.61 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 181.61 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 181.61 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 181.61 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "543bd22b-d2bf-4e3f-862f-be664ddb71d5")
+		)
+		(pin "4"
+			(uuid "0f0667e7-be27-4020-8b68-277603cd016f")
+		)
+		(pin "2"
+			(uuid "030e8192-e476-42b8-92e7-5f662f9e5169")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 52.07 134.62 0)
 		(unit 1)
@@ -18030,190 +18101,6 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 118.11 25.4 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0df1eab0-0bcc-47c7-b81d-502f105a647e")
-		(property "Reference" "R33"
-			(at 118.11 25.4 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 118.11 22.86 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 118.11 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 118.11 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C17477"
-			(at 118.11 25.4 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "291256aa-67c0-4fdb-bd16-9ce8453c4d99")
-		)
-		(pin "1"
-			(uuid "048f17e1-f0ef-4e34-b393-3c90cd186fec")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "R33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack3")
-		(at 181.61 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0e904fad-104e-41d3-905e-5025659b2470")
-		(property "Reference" "J3"
-			(at 179.705 144.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AudioJack3"
-			(at 179.705 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
-			(at 181.61 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-			(at 181.61 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 181.61 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "S"
-			(uuid "aa996191-3b10-42a4-8f44-3c046399f131")
-		)
-		(pin "T"
-			(uuid "329df792-87a9-4b7d-8b72-8b1cdd71b92e")
-		)
-		(pin "R"
-			(uuid "b57e6527-22d3-43fe-98a5-65cb072b54e7")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -19794,7 +19681,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 194.31 158.75 0)
+		(at 194.31 162.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19805,7 +19692,7 @@
 		(fields_autoplaced yes)
 		(uuid "24b57970-6a22-44f1-9efb-9a5772d0f6f9")
 		(property "Reference" "#PWR068"
-			(at 194.31 165.1 0)
+			(at 194.31 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19816,7 +19703,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 194.31 163.83 0)
+			(at 194.31 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19826,7 +19713,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 158.75 0)
+			(at 194.31 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19837,7 +19724,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 158.75 0)
+			(at 194.31 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19848,7 +19735,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 194.31 158.75 0)
+			(at 194.31 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20122,100 +20009,6 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack3")
-		(at 181.61 138.43 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "291af490-5cbc-4e9a-b6a1-3105a6babb37")
-		(property "Reference" "J4"
-			(at 179.705 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AudioJack3"
-			(at 179.705 132.08 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
-			(at 181.61 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-			(at 181.61 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 181.61 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "S"
-			(uuid "c305c542-c879-45e9-a23a-6944133ce942")
-		)
-		(pin "T"
-			(uuid "e6a54d19-0afc-4d98-9308-7f38ae79db0b")
-		)
-		(pin "R"
-			(uuid "27378aa4-ba1f-495c-a19e-ddb0a3b65d02")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -20960,6 +20753,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 195.58 140.97 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "328267a6-59bb-4e3d-8226-d99f4c797af1")
+		(property "Reference" "TP5"
+			(at 198.12 143.0019 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MS5"
+			(at 198.12 145.5419 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 190.5 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 195.58 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "30aa8faf-fcba-4c06-8c56-7b9dd9a9d119")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 240.03 138.43 0)
 		(unit 1)
@@ -20991,7 +20863,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Test:SW-TH_CPG151101D9X"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
 			(at 240.03 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -22236,97 +22108,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 118.11 27.94 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3f3a0510-fc9b-4fb7-8dcf-2a93e183bcce")
-		(property "Reference" "R34"
-			(at 118.11 27.94 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 116.84 29.464 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 118.11 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 118.11 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C17477"
-			(at 118.11 27.94 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4748455c-95fc-4234-be7b-4adfc9374667")
-		)
-		(pin "1"
-			(uuid "6dd01cda-0710-4ed0-9877-8d0741067f5f")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "R34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 68.58 24.13 0)
 		(mirror x)
@@ -22835,7 +22616,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 170.18 153.67 180)
+		(at 186.69 156.21 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22846,7 +22627,7 @@
 		(fields_autoplaced yes)
 		(uuid "429ea96f-4d1b-4392-9418-2a8554a630fc")
 		(property "Reference" "TP6"
-			(at 172.72 155.7019 0)
+			(at 189.23 158.2419 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22857,7 +22638,7 @@
 			)
 		)
 		(property "Value" "MS1"
-			(at 172.72 158.2419 0)
+			(at 189.23 160.7819 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22868,7 +22649,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 165.1 153.67 0)
+			(at 181.61 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22879,7 +22660,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 153.67 0)
+			(at 181.61 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22890,7 +22671,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 170.18 153.67 0)
+			(at 186.69 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23284,7 +23065,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 223.52 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -23512,6 +23293,85 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 185.42 140.97 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45e95469-8e68-4a2d-8c6a-541fb73e2de2")
+		(property "Reference" "TP7"
+			(at 187.96 143.0019 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MS2"
+			(at 187.96 145.5419 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 180.34 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 185.42 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2beebcd3-7367-4a32-bd1e-996dd51b7b9b")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -24003,6 +23863,122 @@
 		)
 	)
 	(symbol
+		(lib_id "easyeda2kicad:PJ-3136-3A")
+		(at 200.66 138.43 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4e6e11f5-1907-4477-8926-9d84abe736b2")
+		(property "Reference" "CN5"
+			(at 202.31 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 202.31 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
+			(at 200.66 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 200.66 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 200.66 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 200.66 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 200.66 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "575ceafe-008e-4d77-92b3-1132db3389ee")
+		)
+		(pin "4"
+			(uuid "8bd28133-54d6-4d01-9449-ed63bb58dba3")
+		)
+		(pin "2"
+			(uuid "aca3d91e-3326-4955-9383-bdf09e6faf99")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 267.97 29.21 90)
 		(unit 1)
@@ -24417,85 +24393,6 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 170.18 138.43 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "546e1835-4cc0-4910-8ae1-d614d70866b0")
-		(property "Reference" "TP7"
-			(at 172.72 140.4619 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "MS2"
-			(at 172.72 143.0019 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 165.1 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 170.18 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a11877ea-9fa8-4858-9e15-e42c82fabc96")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -25522,100 +25419,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack3")
-		(at 200.66 123.19 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5f5bf1cc-cd99-4842-8cac-40601fd9f8fa")
-		(property "Reference" "J8"
-			(at 202.565 114.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AudioJack3"
-			(at 202.565 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
-			(at 200.66 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-			(at 200.66 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 200.66 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "S"
-			(uuid "ddbca91e-3c75-4f16-9c12-5bb5cc5053a9")
-		)
-		(pin "T"
-			(uuid "d0f43d11-977c-42fa-990f-7e9440d4a19c")
-		)
-		(pin "R"
-			(uuid "76b988c2-1c88-4e11-88d7-ee6a225dc498")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 210.82 30.48 270)
 		(unit 1)
@@ -25768,6 +25571,122 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:PJ-3136-3A")
+		(at 181.61 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "612ec1b0-8abc-412e-92f2-4ea12d9ea0b7")
+		(property "Reference" "CN2"
+			(at 179.96 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 179.96 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
+			(at 181.61 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 181.61 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 181.61 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 181.61 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 181.61 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07018b2a-eb0f-4570-9d9e-78901088807b")
+		)
+		(pin "4"
+			(uuid "e40bd0b6-b85b-45d1-92f1-1cb54e35b900")
+		)
+		(pin "2"
+			(uuid "5b9a8b7c-4651-4a42-b0a0-d1365bcc50b7")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN2")
 					(unit 1)
 				)
 			)
@@ -28911,100 +28830,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack3")
-		(at 200.66 153.67 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "872ef868-a262-40e4-b358-1e17d0bd0912")
-		(property "Reference" "J12"
-			(at 202.565 144.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AudioJack3"
-			(at 202.565 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
-			(at 200.66 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-			(at 200.66 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 200.66 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "S"
-			(uuid "51e2d9be-1b97-4ec2-bfad-b751e31f845b")
-		)
-		(pin "T"
-			(uuid "e0c87b28-ca89-43f4-aba9-293460ecc48d")
-		)
-		(pin "R"
-			(uuid "c699fc24-a98a-47de-9b03-bd402603ae48")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 267.97 24.13 90)
 		(unit 1)
@@ -29383,7 +29208,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Test:SW-TH_CPG151101D9X"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
 			(at 240.03 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -30187,6 +30012,122 @@
 		)
 	)
 	(symbol
+		(lib_id "easyeda2kicad:PJ-3136-3A")
+		(at 200.66 123.19 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "96191c59-1af0-41ca-8d08-f75e120cd206")
+		(property "Reference" "CN4"
+			(at 202.31 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 202.31 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
+			(at 200.66 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 200.66 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 200.66 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 200.66 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 200.66 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aa704292-a1c7-46ce-b15b-866961baa451")
+		)
+		(pin "4"
+			(uuid "4c5800dc-388d-4f07-8d6d-0174b9a19047")
+		)
+		(pin "2"
+			(uuid "6d8fd7fb-8e4f-4cb7-ac20-b78667c509fb")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 270.51 128.27 270)
 		(unit 1)
@@ -30793,84 +30734,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 242.57 171.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9db6390f-da5b-4f58-8045-ee98e915d32e")
-		(property "Reference" "TP19"
-			(at 245.11 166.8779 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LED-RGB"
-			(at 243.84 171.704 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
-			(at 247.65 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 242.57 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4c5b10e3-c10a-40ee-bb28-e206e2ebd972")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "TP19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 27.94 180.34 0)
 		(unit 1)
@@ -31373,6 +31236,122 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:PJ-3136-3A")
+		(at 200.66 153.67 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a3ba1e0f-53c1-4aa3-a31c-8f0771a3637e")
+		(property "Reference" "CN6"
+			(at 202.31 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 202.31 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
+			(at 200.66 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 200.66 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 200.66 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 200.66 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 200.66 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8631b365-bf7f-41db-9706-70a00e73baf3")
+		)
+		(pin "4"
+			(uuid "26284e7a-0b56-41f1-8bce-346c4786be48")
+		)
+		(pin "2"
+			(uuid "74903ae1-bb24-4a27-90cf-804ef5f31fdf")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN6")
 					(unit 1)
 				)
 			)
@@ -32010,7 +31989,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 209.55 123.19 180)
+		(at 195.58 125.73 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -32019,9 +31998,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a9ac7603-4e41-4d7c-841f-48185ef26bcf")
+		(uuid "a8f7f569-06b9-4881-aeca-ec480af4b60e")
 		(property "Reference" "TP4"
-			(at 212.09 125.2219 0)
+			(at 198.12 127.7619 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32032,7 +32011,7 @@
 			)
 		)
 		(property "Value" "MS4"
-			(at 212.09 127.7619 0)
+			(at 198.12 130.3019 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32043,7 +32022,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 204.47 123.19 0)
+			(at 190.5 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32054,7 +32033,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 123.19 0)
+			(at 190.5 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32065,7 +32044,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 209.55 123.19 0)
+			(at 195.58 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32076,7 +32055,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "43aac69f-d53d-4647-9a8c-c3be2cc58d82")
+			(uuid "572746a6-bf99-434f-ab99-bc3f9c553c3d")
 		)
 		(instances
 			(project "Smart_Irrigation_SystemV2"
@@ -33715,86 +33694,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 208.28 153.67 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b7637b31-57f7-4066-a87c-3553a1d68565")
-		(property "Reference" "TP17"
-			(at 210.82 155.7019 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "MS6"
-			(at 210.82 158.2419 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 203.2 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 208.28 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a20d67b8-f364-42fa-84e1-6283f2e846dd")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "TP17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 170.18 123.19 180)
+		(at 186.69 125.73 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33805,7 +33705,7 @@
 		(fields_autoplaced yes)
 		(uuid "b7d322f7-78a3-41b7-9247-5feb2c090b56")
 		(property "Reference" "TP8"
-			(at 172.72 125.2219 0)
+			(at 189.23 127.7619 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33816,7 +33716,7 @@
 			)
 		)
 		(property "Value" "MS3"
-			(at 172.72 127.7619 0)
+			(at 189.23 130.3019 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33827,7 +33727,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 165.1 123.19 0)
+			(at 181.61 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33838,7 +33738,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 123.19 0)
+			(at 181.61 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33849,7 +33749,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 170.18 123.19 0)
+			(at 186.69 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36583,7 +36483,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 209.55 138.43 180)
+		(at 195.58 156.21 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -36592,9 +36492,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d6adcade-0ee3-43b3-a86b-ba134c7df5b1")
-		(property "Reference" "TP5"
-			(at 212.09 140.4619 0)
+		(uuid "d7efd1d3-df74-407f-bdb3-b330020847e1")
+		(property "Reference" "TP17"
+			(at 198.12 158.2419 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36604,8 +36504,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "MS5"
-			(at 212.09 143.0019 0)
+		(property "Value" "MS6"
+			(at 198.12 160.7819 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36616,7 +36516,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 204.47 138.43 0)
+			(at 190.5 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36627,7 +36527,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 138.43 0)
+			(at 190.5 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36638,7 +36538,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 209.55 138.43 0)
+			(at 195.58 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36649,12 +36549,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "18029324-428b-4768-ac09-06c949b6fa83")
+			(uuid "ab637777-0316-4555-b3d0-a8861c6c6955")
 		)
 		(instances
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "TP5")
+					(reference "TP17")
 					(unit 1)
 				)
 			)
@@ -37578,100 +37478,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack3")
-		(at 181.61 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e659a2be-d711-430f-8a38-da64ca932f1b")
-		(property "Reference" "J5"
-			(at 179.705 114.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AudioJack3"
-			(at 179.705 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
-			(at 181.61 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-			(at 181.61 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 181.61 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "S"
-			(uuid "fdb11635-2767-4c50-ab35-0b26bf0d6bb8")
-		)
-		(pin "T"
-			(uuid "c4a923d1-6263-4b72-aa5d-d13a2e90030e")
-		)
-		(pin "R"
-			(uuid "ab85aad4-d361-4488-91ae-29ce0c5aa2ef")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 149.86 171.45 0)
 		(unit 1)
@@ -38321,100 +38127,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack3")
-		(at 200.66 138.43 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ecf4d52e-24a7-4a37-8dd7-b9af2f0b5c50")
-		(property "Reference" "J7"
-			(at 202.565 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AudioJack3"
-			(at 202.565 132.08 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
-			(at 200.66 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-			(at 200.66 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 200.66 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "S"
-			(uuid "a63dc277-c710-4bd7-954c-14be23887af6")
-		)
-		(pin "T"
-			(uuid "963847fe-95a2-46fc-8a22-1f0a4d611c79")
-		)
-		(pin "R"
-			(uuid "f1361b89-5730-447b-a446-cdc1f6f34cf2")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 162.56 127 180)
 		(unit 1)
@@ -38523,7 +38235,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 223.52 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -38746,6 +38458,122 @@
 		)
 	)
 	(symbol
+		(lib_id "easyeda2kicad:PJ-3136-3A")
+		(at 180.34 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f179edc0-7a3e-4100-8cee-d9053f66b38a")
+		(property "Reference" "CN1"
+			(at 178.69 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 178.69 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Test:AUDIO-TH_PJ-3136-3A"
+			(at 180.34 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 180.34 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 180.34 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 180.34 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 180.34 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cadce505-7f7e-416a-8d9d-0284c28cdf21")
+		)
+		(pin "4"
+			(uuid "d81799b2-e3db-4769-a55b-0e4f996fba0c")
+		)
+		(pin "2"
+			(uuid "e1c0714c-3807-495b-98a0-b38f86420028")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 270.51 74.93 270)
 		(unit 1)
@@ -38949,7 +38777,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Test:SW-TH_CPG151101D9X"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
 			(at 240.03 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -39119,7 +38947,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Test:SW-TH_CPG151101D9X"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
 			(at 240.03 142.24 0)
 			(hide yes)
 			(show_name no)
