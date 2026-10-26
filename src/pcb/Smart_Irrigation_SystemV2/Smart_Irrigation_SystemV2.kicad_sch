@@ -17747,6 +17747,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 181.61 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "543bd22b-d2bf-4e3f-862f-be664ddb71d5")
 		)
@@ -24159,6 +24170,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 200.66 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "575ceafe-008e-4d77-92b3-1132db3389ee")
 		)
@@ -25968,6 +25990,17 @@
 		)
 		(property "LCSC Part" "C707248"
 			(at 181.61 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 181.61 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30659,6 +30692,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 200.66 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "aa704292-a1c7-46ce-b15b-866961baa451")
 		)
@@ -31880,6 +31924,17 @@
 		)
 		(property "LCSC Part" "C707248"
 			(at 200.66 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 200.66 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34137,7 +34192,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part Number" "C5355496"
+		(property "JLCPCB Part Number" "C513277"
 			(at 109.22 170.18 90)
 			(hide yes)
 			(show_name no)
@@ -35567,7 +35622,7 @@
 				)
 			)
 		)
-		(property "Footprint" "C28060:VSON-10_L3.0-W3.0-P0.50-TL-EP_TPS62410DRCR"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 157.48 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -39340,6 +39395,17 @@
 		)
 		(property "LCSC Part" "C707248"
 			(at 180.34 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 180.34 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
