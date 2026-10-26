@@ -3,6 +3,7 @@ Title: "Smart Irrigation System"
 Author: "Benedikt 314159" 
 Description: "A monitoring and control unit of a smart irrigation system with soil moisture sensors, environmental sensors, display, buttons and SD logging."
 Created On: "13/04/2026"
+Total hours: ~ 140h
 ---
 
 # Journal
@@ -148,15 +149,21 @@ This was my final cart for the order:
 Final BOM:
 ![BOM](images/Progress/bom.png)
 
+Time spent: ~1h
+
 ## July 17-23, 2026
 
 I received an Emails about a mismatching of the audio jack. With some friendly email communication I could solve those Issues and received the boards at July 24. But I were on vacation so I could only inspect the boards when I came back at July 27.
+
+Time spent: 1h
 
 ## July 27, 2026
 
 I unboxed the pcbs and checkt rought dimensions of the existing parts. I realised that many of the parts I would later assemble doesn't match the dimensions of the board. Therefore I had to think of some solutions for those but I was really disappointed. Eventhough I was too tired to proceed with soldering.
 ![boards](images/Progress/package.jpg)
 ![boards](images/Progress/boards.jpg)
+
+Time spent: 2h
 
 ## July 28, 2026
 
@@ -197,7 +204,33 @@ Time spend: ~ 2h
 
 My goal for today was to get the LEDs working properly And to address the ADCs. But before I could start I had to realise that again some connectors didn't properly connect. So again soldering of wires that don't want to stick in the holes they're supposed to.
 Finally everything was connected I asked AI to find software bugs. My self check class couldn't have worked or thrown an error because the begin functions don't throw an error but return non-zero values so I had to modify the complete class. In the end it worked so it thrower errors. But I didn't want to get those errors. It started with simple Errors that the ADCs and the clock couldn't be addressed or called by their begin functions. I tried a lot but that didn't worked. I got even more cable broken at their connectors, my Laptop was constantly throwing errors because the connected device was pulling too much power from the USB port because I probably miswired the MQ2 so it heated up to more than 60°C... Anyway I had a successful I2C scan. but as I wanted to repeat it it didn't work. I thought it would have been a software bug but it turned out to be another hardware problem.
-It took me hours until I decided to turn all over. Until then I had already tried to throw away all files aren't necessary needed. 
+It took me hours until I decided to turn all over. Until then I had already tried to throw away all files aren't necessary needed.
 But then I started wir a new board. I learned from my mistakes with board 1 and 2 and tried to connect everything using connectors then can easily be removed. Finally after I had soldered alle components except for the buttons and the MQ2 I could successfully use the I2C of the ESP32 Devkit c. It took me again a lot of time until I reached the state of August 1. Eventough the LEDs still don't light up and the SD card doesn't work I had wasted around 8.5 hours of my life here and still don't really know what the error was. It was one of my least successful and enjoyable days this year. I think it was the last bigger project in my life.
 
 Time spend: 8.5h
+
+## September 2026
+
+I tested the pcb functions and found some errors. I fixed them by wiring some cabels and got every system working. But due to lose contacts some features didn't work all the time. Some  contacts shortened 3.3V and 5V so sometimes features like the sd card didn't work because of a mismatching voltage.  The RX and TX wires were accidently not crossed so some more wires were need to make the USB communication via Board-USB2UART bridge possible.
+
+Time spend: ~10h
+
+## October 2026
+
+The lose connections and the annoying wires sucked so I decided to focus on the next iteration of pcb. I decided to put everything on one single pcb. Moreover I tried to get rid of the modules and use an ESP32 directly soldered to the board. Besides, I wanted to have a  larger display and looked at adafruit for larger seperate displays.
+
+First I started to unify the pcbs  by just adding each ones components to a new KiCAD project folder. I realized that some components I chose weren't optimal or mismatched my requirements. In addition, I realized that all the components were too big for the small pcb.
+
+Time spend (wasted): ~5h
+
+## End of October
+
+I started all over from scretch. I did further research on the circuits and components, watched Youtube Videos and found new tools like the buckboost converter calculater from Texas Instruments. I read articles about the functions of  capacitors, I read datasheets and decided for components which are well documentated. With that knowledge and the experience I gained while developing the first iteration of the project I started all over with a blank KiCAD Project.  The iterating progress can be seen in the commit tree.
+The carts can be seen in the project root.
+The additional displays are for spare options if Version 2 still doesnt work so I can just use them instead of building a whole new pcb.
+![cart](cart_adafruit.png)
+![cart](cart_jlcpcb.png)
+Together pcbs and display hardware will cost around 560$
+
+All together I spend around 20h on that.
+

@@ -62,7 +62,6 @@ class CSV_Logger {
 };
 
 // Display
-void testDisplay(void);
 void lvglDisplayFlush(lv_disp_drv_t*, const lv_area_t*, lv_color_t*);
 void lvglTouchRead(lv_indev_drv_t* indev, lv_indev_data_t* data);
 void buttonEvent(lv_event_t*);
