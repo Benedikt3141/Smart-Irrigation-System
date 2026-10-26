@@ -115,7 +115,7 @@ Open the project folder in VS Code and build/upload the firmware using PlatformI
 
 You can either use the provided Gerber files or modify the KiCad project and generate new manufacturing files for your preferred PCB supplier.
 
-You can find the gerberfiles [here (PCB01)](src/pcb/Smart_Irrigation_SystemV2/production). The correlating `BOM.csv` and `position.csv` can be found in the same directories.
+You can find the gerberfiles [here ](src/pcb/Smart_Irrigation_SystemV2/production). The correlating `BOM.csv` and `position.csv` can be found in the same directories.
 
 ## License
 
