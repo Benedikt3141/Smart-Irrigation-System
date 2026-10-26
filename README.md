@@ -26,7 +26,6 @@ The unit should also monitor the water tank level using an ultrasonic sensor.
 
 This part of the system is still work in progress.
 
-
 ![Concept](Concept.jpg)
 
 ## Feature overview
@@ -68,27 +67,29 @@ This repository contains both the firmware and the PCB design files.
 - `/src/pcb/` contains the KiCad PCB design files.
 - `/src/pcb/gerbers/` contains the exported Gerber files for manufacturing.
 
-
 ## File Structure
 
 ```
 Smart-Irrigation-System/
-├── BOM.csv
-├── JOURNAL.md
-├── README.md
 ├── firmware/
-│   ├── platformio.ini
-│   └── src/
-├── src/
-│   ├── assembly_and_models/
+├── images/
+├── src/│    ├── assembly_and_models/
 │   │   ├── SmartIrrigationSystem-Assembly.step
 │   │   └── SmartIrrigationSystem.FCStd
 │   └── pcb/
-│       ├── PlantWatering_PCB01/
-│       ├── PlantWatering_PCB02/
-│       └── gerbers/
-└── images/
+│          ├── Smart_Irrigation_SytemV2/
+├── .gitignore
+├── BOM.csv
+├── Concept.jpg
+├── JOURNAL.md
+├── LICENSE
+├── README.md
+├── cart_adafruit.png
+└── cart_jlcpcb.png
+
 ```
+
+
 
 ## Getting started
 
