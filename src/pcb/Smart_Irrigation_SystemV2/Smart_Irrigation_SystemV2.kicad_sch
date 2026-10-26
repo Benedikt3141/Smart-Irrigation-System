@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Smart Irrigation System")
-		(date "2026-10-11")
-		(rev "V2.1")
+		(date "2026-10-26")
+		(rev "V2.2")
 		(company "benedikt314159")
 	)
 	(lib_symbols
