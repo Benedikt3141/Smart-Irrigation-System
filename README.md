@@ -73,11 +73,12 @@ This repository contains both the firmware and the PCB design files.
 Smart-Irrigation-System/
 ├── firmware/
 ├── images/
-├── src/│    ├── assembly_and_models/
+├── src/│  
+│   ├── assembly_and_models/
 │   │   ├── SmartIrrigationSystem-Assembly.step
 │   │   └── SmartIrrigationSystem.FCStd
 │   └── pcb/
-│          ├── Smart_Irrigation_SytemV2/
+│       └── Smart_Irrigation_SytemV2/
 ├── .gitignore
 ├── BOM.csv
 ├── Concept.jpg
@@ -88,8 +89,6 @@ Smart-Irrigation-System/
 └── cart_jlcpcb.png
 
 ```
-
-
 
 ## Getting started
 
@@ -144,4 +143,3 @@ does not represent the final manufactured hardware.
 
 The PCB design, hardware architecture and most of the firmware were
 created by myself.
-
