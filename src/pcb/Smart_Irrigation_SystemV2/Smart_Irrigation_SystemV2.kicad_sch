@@ -19101,7 +19101,7 @@
 				)
 			)
 		)
-		(property "Footprint" "C83206:KEY-SMD_4P-L6.0-W6.0-P3.90-LS9.0"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm"
 			(at 240.03 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -27323,7 +27323,7 @@
 				)
 			)
 		)
-		(property "Footprint" "C83206:KEY-SMD_4P-L6.0-W6.0-P3.90-LS9.0"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm"
 			(at 240.03 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -36597,7 +36597,7 @@
 				)
 			)
 		)
-		(property "Footprint" "C83206:KEY-SMD_4P-L6.0-W6.0-P3.90-LS9.0"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm"
 			(at 240.03 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -36767,7 +36767,7 @@
 				)
 			)
 		)
-		(property "Footprint" "C83206:KEY-SMD_4P-L6.0-W6.0-P3.90-LS9.0"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm"
 			(at 240.03 142.24 0)
 			(hide yes)
 			(show_name no)
