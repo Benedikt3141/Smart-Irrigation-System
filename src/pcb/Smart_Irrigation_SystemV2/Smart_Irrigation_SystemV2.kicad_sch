@@ -549,6 +549,226 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "C707248:PJ-3136-3A"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CN"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PJ-3136-3A"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "easyeda2kicad:AUDIO-TH_PJ-3136-3A"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "韩国韩荣"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "PJ-3136-3A"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C707248"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Audio Connectors"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PJ-3136-3A_0_1"
+				(rectangle
+					(start -5.84 0.51)
+					(end -4.32 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.78 -5.08) (xy -2.03 -4.06)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -5.08 2.54) (xy -5.08 0.51) (xy -5.08 0.51)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy -1.78 -2.54) (xy -1.78 -5.08) (xy -1.52 -4.06)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -5.08) (xy -3.3 -5.08) (xy -3.56 -4.06) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 -5.08 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
 				(offset 1.016)
@@ -989,2205 +1209,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Connector:Conn_01x50_Socket"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 63.5 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x50_Socket"
-				(at 0 -66.04 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "\"Generic connector, single row, 01x50, script generated\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x50_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 60.96) (xy -0.508 60.96)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 58.42) (xy -0.508 58.42)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 55.88) (xy -0.508 55.88)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 53.34) (xy -0.508 53.34)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 50.8) (xy -0.508 50.8)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 48.26) (xy -0.508 48.26)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 45.72) (xy -0.508 45.72)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 43.18) (xy -0.508 43.18)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 40.64) (xy -0.508 40.64)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 38.1) (xy -0.508 38.1)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 35.56) (xy -0.508 35.56)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 33.02) (xy -0.508 33.02)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 30.48) (xy -0.508 30.48)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 27.94) (xy -0.508 27.94)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 25.4) (xy -0.508 25.4)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 22.86) (xy -0.508 22.86)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 20.32) (xy -0.508 20.32)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 17.78) (xy -0.508 17.78)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 15.24) (xy -0.508 15.24)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 12.7) (xy -0.508 12.7)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 10.16) (xy -0.508 10.16)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 7.62) (xy -0.508 7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 5.08) (xy -0.508 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -7.62) (xy -0.508 -7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -10.16) (xy -0.508 -10.16)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -12.7) (xy -0.508 -12.7)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -15.24) (xy -0.508 -15.24)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -17.78) (xy -0.508 -17.78)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -20.32) (xy -0.508 -20.32)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -22.86) (xy -0.508 -22.86)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -25.4) (xy -0.508 -25.4)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -27.94) (xy -0.508 -27.94)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -30.48) (xy -0.508 -30.48)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -33.02) (xy -0.508 -33.02)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -35.56) (xy -0.508 -35.56)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -38.1) (xy -0.508 -38.1)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -40.64) (xy -0.508 -40.64)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -43.18) (xy -0.508 -43.18)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -45.72) (xy -0.508 -45.72)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -48.26) (xy -0.508 -48.26)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -50.8) (xy -0.508 -50.8)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -53.34) (xy -0.508 -53.34)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -55.88) (xy -0.508 -55.88)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -58.42) (xy -0.508 -58.42)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -60.96) (xy -0.508 -60.96)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -63.5) (xy -0.508 -63.5)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 60.452)
-					(mid -0.5058 60.96)
-					(end 0 61.468)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 57.912)
-					(mid -0.5058 58.42)
-					(end 0 58.928)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 55.372)
-					(mid -0.5058 55.88)
-					(end 0 56.388)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 52.832)
-					(mid -0.5058 53.34)
-					(end 0 53.848)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 50.292)
-					(mid -0.5058 50.8)
-					(end 0 51.308)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 47.752)
-					(mid -0.5058 48.26)
-					(end 0 48.768)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 45.212)
-					(mid -0.5058 45.72)
-					(end 0 46.228)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 42.672)
-					(mid -0.5058 43.18)
-					(end 0 43.688)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 40.132)
-					(mid -0.5058 40.64)
-					(end 0 41.148)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 37.592)
-					(mid -0.5058 38.1)
-					(end 0 38.608)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 35.052)
-					(mid -0.5058 35.56)
-					(end 0 36.068)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 32.512)
-					(mid -0.5058 33.02)
-					(end 0 33.528)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 29.972)
-					(mid -0.5058 30.48)
-					(end 0 30.988)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 27.432)
-					(mid -0.5058 27.94)
-					(end 0 28.448)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 24.892)
-					(mid -0.5058 25.4)
-					(end 0 25.908)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 22.352)
-					(mid -0.5058 22.86)
-					(end 0 23.368)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 19.812)
-					(mid -0.5058 20.32)
-					(end 0 20.828)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 17.272)
-					(mid -0.5058 17.78)
-					(end 0 18.288)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 14.732)
-					(mid -0.5058 15.24)
-					(end 0 15.748)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 12.192)
-					(mid -0.5058 12.7)
-					(end 0 13.208)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 9.652)
-					(mid -0.5058 10.16)
-					(end 0 10.668)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 7.112)
-					(mid -0.5058 7.62)
-					(end 0 8.128)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 4.572)
-					(mid -0.5058 5.08)
-					(end 0 5.588)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 2.032)
-					(mid -0.5058 2.54)
-					(end 0 3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -3.048)
-					(mid -0.5058 -2.54)
-					(end 0 -2.032)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -5.588)
-					(mid -0.5058 -5.08)
-					(end 0 -4.572)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -8.128)
-					(mid -0.5058 -7.62)
-					(end 0 -7.112)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -10.668)
-					(mid -0.5058 -10.16)
-					(end 0 -9.652)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -13.208)
-					(mid -0.5058 -12.7)
-					(end 0 -12.192)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -15.748)
-					(mid -0.5058 -15.24)
-					(end 0 -14.732)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -18.288)
-					(mid -0.5058 -17.78)
-					(end 0 -17.272)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -20.828)
-					(mid -0.5058 -20.32)
-					(end 0 -19.812)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -23.368)
-					(mid -0.5058 -22.86)
-					(end 0 -22.352)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -25.908)
-					(mid -0.5058 -25.4)
-					(end 0 -24.892)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -28.448)
-					(mid -0.5058 -27.94)
-					(end 0 -27.432)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -30.988)
-					(mid -0.5058 -30.48)
-					(end 0 -29.972)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -33.528)
-					(mid -0.5058 -33.02)
-					(end 0 -32.512)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -36.068)
-					(mid -0.5058 -35.56)
-					(end 0 -35.052)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -38.608)
-					(mid -0.5058 -38.1)
-					(end 0 -37.592)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -41.148)
-					(mid -0.5058 -40.64)
-					(end 0 -40.132)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -43.688)
-					(mid -0.5058 -43.18)
-					(end 0 -42.672)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -46.228)
-					(mid -0.5058 -45.72)
-					(end 0 -45.212)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -48.768)
-					(mid -0.5058 -48.26)
-					(end 0 -47.752)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -51.308)
-					(mid -0.5058 -50.8)
-					(end 0 -50.292)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -53.848)
-					(mid -0.5058 -53.34)
-					(end 0 -52.832)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -56.388)
-					(mid -0.5058 -55.88)
-					(end 0 -55.372)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -58.928)
-					(mid -0.5058 -58.42)
-					(end 0 -57.912)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -61.468)
-					(mid -0.5058 -60.96)
-					(end 0 -60.452)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -64.008)
-					(mid -0.5058 -63.5)
-					(end 0 -62.992)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 60.96 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 58.42 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 55.88 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 53.34 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 50.8 0)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 48.26 0)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 45.72 0)
-					(length 3.81)
-					(name "Pin_7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 43.18 0)
-					(length 3.81)
-					(name "Pin_8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 40.64 0)
-					(length 3.81)
-					(name "Pin_9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 38.1 0)
-					(length 3.81)
-					(name "Pin_10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 35.56 0)
-					(length 3.81)
-					(name "Pin_11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 33.02 0)
-					(length 3.81)
-					(name "Pin_12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 30.48 0)
-					(length 3.81)
-					(name "Pin_13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 27.94 0)
-					(length 3.81)
-					(name "Pin_14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 25.4 0)
-					(length 3.81)
-					(name "Pin_15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 22.86 0)
-					(length 3.81)
-					(name "Pin_16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 20.32 0)
-					(length 3.81)
-					(name "Pin_17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 17.78 0)
-					(length 3.81)
-					(name "Pin_18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 15.24 0)
-					(length 3.81)
-					(name "Pin_19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 12.7 0)
-					(length 3.81)
-					(name "Pin_20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 10.16 0)
-					(length 3.81)
-					(name "Pin_21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 7.62 0)
-					(length 3.81)
-					(name "Pin_22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 5.08 0)
-					(length 3.81)
-					(name "Pin_23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 0)
-					(length 3.81)
-					(name "Pin_28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -10.16 0)
-					(length 3.81)
-					(name "Pin_29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -12.7 0)
-					(length 3.81)
-					(name "Pin_30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -15.24 0)
-					(length 3.81)
-					(name "Pin_31"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "31"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -17.78 0)
-					(length 3.81)
-					(name "Pin_32"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "32"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -20.32 0)
-					(length 3.81)
-					(name "Pin_33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -22.86 0)
-					(length 3.81)
-					(name "Pin_34"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "34"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -25.4 0)
-					(length 3.81)
-					(name "Pin_35"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "35"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -27.94 0)
-					(length 3.81)
-					(name "Pin_36"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "36"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -30.48 0)
-					(length 3.81)
-					(name "Pin_37"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "37"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -33.02 0)
-					(length 3.81)
-					(name "Pin_38"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "38"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -35.56 0)
-					(length 3.81)
-					(name "Pin_39"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "39"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -38.1 0)
-					(length 3.81)
-					(name "Pin_40"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "40"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -40.64 0)
-					(length 3.81)
-					(name "Pin_41"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "41"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -43.18 0)
-					(length 3.81)
-					(name "Pin_42"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "42"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -45.72 0)
-					(length 3.81)
-					(name "Pin_43"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "43"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -48.26 0)
-					(length 3.81)
-					(name "Pin_44"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "44"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -50.8 0)
-					(length 3.81)
-					(name "Pin_45"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "45"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -53.34 0)
-					(length 3.81)
-					(name "Pin_46"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "46"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -55.88 0)
-					(length 3.81)
-					(name "Pin_47"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "47"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -58.42 0)
-					(length 3.81)
-					(name "Pin_48"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "48"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -60.96 0)
-					(length 3.81)
-					(name "Pin_49"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "49"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -63.5 0)
-					(length 3.81)
-					(name "Pin_50"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "50"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9890,14 +7911,14 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "easyeda2kicad:PJ-3136-3A"
+		(symbol "easyeda2kicad:FPC-05FB-50PH20"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "CN"
-				(at 0 7.62 0)
+			(property "Reference" "FPC"
+				(at 0 72.39 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -9906,8 +7927,8 @@
 					)
 				)
 			)
-			(property "Value" "PJ-3136-3A"
-				(at 0 -10.16 0)
+			(property "Value" "FPC-05FB-50PH20"
+				(at 0 -72.39 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -9916,8 +7937,8 @@
 					)
 				)
 			)
-			(property "Footprint" "easyeda2kicad:AUDIO-TH_PJ-3136-3A"
-				(at 0 -12.7 0)
+			(property "Footprint" "easyeda2kicad:FPC-SMD_50P-P0.50_FPC-05FB-50PH20"
+				(at 0 -74.93 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9927,8 +7948,8 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
-				(at 0 -15.24 0)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C2856838.pdf"
+				(at 0 -77.47 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9949,8 +7970,8 @@
 					)
 				)
 			)
-			(property "Manufacturer" "韩国韩荣"
-				(at 0 -17.78 0)
+			(property "Manufacturer" "XUNPU(讯普)"
+				(at 0 -80.01 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9960,8 +7981,8 @@
 					)
 				)
 			)
-			(property "MPN" "PJ-3136-3A"
-				(at 0 -20.32 0)
+			(property "MPN" "FPC-05FB-50PH20"
+				(at 0 -82.55 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9971,8 +7992,8 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C707248"
-				(at 0 -22.86 0)
+			(property "LCSC Part" "C2856838"
+				(at 0 -85.09 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9982,7 +8003,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "Audio Connectors"
+			(property "ki_keywords" "FFC/FPC Connectors"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9993,10 +8014,10 @@
 					)
 				)
 			)
-			(symbol "PJ-3136-3A_0_1"
+			(symbol "FPC-05FB-50PH20_0_1"
 				(rectangle
-					(start -5.84 0.51)
-					(end -4.32 -3.81)
+					(start -2.54 64.77)
+					(end 5.08 -64.77)
 					(stroke
 						(width 0)
 						(type default)
@@ -10005,46 +8026,9 @@
 						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.78 -5.08) (xy -2.03 -4.06)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -5.08 2.54) (xy -5.08 0.51) (xy -5.08 0.51)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy -1.78 -2.54) (xy -1.78 -5.08) (xy -1.52 -4.06)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -5.08) (xy -3.3 -5.08) (xy -3.56 -4.06) (xy -3.81 -5.08)
-					)
+				(circle
+					(center -1.27 63.5)
+					(radius 0.38)
 					(stroke
 						(width 0)
 						(type default)
@@ -10054,7 +8038,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 5.08 2.54 180)
+					(at -5.08 62.23 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -10072,7 +8056,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 5.08 -5.08 180)
+					(at -5.08 59.69 0)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -10090,7 +8074,25 @@
 					)
 				)
 				(pin unspecified line
-					(at 5.08 -2.54 180)
+					(at -5.08 57.15 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 54.61 0)
 					(length 2.54)
 					(name "4"
 						(effects
@@ -10100,6 +8102,870 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 52.07 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 49.53 0)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 46.99 0)
+					(length 2.54)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 44.45 0)
+					(length 2.54)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 41.91 0)
+					(length 2.54)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 39.37 0)
+					(length 2.54)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 36.83 0)
+					(length 2.54)
+					(name "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 34.29 0)
+					(length 2.54)
+					(name "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 31.75 0)
+					(length 2.54)
+					(name "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 29.21 0)
+					(length 2.54)
+					(name "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 26.67 0)
+					(length 2.54)
+					(name "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 24.13 0)
+					(length 2.54)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 21.59 0)
+					(length 2.54)
+					(name "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 19.05 0)
+					(length 2.54)
+					(name "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 16.51 0)
+					(length 2.54)
+					(name "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 13.97 0)
+					(length 2.54)
+					(name "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 11.43 0)
+					(length 2.54)
+					(name "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 8.89 0)
+					(length 2.54)
+					(name "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 6.35 0)
+					(length 2.54)
+					(name "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 3.81 0)
+					(length 2.54)
+					(name "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -3.81 0)
+					(length 2.54)
+					(name "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -6.35 0)
+					(length 2.54)
+					(name "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -8.89 0)
+					(length 2.54)
+					(name "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -11.43 0)
+					(length 2.54)
+					(name "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -13.97 0)
+					(length 2.54)
+					(name "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -16.51 0)
+					(length 2.54)
+					(name "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -19.05 0)
+					(length 2.54)
+					(name "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -21.59 0)
+					(length 2.54)
+					(name "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -24.13 0)
+					(length 2.54)
+					(name "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -26.67 0)
+					(length 2.54)
+					(name "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -29.21 0)
+					(length 2.54)
+					(name "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -31.75 0)
+					(length 2.54)
+					(name "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -34.29 0)
+					(length 2.54)
+					(name "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -36.83 0)
+					(length 2.54)
+					(name "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -39.37 0)
+					(length 2.54)
+					(name "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -41.91 0)
+					(length 2.54)
+					(name "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -44.45 0)
+					(length 2.54)
+					(name "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -46.99 0)
+					(length 2.54)
+					(name "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -49.53 0)
+					(length 2.54)
+					(name "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -52.07 0)
+					(length 2.54)
+					(name "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -54.61 0)
+					(length 2.54)
+					(name "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -57.15 0)
+					(length 2.54)
+					(name "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -59.69 0)
+					(length 2.54)
+					(name "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -62.23 0)
+					(length 2.54)
+					(name "50"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "50"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 3.81 -67.31 90)
+					(length 2.54)
+					(name "51"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "51"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 3.81 67.31 270)
+					(length 2.54)
+					(name "52"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "52"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10912,12 +9778,6 @@
 		(uuid "1663ce93-0a56-434f-9fc8-2f465e94e581")
 	)
 	(junction
-		(at 270.51 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1a08294c-130f-4648-b631-11da76733be9")
-	)
-	(junction
 		(at 233.68 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10948,16 +9808,16 @@
 		(uuid "2593e629-8338-4976-8709-1e20914caf66")
 	)
 	(junction
+		(at 270.51 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2775490d-9237-4783-b3a7-de1141abe1dc")
+	)
+	(junction
 		(at 245.11 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "290c82c9-5284-436b-b0b6-688cf8188538")
-	)
-	(junction
-		(at 270.51 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "29e8498f-bb74-4dbd-ad58-9b988b9fecb7")
 	)
 	(junction
 		(at 138.43 67.31)
@@ -11134,12 +9994,6 @@
 		(uuid "69e8f45a-59d5-4844-b021-70f739d10efa")
 	)
 	(junction
-		(at 270.51 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "749c7c5f-21b3-4738-97d6-4b68905a3d3d")
-	)
-	(junction
 		(at 33.02 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11168,6 +10022,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7ca78601-6c02-4062-a318-9993fac3140a")
+	)
+	(junction
+		(at 270.51 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cb02be4-ce94-4919-9684-8494ca333ba0")
 	)
 	(junction
 		(at 19.05 102.87)
@@ -11266,6 +10126,12 @@
 		(uuid "b2c1e28f-d5a3-4ee7-a70c-6fa2bcd23267")
 	)
 	(junction
+		(at 270.51 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b504f03b-a473-4e2c-b1fc-6de80e612130")
+	)
+	(junction
 		(at 224.79 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11356,12 +10222,6 @@
 		(uuid "d542d028-5c07-4e1d-8bbf-025603cbad3c")
 	)
 	(junction
-		(at 270.51 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d54c07c0-5e15-4a1f-9db5-1df19f63277b")
-	)
-	(junction
 		(at 93.98 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11420,6 +10280,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef7cb8df-efcc-468c-acdb-c31c13673c59")
+	)
+	(junction
+		(at 270.51 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efff6409-a343-4b76-aeb2-434b8f7dac2d")
 	)
 	(junction
 		(at 68.58 24.13)
@@ -11646,6 +10512,16 @@
 			(type default)
 		)
 		(uuid "03731ad4-a6ed-4266-b51b-8e1b130f8adb")
+	)
+	(wire
+		(pts
+			(xy 270.51 82.55) (xy 283.21 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03a9c55d-cd21-4b59-b576-2a740555e653")
 	)
 	(wire
 		(pts
@@ -11999,6 +10875,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 85.09) (xy 281.94 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e02ff3c-e545-4852-9253-c9dde797f90d")
+	)
+	(wire
+		(pts
 			(xy 264.16 24.13) (xy 265.43 24.13)
 		)
 		(stroke
@@ -12066,16 +10952,6 @@
 			(type default)
 		)
 		(uuid "2224b969-5df4-4403-815b-802d395ae70a")
-	)
-	(wire
-		(pts
-			(xy 270.51 85.09) (xy 281.94 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "224840b8-b473-446e-8c1d-1591059279b1")
 	)
 	(wire
 		(pts
@@ -12939,16 +11815,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 82.55) (xy 270.51 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60ffa24b-e353-457b-bb9b-d3c0f48f56c6")
-	)
-	(wire
-		(pts
 			(xy 267.97 152.4) (xy 267.97 154.94)
 		)
 		(stroke
@@ -13036,6 +11902,16 @@
 			(type default)
 		)
 		(uuid "6800f65b-65c4-4164-8435-f898fc225460")
+	)
+	(wire
+		(pts
+			(xy 270.51 133.35) (xy 283.21 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "681cb415-b566-46fd-aca4-636a59869a6f")
 	)
 	(wire
 		(pts
@@ -13306,6 +12182,16 @@
 			(type default)
 		)
 		(uuid "78765512-e517-443c-8fde-4c7c6b62c832")
+	)
+	(wire
+		(pts
+			(xy 257.81 85.09) (xy 270.51 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78955a17-8176-4da8-83de-a3e4b54d9f10")
 	)
 	(wire
 		(pts
@@ -13899,7 +12785,7 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 82.55) (xy 270.51 82.55)
+			(xy 257.81 82.55) (xy 270.51 82.55)
 		)
 		(stroke
 			(width 0)
@@ -14389,16 +13275,6 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 135.89) (xy 270.51 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5ee54de-ab3e-4612-8597-cab9ad191436")
-	)
-	(wire
-		(pts
 			(xy 20.32 121.92) (xy 22.86 121.92)
 		)
 		(stroke
@@ -14709,16 +13585,6 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 133.35) (xy 283.21 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfc7cdf2-2cb6-4e7c-8330-48abdf65b660")
-	)
-	(wire
-		(pts
 			(xy 66.04 92.71) (xy 66.04 93.98)
 		)
 		(stroke
@@ -14939,6 +13805,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 135.89) (xy 281.94 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbff43f2-a187-4f72-984e-1d9818e4bcd7")
+	)
+	(wire
+		(pts
 			(xy 194.31 120.65) (xy 194.31 135.89)
 		)
 		(stroke
@@ -14986,16 +13862,6 @@
 			(type default)
 		)
 		(uuid "de555ebc-b000-49b6-a9bb-62f0f2771163")
-	)
-	(wire
-		(pts
-			(xy 257.81 85.09) (xy 270.51 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df62f7ab-9245-46df-9166-ee7c1f94e74a")
 	)
 	(wire
 		(pts
@@ -17257,133 +16123,6 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "easyeda2kicad:PJ-3136-3A")
-		(at 181.61 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0946dd54-f9f5-41c6-82cf-04fdaab4d5b9")
-		(property "Reference" "CN3"
-			(at 179.96 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PJ-3136-3A"
-			(at 179.96 148.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
-			(at 181.61 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
-			(at 181.61 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 181.61 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "韩国韩荣"
-			(at 181.61 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PJ-3136-3A"
-			(at 181.61 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C707248"
-			(at 181.61 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 181.61 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "543bd22b-d2bf-4e3f-862f-be664ddb71d5")
-		)
-		(pin "4"
-			(uuid "0f0667e7-be27-4020-8b68-277603cd016f")
-		)
-		(pin "2"
-			(uuid "030e8192-e476-42b8-92e7-5f662f9e5169")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "CN3")
 					(unit 1)
 				)
 			)
@@ -20144,6 +18883,125 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "C707248:PJ-3136-3A")
+		(at 200.66 138.43 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e4ca838-f93e-4f30-8e5e-c0a222b02d3c")
+		(property "Reference" "CN5"
+			(at 208.28 138.4299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 208.28 140.9699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
+			(at 200.66 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 200.66 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 200.66 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 200.66 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 200.66 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "a399fda2-94ff-4fe6-8ef6-ef1c3b033b5f")
+		)
+		(pin "2"
+			(uuid "2c687403-f005-4c82-8116-5266447cddcf")
+		)
+		(pin "1"
+			(uuid "36da0e6c-a6ee-4f0d-b0df-db18d60be70f")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN5")
 					(unit 1)
 				)
 			)
@@ -23608,133 +22466,6 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:PJ-3136-3A")
-		(at 200.66 138.43 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4e6e11f5-1907-4477-8926-9d84abe736b2")
-		(property "Reference" "CN5"
-			(at 202.31 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PJ-3136-3A"
-			(at 202.31 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
-			(at 200.66 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
-			(at 200.66 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 200.66 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "韩国韩荣"
-			(at 200.66 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PJ-3136-3A"
-			(at 200.66 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C707248"
-			(at 200.66 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 200.66 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "575ceafe-008e-4d77-92b3-1132db3389ee")
-		)
-		(pin "4"
-			(uuid "8bd28133-54d6-4d01-9449-ed63bb58dba3")
-		)
-		(pin "2"
-			(uuid "aca3d91e-3326-4955-9383-bdf09e6faf99")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "CN5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 267.97 29.21 90)
 		(unit 1)
@@ -23977,6 +22708,122 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "C707248:PJ-3136-3A")
+		(at 181.61 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "506aec3c-681f-4cca-9166-85b3bf0d34fb")
+		(property "Reference" "CN3"
+			(at 179.96 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 179.96 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
+			(at 181.61 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 181.61 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 181.61 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 181.61 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 181.61 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07412855-76ea-4dbb-b7f0-698f3a11d934")
+		)
+		(pin "4"
+			(uuid "a650127c-c99c-4c1f-ab0f-d1f820794685")
+		)
+		(pin "2"
+			(uuid "560bf09e-1cd2-466f-92b6-083d491b9300")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN3")
 					(unit 1)
 				)
 			)
@@ -25345,133 +24192,6 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:PJ-3136-3A")
-		(at 181.61 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "612ec1b0-8abc-412e-92f2-4ea12d9ea0b7")
-		(property "Reference" "CN2"
-			(at 179.96 115.57 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PJ-3136-3A"
-			(at 179.96 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
-			(at 181.61 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
-			(at 181.61 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 181.61 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "韩国韩荣"
-			(at 181.61 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PJ-3136-3A"
-			(at 181.61 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C707248"
-			(at 181.61 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 181.61 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "07018b2a-eb0f-4570-9d9e-78901088807b")
-		)
-		(pin "4"
-			(uuid "e40bd0b6-b85b-45d1-92f1-1cb54e35b900")
-		)
-		(pin "2"
-			(uuid "5b9a8b7c-4651-4a42-b0a0-d1365bcc50b7")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "CN2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 267.97 107.95 90)
 		(unit 1)
@@ -26747,6 +25467,84 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 279.4 16.51 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a502221-5d09-401f-82b2-f6ad049bb477")
+		(property "Reference" "#PWR082"
+			(at 279.4 10.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 279.4 11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 279.4 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 279.4 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "313e9e79-d2ff-4e5d-bf54-c5143e232b85")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -28088,6 +26886,122 @@
 		)
 	)
 	(symbol
+		(lib_id "C707248:PJ-3136-3A")
+		(at 180.34 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79ac4462-41d8-417f-93e7-202831159cfe")
+		(property "Reference" "CN2"
+			(at 178.69 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 178.69 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
+			(at 180.34 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 180.34 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 180.34 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 180.34 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 180.34 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "568756c9-36ee-40df-a0d9-9cfb8c63daad")
+		)
+		(pin "4"
+			(uuid "d8ce275f-6216-41d4-8145-3e6d46c398f5")
+		)
+		(pin "2"
+			(uuid "6569ab6b-5d02-453f-87e4-ec16310e4be9")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:AO3400A")
 		(at 248.92 24.13 90)
 		(unit 1)
@@ -28570,6 +27484,125 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "C707248:PJ-3136-3A")
+		(at 200.66 153.67 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86066952-b1fd-4250-a685-fe8aeaccffab")
+		(property "Reference" "CN6"
+			(at 208.28 153.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 208.28 156.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
+			(at 200.66 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 200.66 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 200.66 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 200.66 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 200.66 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "d7f9d56d-8207-4946-9ce4-e70c0c737a3e")
+		)
+		(pin "2"
+			(uuid "8d811d98-1db0-4b01-984c-78249cafbd82")
+		)
+		(pin "1"
+			(uuid "886c80de-fb3b-45ae-bbcb-711299b2107a")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN6")
 					(unit 1)
 				)
 			)
@@ -29374,6 +28407,122 @@
 		)
 	)
 	(symbol
+		(lib_id "C707248:PJ-3136-3A")
+		(at 181.61 153.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91bba75f-e6bf-4bc6-9705-751cf8ca784a")
+		(property "Reference" "CN1"
+			(at 179.96 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 179.96 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
+			(at 181.61 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 181.61 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 181.61 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 181.61 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 181.61 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6893e9ec-08f2-4534-8f5b-ce8bac9aa9d5")
+		)
+		(pin "4"
+			(uuid "d4565c8b-8c1d-40dd-8fee-9360d150cbc1")
+		)
+		(pin "2"
+			(uuid "21f995c7-ea76-4443-8dc6-103c8e8f617d")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LESD5D5.0CT1G:LESD5D5.0CT1G")
 		(at 16.51 91.44 270)
 		(unit 1)
@@ -29850,9 +28999,8 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:PJ-3136-3A")
-		(at 200.66 123.19 0)
-		(mirror y)
+		(lib_id "power:GND")
+		(at 279.4 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29860,29 +29008,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "96191c59-1af0-41ca-8d08-f75e120cd206")
-		(property "Reference" "CN4"
-			(at 202.31 115.57 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PJ-3136-3A"
-			(at 202.31 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
-			(at 200.66 135.89 0)
+		(fields_autoplaced yes)
+		(uuid "96b40547-ce63-4748-a3cc-c82e6b4d9f41")
+		(property "Reference" "#PWR083"
+			(at 279.4 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29892,8 +29021,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
-			(at 200.66 138.43 0)
+		(property "Value" "GND"
+			(at 279.4 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29903,8 +29042,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 200.66 123.19 0)
+		(property "Datasheet" ""
+			(at 279.4 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29914,41 +29053,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "韩国韩荣"
-			(at 200.66 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PJ-3136-3A"
-			(at 200.66 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C707248"
-			(at 200.66 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 200.66 123.19 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 279.4 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29959,18 +29065,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "aa704292-a1c7-46ce-b15b-866961baa451")
-		)
-		(pin "4"
-			(uuid "4c5800dc-388d-4f07-8d6d-0174b9a19047")
-		)
-		(pin "2"
-			(uuid "6d8fd7fb-8e4f-4cb7-ac20-b78667c509fb")
+			(uuid "0e1a488b-7e8c-4271-b5e3-370a95563285")
 		)
 		(instances
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "CN4")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -31085,133 +30185,6 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "easyeda2kicad:PJ-3136-3A")
-		(at 200.66 153.67 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a3ba1e0f-53c1-4aa3-a31c-8f0771a3637e")
-		(property "Reference" "CN6"
-			(at 202.31 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PJ-3136-3A"
-			(at 202.31 148.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
-			(at 200.66 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
-			(at 200.66 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 200.66 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "韩国韩荣"
-			(at 200.66 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PJ-3136-3A"
-			(at 200.66 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C707248"
-			(at 200.66 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 200.66 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8631b365-bf7f-41db-9706-70a00e73baf3")
-		)
-		(pin "4"
-			(uuid "26284e7a-0b56-41f1-8bce-346c4786be48")
-		)
-		(pin "2"
-			(uuid "74903ae1-bb24-4a27-90cf-804ef5f31fdf")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "CN6")
 					(unit 1)
 				)
 			)
@@ -32734,242 +31707,6 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#PWR072")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x50_Socket")
-		(at 275.59 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b07f5db9-c7ad-4cc3-8a77-0907ca34a3a1")
-		(property "Reference" "J2"
-			(at 276.86 82.5499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FPC_Connector"
-			(at 279.654 101.092 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "5051105091:CON_5051105091_MOL"
-			(at 275.59 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 275.59 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "\"Generic connector, single row, 01x50, script generated\""
-			(at 275.59 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C779387"
-			(at 275.59 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "15"
-			(uuid "98f312a9-39d1-44cf-a16b-424d5956f3b2")
-		)
-		(pin "10"
-			(uuid "1698fc7d-93f0-4f01-a4f0-784fae22dfde")
-		)
-		(pin "12"
-			(uuid "58bd6acd-6986-4aaa-9f78-e399af6d9a26")
-		)
-		(pin "14"
-			(uuid "fed63e49-824a-46e0-9e17-6717daaade61")
-		)
-		(pin "13"
-			(uuid "5856e600-77d3-40f8-9bd5-25ca6d189556")
-		)
-		(pin "11"
-			(uuid "5e8f8dc7-7c7d-45ed-85d8-f065e90e0777")
-		)
-		(pin "29"
-			(uuid "e9777fc6-2f3e-49c1-9430-85e8475a0863")
-		)
-		(pin "17"
-			(uuid "24902fb4-591a-489e-92bf-24bf138e56c0")
-		)
-		(pin "44"
-			(uuid "8f65b14b-be90-40c8-b5b8-2770a3b3068e")
-		)
-		(pin "45"
-			(uuid "078a1a87-4876-4e81-821a-960c41f95098")
-		)
-		(pin "21"
-			(uuid "5d6c012e-3686-4ec8-b33d-b9c3cc0f55c6")
-		)
-		(pin "24"
-			(uuid "9e423bad-49b1-41e4-8b77-c7b6ccc13d32")
-		)
-		(pin "43"
-			(uuid "c61c823e-8d28-4a88-a878-86ec427f4abc")
-		)
-		(pin "37"
-			(uuid "4e5d4c1b-ffd3-448f-ad4a-1e60a1ddf202")
-		)
-		(pin "33"
-			(uuid "da7de844-6927-47bc-b89f-e45465c7841d")
-		)
-		(pin "38"
-			(uuid "4ed8ffbd-3007-4d18-bc9f-2a70ec8d15b6")
-		)
-		(pin "41"
-			(uuid "35dae8ab-bc2d-4979-987f-7ee1b8392cdf")
-		)
-		(pin "46"
-			(uuid "e2db555d-949f-485c-a056-c3335b7b202d")
-		)
-		(pin "23"
-			(uuid "1d84f3f9-c36b-46f0-9d9e-89f96b545cef")
-		)
-		(pin "28"
-			(uuid "920fdcb4-a4bb-492d-a5f5-ab84bb488434")
-		)
-		(pin "31"
-			(uuid "0475f6f0-7f2e-45ad-ae23-d5072c150f06")
-		)
-		(pin "27"
-			(uuid "1c6427d1-5f1f-419a-ac5e-56b59e74035d")
-		)
-		(pin "40"
-			(uuid "0d5b2be8-0eec-49ae-91cc-30d4daa07ddb")
-		)
-		(pin "22"
-			(uuid "072f2634-d9a7-471d-b108-3fba9a7c0303")
-		)
-		(pin "34"
-			(uuid "2c67a55d-87f7-42e3-b679-c8e27bd07e9c")
-		)
-		(pin "26"
-			(uuid "fe7681c0-625c-49d1-b7ee-b900d237d34f")
-		)
-		(pin "39"
-			(uuid "e31d1c07-9f23-4746-8fc5-d835d5530a8a")
-		)
-		(pin "25"
-			(uuid "e4258981-f27d-4d0a-a65a-f0deaf2a79c6")
-		)
-		(pin "18"
-			(uuid "a4d976c2-2b22-4e61-bcac-ffa13807d0d1")
-		)
-		(pin "19"
-			(uuid "5c731b78-83ad-4434-a338-c3aeb030cbc8")
-		)
-		(pin "47"
-			(uuid "a8d19d19-c2a8-4822-9bb7-6ebd2176fe33")
-		)
-		(pin "35"
-			(uuid "e1cd0040-aeaf-49c4-afd2-ddd676a6da21")
-		)
-		(pin "16"
-			(uuid "7118e6e5-189a-4237-b099-4255c4d54eaf")
-		)
-		(pin "30"
-			(uuid "d3bae9a8-2d5f-4376-ad7c-0ed9a82a6e83")
-		)
-		(pin "32"
-			(uuid "1000e380-552e-4763-a843-9e09846e89e7")
-		)
-		(pin "20"
-			(uuid "54675fba-dd18-4934-ba9a-b6980cb9737b")
-		)
-		(pin "36"
-			(uuid "1c033764-8140-4819-9162-432b12fd5953")
-		)
-		(pin "42"
-			(uuid "255bf9c7-f8f9-4cca-a998-d6f6dbb91a4a")
-		)
-		(pin "50"
-			(uuid "e30b3b1a-fa19-43ad-9ceb-d65ee12db93e")
-		)
-		(pin "49"
-			(uuid "da77ad27-c8e3-4a4c-9b76-6be056a2b7f8")
-		)
-		(pin "48"
-			(uuid "114dd5a3-5f04-4416-85e1-b9f73440cc92")
-		)
-		(pin "3"
-			(uuid "e820cf89-ee93-4b28-a022-754b5fa67f79")
-		)
-		(pin "7"
-			(uuid "2d5b6a10-e999-465b-801c-69fc40e49cdc")
-		)
-		(pin "1"
-			(uuid "2f2de257-4559-4ff6-868b-c336f95a864c")
-		)
-		(pin "5"
-			(uuid "c669a507-870e-48a2-91dd-b30d1fbcf182")
-		)
-		(pin "6"
-			(uuid "5d216060-434d-4c62-b562-30341ee4de5d")
-		)
-		(pin "2"
-			(uuid "65915afe-d48e-4f9f-acdd-883ab9d7d4a9")
-		)
-		(pin "9"
-			(uuid "58b442fc-4433-4dcc-a49e-9e0c82bf4669")
-		)
-		(pin "4"
-			(uuid "a6fd905d-c5e5-4db0-a081-2848abc8bd40")
-		)
-		(pin "8"
-			(uuid "df255d46-0f54-4c97-9d18-9f00054a9ff0")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -35535,6 +34272,125 @@
 		)
 	)
 	(symbol
+		(lib_id "C707248:PJ-3136-3A")
+		(at 200.66 123.19 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1c10962-a0e3-4f60-9a47-ae75ac995879")
+		(property "Reference" "CN4"
+			(at 208.28 123.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PJ-3136-3A"
+			(at 208.28 125.7299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
+			(at 200.66 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
+			(at 200.66 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 200.66 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3136-3A"
+			(at 200.66 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C707248"
+			(at 200.66 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "857aaa5e-7dd2-4031-917b-076a5a7d1cce")
+		)
+		(pin "2"
+			(uuid "5034a2fa-f31a-40c2-88f8-ca17fca25267")
+		)
+		(pin "1"
+			(uuid "26ab049a-ccc7-4fcf-b18e-43de4de8bd60")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "CN4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LESD5D5.0CT1G:LESD5D5.0CT1G")
 		(at 54.61 49.53 270)
 		(unit 1)
@@ -36920,6 +35776,271 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:FPC-05FB-50PH20")
+		(at 275.59 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df93829c-71b2-4a7d-b8b6-8cff8eda6743")
+		(property "Reference" "FPC2"
+			(at 281.94 82.5499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FPC-05FB-50PH20"
+			(at 281.94 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "C2856838:FPC-SMD_50P-P0.50_FPC-05FB-50PH20"
+			(at 275.59 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2856838.pdf"
+			(at 275.59 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 275.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "XUNPU(讯普)"
+			(at 275.59 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "FPC-05FB-50PH20"
+			(at 275.59 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2856838"
+			(at 275.59 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "41eafb8d-4c3d-4d77-bbc5-90403d99abff")
+		)
+		(pin "9"
+			(uuid "d6742185-1154-4669-9e9a-ddb66fe88606")
+		)
+		(pin "23"
+			(uuid "563f5f38-393b-4b45-bb9f-c2c486186112")
+		)
+		(pin "14"
+			(uuid "6f1a6b9a-1d2c-4361-8df8-1f9f525a2f34")
+		)
+		(pin "27"
+			(uuid "d2323798-7c6c-4f32-8212-df632ccc5e00")
+		)
+		(pin "13"
+			(uuid "643e8347-08e9-4833-b028-736c06e1c865")
+		)
+		(pin "18"
+			(uuid "fd1e015a-23ce-4fec-864a-932e419f12e4")
+		)
+		(pin "3"
+			(uuid "4025bf86-59e4-4c57-901d-f412466c7eae")
+		)
+		(pin "30"
+			(uuid "3c1680d3-f0fe-4e61-bee9-e63c4632982c")
+		)
+		(pin "4"
+			(uuid "93afa54c-597a-4112-bc62-010adcc63461")
+		)
+		(pin "19"
+			(uuid "e14b5fb6-b129-41a9-b6ae-3fe9a1de2a70")
+		)
+		(pin "26"
+			(uuid "b53824a7-0379-43b2-bcab-b6eea371c644")
+		)
+		(pin "11"
+			(uuid "11f7e4a6-d78f-4db9-b88b-77337c6cfba7")
+		)
+		(pin "15"
+			(uuid "b36060f5-df74-4a33-8972-f3f017591735")
+		)
+		(pin "24"
+			(uuid "6a49b883-98b4-4b52-b28a-fd179d6efca9")
+		)
+		(pin "31"
+			(uuid "de6dcf41-29ad-44c2-98d3-5944a29bb4fe")
+		)
+		(pin "5"
+			(uuid "8bf3a22b-51af-4490-a4aa-057044202f44")
+		)
+		(pin "21"
+			(uuid "1ef21aac-670f-4fe0-b4a8-b84285dc9dcc")
+		)
+		(pin "1"
+			(uuid "ad60f91d-894b-4752-ba4d-1a78c03e6edb")
+		)
+		(pin "2"
+			(uuid "bb8a9bc3-e01c-4153-8dde-ceb4a743e33e")
+		)
+		(pin "25"
+			(uuid "2cfb0115-6548-4e49-9488-71cb2c896ca1")
+		)
+		(pin "6"
+			(uuid "9cc108b4-b0f0-41d8-b656-645aa71f44c0")
+		)
+		(pin "29"
+			(uuid "af767488-4b3c-4158-a784-fd34fede27ab")
+		)
+		(pin "12"
+			(uuid "6be8162f-ad7b-4b77-a318-b8633c31e10a")
+		)
+		(pin "17"
+			(uuid "f4c39869-be00-423e-bcb7-3ca3b6f39cea")
+		)
+		(pin "28"
+			(uuid "2ff1cdec-56da-42a4-adff-1fdaecf17e94")
+		)
+		(pin "7"
+			(uuid "13646e6d-a25f-4265-9650-b6729c8160ba")
+		)
+		(pin "10"
+			(uuid "bfc5b0e8-ea33-4e96-aa47-023a07ecfc6e")
+		)
+		(pin "16"
+			(uuid "63e58122-cc0c-4a4d-99e8-682ad4e31356")
+		)
+		(pin "22"
+			(uuid "cba85d47-8302-49f3-82b4-e748693df132")
+		)
+		(pin "20"
+			(uuid "d2c5c6f0-ba76-4de2-b415-33226fa75ccd")
+		)
+		(pin "48"
+			(uuid "abf6ecc5-211a-43ea-a459-7737d31723a3")
+		)
+		(pin "44"
+			(uuid "85228111-a4bb-40c0-a566-137c751c676c")
+		)
+		(pin "39"
+			(uuid "14f9ac3b-ba6d-4ffa-b174-37496fe231fc")
+		)
+		(pin "34"
+			(uuid "6408cf74-3bd9-4aad-87f4-934e71ae406e")
+		)
+		(pin "41"
+			(uuid "b32305a5-9250-4cff-8598-24b09bfda0e3")
+		)
+		(pin "49"
+			(uuid "0bd5f3f6-1d8c-4a86-ae90-a8b5e5eaeb9b")
+		)
+		(pin "38"
+			(uuid "0713e0fa-4b35-4b7c-b1f9-94719e92909b")
+		)
+		(pin "46"
+			(uuid "b115068c-4422-4185-a824-1679f886b19f")
+		)
+		(pin "47"
+			(uuid "32f22544-7248-4a49-8c20-574afe3682cd")
+		)
+		(pin "52"
+			(uuid "e11249c1-ede7-464b-beb6-f11042988919")
+		)
+		(pin "45"
+			(uuid "d8427e5e-a31a-41df-ba94-de069d9eece7")
+		)
+		(pin "36"
+			(uuid "0af52224-79df-436f-befb-7116a005ad54")
+		)
+		(pin "50"
+			(uuid "48524333-ae44-43dc-885a-d469fb82f511")
+		)
+		(pin "40"
+			(uuid "32217301-6427-4d08-8e56-7455f1fe1269")
+		)
+		(pin "37"
+			(uuid "e5a90ada-f654-4938-83d9-cdd7ef0f18cb")
+		)
+		(pin "32"
+			(uuid "889788dc-9c7d-4f5c-a204-24415114209a")
+		)
+		(pin "35"
+			(uuid "390c76ba-f55b-40e1-8a5e-af6f0b61970e")
+		)
+		(pin "33"
+			(uuid "dd29db47-8a61-4b58-aed1-fd36855bd4f1")
+		)
+		(pin "42"
+			(uuid "1f743e86-fdbf-43ae-957c-0273517dfb09")
+		)
+		(pin "51"
+			(uuid "7e80f1f8-b1c8-497c-8e52-2f970f4c859c")
+		)
+		(pin "43"
+			(uuid "52b03d9b-df48-4302-bb73-7594eed51487")
+		)
+		(instances
+			(project "Smart_Irrigation_SystemV2"
+				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
+					(reference "FPC2")
 					(unit 1)
 				)
 			)
@@ -38478,133 +37599,6 @@
 			(project "Smart_Irrigation_SystemV2"
 				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
 					(reference "#FLG04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "easyeda2kicad:PJ-3136-3A")
-		(at 180.34 138.43 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f179edc0-7a3e-4100-8cee-d9053f66b38a")
-		(property "Reference" "CN1"
-			(at 178.69 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PJ-3136-3A"
-			(at 178.69 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
-			(at 180.34 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
-			(at 180.34 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "韩国韩荣"
-			(at 180.34 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PJ-3136-3A"
-			(at 180.34 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C707248"
-			(at 180.34 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part Number" "C707248"
-			(at 180.34 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cadce505-7f7e-416a-8d9d-0284c28cdf21")
-		)
-		(pin "4"
-			(uuid "d81799b2-e3db-4769-a55b-0e4f996fba0c")
-		)
-		(pin "2"
-			(uuid "e1c0714c-3807-495b-98a0-b38f86420028")
-		)
-		(instances
-			(project "Smart_Irrigation_SystemV2"
-				(path "/53cd4412-b596-463c-8d76-f5cd1a4639a9"
-					(reference "CN1")
 					(unit 1)
 				)
 			)
