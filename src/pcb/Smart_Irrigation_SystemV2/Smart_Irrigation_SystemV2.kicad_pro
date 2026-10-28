@@ -83,6 +83,10 @@
       ],
       "drc_exclusions": [
         [
+          "silk_edge_clearance|103450000|118144472|c995bd9f-d705-4ab4-96d9-3aa315114784|d44b2913-8d20-428d-9f52-3318ee55e005",
+          ""
+        ],
+        [
           "silk_edge_clearance|123335000|82129864|25a3c8de-c8a1-4e56-b7af-0c5768ceb902|58907d12-9b89-4fa8-9b87-bd6e340d9508",
           ""
         ],

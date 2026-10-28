@@ -445,13 +445,13 @@
 		(embedded_fonts no)
 		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 1.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -1335,13 +1335,13 @@
 		(embedded_fonts no)
 		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 1.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -1970,7 +1970,7 @@
 			(at -10.61 8.43 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "51783a26-8b50-446a-904e-5a3b9fd3cce9")
+			(uuid "a1cd6425-3060-4d9d-8210-3df4f3713ffd")
 			(effects
 				(font
 					(size 1 1)
@@ -1981,7 +1981,7 @@
 		(property "Value" "ESP32-WROOM-32"
 			(at 0 11.5 0)
 			(layer "F.Fab")
-			(uuid "89593b3f-2894-48f9-8d44-e408f42eea41")
+			(uuid "cd74424b-e0e3-4524-a59d-1466af116abb")
 			(effects
 				(font
 					(size 1 1)
@@ -1994,7 +1994,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5fd5049d-f85d-41a9-8989-1f142d3ff802")
+			(uuid "3031c3c1-4636-4eeb-8e1c-03b107a1dc67")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2007,7 +2007,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "79f21972-75e9-4f2c-9438-bf5f77527f01")
+			(uuid "853812a0-aeaa-473a-972f-917379efff5d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11947,13 +11947,13 @@
 		(embedded_fonts no)
 		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 1.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -12605,7 +12605,7 @@
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP16"
 			(at 0 -2.148 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "82707675-5771-43da-9112-2d151d41275c")
 			(effects
 				(font
@@ -12615,8 +12615,8 @@
 			)
 		)
 		(property "Value" "3.3V"
-			(at 0 2.25 0)
-			(layer "F.Fab")
+			(at -3.2 0.1 0)
+			(layer "F.SilkS")
 			(uuid "14d7886a-d9db-46ba-abc1-7e2a37ac0905")
 			(effects
 				(font
@@ -14678,13 +14678,13 @@
 		(embedded_fonts no)
 		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 1.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -26566,13 +26566,13 @@
 		(embedded_fonts no)
 		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 1.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -26861,13 +26861,13 @@
 		(embedded_fonts no)
 		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 1.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -36235,6 +36235,17 @@
 		(layer "B.SilkS")
 		(uuid "a4b73911-cb89-4a43-87cb-145c80ae33fe")
 	)
+	(gr_rect
+		(start 103.45 76.55)
+		(end 181.15 131.65)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "d44b2913-8d20-428d-9f52-3318ee55e005")
+	)
 	(gr_line
 		(start 82.35 76.394472)
 		(end 106.35 76.394472)
@@ -36365,17 +36376,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "7166c7e6-cb57-4ee1-bf28-0a29e24a5064")
-	)
-	(gr_rect
-		(start 102.68 76.624472)
-		(end 180.38 131.724472)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "B.Fab")
-		(uuid "d44b2913-8d20-428d-9f52-3318ee55e005")
 	)
 	(gr_text "made by humans \non earth\nwithout AI"
 		(at 149.2 95.72 0)
