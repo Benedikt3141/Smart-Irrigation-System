@@ -442,7 +442,7 @@
 			(uuid "75b8124c-4ec4-4735-a458-a4f4d6328e1a")
 		)
 		(embedded_fonts no)
-		(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/AUDIO-TH_PJ-3136-3A.wrl"
+		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1331,7 +1331,7 @@
 			(uuid "eef806f1-1d63-4c2c-99ca-f0814c29eabe")
 		)
 		(embedded_fonts no)
-		(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/AUDIO-TH_PJ-3136-3A.wrl"
+		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11416,7 +11416,7 @@
 			(uuid "3579a4a7-eb51-40a8-a4ab-0ea57514aa1e")
 		)
 		(embedded_fonts no)
-		(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/AUDIO-TH_PJ-3136-3A.wrl"
+		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14146,7 +14146,7 @@
 			(uuid "3a7fecec-9e31-461f-9456-37ffb71624a5")
 		)
 		(embedded_fonts no)
-		(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/AUDIO-TH_PJ-3136-3A.wrl"
+		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24981,7 +24981,7 @@
 			(uuid "ffe73492-994f-471c-b43c-bdd6c9ecdc95")
 		)
 		(embedded_fonts no)
-		(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/AUDIO-TH_PJ-3136-3A.wrl"
+		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25275,7 +25275,7 @@
 			(uuid "3e5cb21e-1192-49a8-8cc5-7f488f77ac7c")
 		)
 		(embedded_fonts no)
-		(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/AUDIO-TH_PJ-3136-3A.wrl"
+		(model "C:/Benedikt/KiCAD_Libraries/C707248/AUDIO-TH_PJ-3136-3A.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26329,7 +26329,7 @@
 			(uuid "8229c6c3-37b8-4b87-a230-02bb278471e9")
 		)
 		(embedded_fonts no)
-		(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/FPC-SMD_50P-P0.50_FPC-05FB-50PH20.wrl"
+		(model "C:/Benedikt/KiCAD_Libraries/C2856838/FPC-SMD_50P-P0.50_FPC-05FB-50PH20.step"
 			(offset
 				(xyz 0 0 0)
 			)
