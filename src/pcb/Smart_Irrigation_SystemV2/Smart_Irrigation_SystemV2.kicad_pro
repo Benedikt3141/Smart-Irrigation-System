@@ -83,6 +83,10 @@
       ],
       "drc_exclusions": [
         [
+          "hole_clearance|175317000|115627236|5daa5f26-ad3b-4f55-97d0-f77c1fc24bbd|031f94d0-5840-45d3-b171-5360e447d193",
+          ""
+        ],
+        [
           "silk_edge_clearance|103450000|118144472|c995bd9f-d705-4ab4-96d9-3aa315114784|d44b2913-8d20-428d-9f52-3318ee55e005",
           ""
         ],
@@ -646,7 +650,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Smart_Irrigation_SystemV2.stl",
       "vrml": ""
     },
     "page_layout_descr_file": ""
