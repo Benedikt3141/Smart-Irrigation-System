@@ -1,6 +1,6 @@
 ![AIPreview](images/Progress/AI_preview.png)
 
--> AI Preview
+→ AI Preview
 
 # Smart Irrigation System
 
@@ -25,8 +25,6 @@ The watering unit is planned as a separate module. It will receive commands from
 The unit should also monitor the water tank level using an ultrasonic sensor.
 
 This part of the system is still work in progress.
-
-![stackedBoards](images/Progress/stackedBoards.png)
 
 ![Concept](Concept.jpg)
 
@@ -54,9 +52,9 @@ This part of the system is still work in progress.
 - *web interface*
 - *Push Emails when water is empty/error etc.*
 
-![Schematic](src/pcb/ProjectSchematic.jpeg)
+![Schematic](src/pcb/ProjectSchematic.jpg)
 
-![PCB](src/pcb/Project_PCB_Layout.jpeg)
+![PCB](src/pcb/Project_PCB_Layout.jpg)
 
 ![Rendering](src/pcb/PCB_PlantWatering.png)
 
@@ -69,27 +67,27 @@ This repository contains both the firmware and the PCB design files.
 - `/src/pcb/` contains the KiCad PCB design files.
 - `/src/pcb/gerbers/` contains the exported Gerber files for manufacturing.
 
-The main monitoring and control unit consists of two stacked custom PCBs. Both PCBs are part of the same project and are required for the complete device.
-
 ## File Structure
 
 ```
 Smart-Irrigation-System/
-├── BOM.csv
-├── JOURNAL.md
-├── README.md
 ├── firmware/
-│   ├── platformio.ini
-│   └── src/
-├── src/
+├── images/
+├── src/│  
 │   ├── assembly_and_models/
 │   │   ├── SmartIrrigationSystem-Assembly.step
 │   │   └── SmartIrrigationSystem.FCStd
 │   └── pcb/
-│       ├── PlantWatering_PCB01/
-│       ├── PlantWatering_PCB02/
-│       └── gerbers/
-└── images/
+│       └── Smart_Irrigation_SytemV2/
+├── .gitignore
+├── BOM.csv
+├── Concept.jpg
+├── JOURNAL.md
+├── LICENSE
+├── README.md
+├── cart_adafruit.png
+└── cart_jlcpcb.png
+
 ```
 
 ## Getting started
@@ -117,7 +115,7 @@ Open the project folder in VS Code and build/upload the firmware using PlatformI
 
 You can either use the provided Gerber files or modify the KiCad project and generate new manufacturing files for your preferred PCB supplier.
 
-You can find the gerberfiles [here (PCB01)](src/pcb/PlantWatering_PCB01/production) and [here (PCB02)](src/pcb/PlantWatering_PCB02/production)) or in the project root. The correlating `BOM.csv` and `position.csv` can be found in the same directories.
+You can find the gerberfiles [here ](src/pcb/Smart_Irrigation_SystemV2/production). The correlating `BOM.csv` and `position.csv` can be found in the same directories.
 
 ## License
 
