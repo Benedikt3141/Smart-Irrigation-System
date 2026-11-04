@@ -83,6 +83,10 @@
       ],
       "drc_exclusions": [
         [
+          "clearance|106190000|134000000|fc1945ff-a855-4d83-b99e-69503fc0dfce|7f1e78d4-7611-479b-946e-0de23affe19d",
+          ""
+        ],
+        [
           "hole_clearance|175317000|115627236|5daa5f26-ad3b-4f55-97d0-f77c1fc24bbd|031f94d0-5840-45d3-b171-5360e447d193",
           ""
         ],
@@ -316,7 +320,8 @@
         0.2,
         0.25,
         0.3,
-        0.5
+        0.5,
+        0.8
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -845,7 +850,7 @@
           "show": false
         }
       ],
-      "filter_string": "cn",
+      "filter_string": "r38",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
@@ -893,7 +898,7 @@
         "uuid": "53cd4412-b596-463c-8d76-f5cd1a4639a9"
       }
     ],
-    "used_designators": "#FLG1-4,R1-41,J1-16,U1-11,L1-2,#PWR1-115,D1-17,C1-24,Q1-3,SW1-6,MICRO_SD1,TP1-19,H1-4,CN1-7,FPC1-2,Card1",
+    "used_designators": "#FLG1-4,R1-45,J1-20,U1-11,L1-2,#PWR1-115,D1-17,C1-24,Q1-3,SW1-6,MICRO_SD1,TP1-19,H1-4,CN1-7,FPC1-2,Card1",
     "variants": []
   },
   "sheets": [
