@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 1.27
+          "drill": 4.2,
+          "height": 4.5,
+          "width": 4.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -100,6 +100,10 @@
         ],
         [
           "hole_clearance|175567000|120632764|5daa5f26-ad3b-4f55-97d0-f77c1fc24bbd|031f94d0-5840-45d3-b171-5360e447d193",
+          ""
+        ],
+        [
+          "silk_edge_clearance|103450000|90150000|0039b1ff-78d4-412c-b112-3630f860644d|d44b2913-8d20-428d-9f52-3318ee55e005",
           ""
         ]
       ],
@@ -284,7 +288,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "V2.2"
+      "sch_revision": "V2.5"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -575,7 +579,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "Smart_Irrigation_SystemV2.stl",
+      "step": "Smart_Irrigation_SystemV2.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

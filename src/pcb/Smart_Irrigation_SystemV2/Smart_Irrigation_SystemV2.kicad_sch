@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Smart Irrigation System")
-		(date "2026-10-26")
-		(rev "V2.2")
+		(date "2026-11-14")
+		(rev "V2.5")
 		(company "benedikt314159")
 	)
 	(lib_symbols
@@ -5048,7 +5048,9 @@
 						(type background)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "SK6812MINI-E_C5149201_1_1"
+				(pin power_in line
 					(at -10.16 1.27 0)
 					(length 2.54)
 					(name "GND"
@@ -5066,7 +5068,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -10.16 -1.27 0)
 					(length 2.54)
 					(name "DIN"
@@ -5084,7 +5086,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 10.16 -1.27 180)
 					(length 2.54)
 					(name "VDD"
@@ -5102,7 +5104,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at 10.16 1.27 180)
 					(length 2.54)
 					(name "DOUT"
@@ -9252,8 +9254,8 @@
 	)
 	(text_box "Fan"
 		(exclude_from_sim no)
-		(at 301.244 105.918 0)
-		(size 42.672 14.478)
+		(at 214.884 80.518 0)
+		(size 31.75 14.478)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -9407,6 +9409,12 @@
 		(uuid "2593e629-8338-4976-8709-1e20914caf66")
 	)
 	(junction
+		(at 195.58 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a6f07b6-1d25-4f78-9463-533e114c1320")
+	)
+	(junction
 		(at 138.43 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9545,6 +9553,12 @@
 		(uuid "5c19cf0e-5e4f-4133-9deb-e5e71d0b5866")
 	)
 	(junction
+		(at 195.58 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c4da37c-837a-40e5-ba04-3f04d5347e96")
+	)
+	(junction
 		(at 91.44 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9611,6 +9625,12 @@
 		(uuid "7a26f0e5-bb08-49e7-9a37-755d805187cf")
 	)
 	(junction
+		(at 195.58 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c8db4a3-e61d-482e-b617-b28ec030dd68")
+	)
+	(junction
 		(at 48.26 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9627,6 +9647,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "803375bb-5aac-4ed3-81c8-b52fe0b71d62")
+	)
+	(junction
+		(at 186.69 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83037ebf-1716-4bc3-94ed-cb69894caf39")
 	)
 	(junction
 		(at 48.26 66.04)
@@ -9995,7 +10021,7 @@
 		(uuid "edf05282-15b1-41b7-8c45-35361e28ef39")
 	)
 	(no_connect
-		(at 309.88 114.3)
+		(at 223.52 88.9)
 		(uuid "fe94e8ae-98f2-462e-a3c4-d84e2ccefbf0")
 	)
 	(no_connect
@@ -10154,7 +10180,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 120.65) (xy 195.58 120.65)
+			(xy 194.31 120.65) (xy 196.85 120.65)
 		)
 		(stroke
 			(width 0)
@@ -10334,7 +10360,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 135.89) (xy 195.58 135.89)
+			(xy 194.31 135.89) (xy 196.85 135.89)
 		)
 		(stroke
 			(width 0)
@@ -10594,7 +10620,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 80.01) (xy 234.95 80.01)
+			(xy 250.19 96.52) (xy 250.19 90.17)
 		)
 		(stroke
 			(width 0)
@@ -10654,7 +10680,7 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 116.84) (xy 309.88 116.84)
+			(xy 215.9 91.44) (xy 223.52 91.44)
 		)
 		(stroke
 			(width 0)
@@ -10711,6 +10737,16 @@
 			(type default)
 		)
 		(uuid "33ae39b8-c18d-4b5d-9f99-7be33c032b4f")
+	)
+	(wire
+		(pts
+			(xy 195.58 139.7) (xy 195.58 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33e1002f-1bd6-4889-9865-9532d6730fcc")
 	)
 	(wire
 		(pts
@@ -10914,6 +10950,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 140.97) (xy 195.58 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4083f350-3db2-47f6-b8a9-1d545c2f79db")
+	)
+	(wire
+		(pts
 			(xy 172.72 30.48) (xy 176.53 30.48)
 		)
 		(stroke
@@ -10961,6 +11007,16 @@
 			(type default)
 		)
 		(uuid "430a1e2a-9682-45a2-95f4-8cbda2bef64e")
+	)
+	(wire
+		(pts
+			(xy 195.58 154.94) (xy 195.58 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43ed8142-97b5-4dbb-8dee-4c5ea8d60f5e")
 	)
 	(wire
 		(pts
@@ -11624,6 +11680,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 124.46) (xy 186.69 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7785eabe-bf32-444d-991d-08af2261b7c1")
+	)
+	(wire
+		(pts
 			(xy 21.59 101.6) (xy 24.13 101.6)
 		)
 		(stroke
@@ -11814,6 +11880,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 124.46) (xy 195.58 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8594a41b-1ed7-4334-9beb-deefdf162d59")
+	)
+	(wire
+		(pts
 			(xy 207.01 63.5) (xy 209.55 63.5)
 		)
 		(stroke
@@ -11874,7 +11950,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 85.09) (xy 234.95 85.09)
+			(xy 255.27 91.44) (xy 255.27 90.17)
 		)
 		(stroke
 			(width 0)
@@ -12124,7 +12200,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 128.27) (xy 195.58 128.27)
+			(xy 191.77 128.27) (xy 196.85 128.27)
 		)
 		(stroke
 			(width 0)
@@ -13084,6 +13160,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 125.73) (xy 196.85 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1afcf4d-1832-48b8-aca8-ee126fcf9c45")
+	)
+	(wire
+		(pts
 			(xy 165.1 111.76) (xy 167.64 111.76)
 		)
 		(stroke
@@ -13284,7 +13370,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 143.51) (xy 195.58 143.51)
+			(xy 191.77 143.51) (xy 196.85 143.51)
 		)
 		(stroke
 			(width 0)
@@ -13743,7 +13829,7 @@
 		(uuid "352f63cd-1eca-47b0-8782-d3574547e8d3")
 	)
 	(label "FAN"
-		(at 302.26 116.84 0)
+		(at 215.9 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13933,7 +14019,7 @@
 		(uuid "78c56a7a-e5fc-424a-8e41-6696fd3c1a25")
 	)
 	(label "MS5"
-		(at 195.58 140.97 0)
+		(at 195.58 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14043,7 +14129,7 @@
 		(uuid "92eb6c42-b522-417a-8122-654dfc5b4889")
 	)
 	(label "MS3"
-		(at 186.69 125.73 0)
+		(at 186.69 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14123,7 +14209,7 @@
 		(uuid "a6b2eb75-4da8-4012-b773-9e7f23253aa4")
 	)
 	(label "Buzzer"
-		(at 228.6 80.01 0)
+		(at 250.19 96.52 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14233,7 +14319,7 @@
 		(uuid "bad41830-0ca2-411c-b764-2866f4f39cee")
 	)
 	(label "MS4"
-		(at 195.58 125.73 0)
+		(at 195.58 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14253,7 +14339,7 @@
 		(uuid "bdb60a58-a6a7-4d28-b54e-c16108e14ab0")
 	)
 	(label "MS6"
-		(at 195.58 156.21 0)
+		(at 195.58 154.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14700,7 +14786,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part Number" ""
+		(property "JLCPCB Part Number" "C17477"
 			(at 266.7 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -15144,7 +15230,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
-		(at 314.96 111.76 0)
+		(at 228.6 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15152,10 +15238,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "09d8b4c2-4b1e-439d-af28-667d42faf95f")
 		(property "Reference" "J4"
-			(at 316.23 111.7599 0)
+			(at 229.87 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15166,7 +15251,7 @@
 			)
 		)
 		(property "Value" "NF-A6x15 5V PWM60x15mm"
-			(at 316.23 114.2999 0)
+			(at 216.662 92.964 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15177,7 +15262,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 314.96 111.76 0)
+			(at 228.6 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15188,7 +15273,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 314.96 111.76 0)
+			(at 228.6 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15199,7 +15284,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 314.96 111.76 0)
+			(at 228.6 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15829,6 +15914,17 @@
 		)
 		(property "LCSC Part" "C5149201"
 			(at 231.14 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C5149201"
+			(at 231.14 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18175,7 +18271,7 @@
 	)
 	(symbol
 		(lib_id "C707248:PJ-3136-3A")
-		(at 200.66 138.43 0)
+		(at 201.93 138.43 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -18186,7 +18282,7 @@
 		(dnp no)
 		(uuid "2e4ca838-f93e-4f30-8e5e-c0a222b02d3c")
 		(property "Reference" "CN5"
-			(at 208.28 138.4299 0)
+			(at 202.184 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18197,7 +18293,7 @@
 			)
 		)
 		(property "Value" "PJ-3136-3A"
-			(at 202.438 136.144 0)
+			(at 198.882 134.112 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18208,7 +18304,7 @@
 			)
 		)
 		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
-			(at 200.66 151.13 0)
+			(at 201.93 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18219,7 +18315,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
-			(at 200.66 153.67 0)
+			(at 201.93 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18230,7 +18326,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 200.66 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18241,7 +18337,7 @@
 			)
 		)
 		(property "Manufacturer" "韩国韩荣"
-			(at 200.66 156.21 0)
+			(at 201.93 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18252,7 +18348,7 @@
 			)
 		)
 		(property "MPN" "PJ-3136-3A"
-			(at 200.66 158.75 0)
+			(at 201.93 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18263,7 +18359,18 @@
 			)
 		)
 		(property "LCSC Part" "C707248"
-			(at 200.66 161.29 0)
+			(at 201.93 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18639,7 +18746,7 @@
 		(dnp no)
 		(uuid "328267a6-59bb-4e3d-8226-d99f4c797af1")
 		(property "Reference" "TP5"
-			(at 194.564 147.066 0)
+			(at 194.31 146.304 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18650,7 +18757,7 @@
 			)
 		)
 		(property "Value" "MS5"
-			(at 198.12 145.5419 0)
+			(at 200.914 139.446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18772,7 +18879,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part Number" "C83206"
+		(property "JLCPCB Part Number" ""
 			(at 240.03 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -20264,10 +20371,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "429ea96f-4d1b-4392-9418-2a8554a630fc")
 		(property "Reference" "TP6"
-			(at 189.23 158.2419 0)
+			(at 185.42 162.306 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20278,7 +20384,7 @@
 			)
 		)
 		(property "Value" "MS1"
-			(at 189.23 160.7819 0)
+			(at 178.054 154.432 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21927,6 +22033,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 181.61 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "07412855-76ea-4dbb-b7f0-698f3a11d934")
 		)
@@ -22040,7 +22157,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 309.88 109.22 270)
+		(at 223.52 83.82 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22051,7 +22168,7 @@
 		(fields_autoplaced yes)
 		(uuid "52b3b21b-38b3-4301-a01a-712df3d8a765")
 		(property "Reference" "#PWR02"
-			(at 303.53 109.22 0)
+			(at 217.17 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22062,7 +22179,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 306.07 109.2199 90)
+			(at 219.71 83.8199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22073,7 +22190,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 309.88 109.22 0)
+			(at 223.52 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22084,7 +22201,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 309.88 109.22 0)
+			(at 223.52 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22095,7 +22212,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 309.88 109.22 0)
+			(at 223.52 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24904,7 +25021,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 231.14 85.09 90)
+		(at 255.27 93.98 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24915,7 +25032,7 @@
 		(fields_autoplaced yes)
 		(uuid "6f534069-cc9c-439e-8973-2f466e6b18be")
 		(property "Reference" "R20"
-			(at 231.14 80.01 90)
+			(at 250.19 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24925,7 +25042,7 @@
 			)
 		)
 		(property "Value" "10R"
-			(at 231.14 82.55 90)
+			(at 252.73 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24935,7 +25052,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 231.14 85.09 0)
+			(at 255.27 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24946,7 +25063,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 85.09 0)
+			(at 255.27 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24957,7 +25074,18 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 231.14 85.09 0)
+			(at 255.27 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C17415"
+			(at 255.27 93.98 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26239,10 +26367,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "79ac4462-41d8-417f-93e7-202831159cfe")
 		(property "Reference" "CN2"
-			(at 178.69 130.81 0)
+			(at 177.8 131.572 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26252,7 +26379,7 @@
 			)
 		)
 		(property "Value" "PJ-3136-3A"
-			(at 178.69 133.35 0)
+			(at 177.292 133.604 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26318,6 +26445,17 @@
 		)
 		(property "LCSC Part" "C707248"
 			(at 180.34 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 180.34 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26687,10 +26825,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "86066952-b1fd-4250-a685-fe8aeaccffab")
 		(property "Reference" "CN6"
-			(at 208.28 153.6699 0)
+			(at 202.184 147.066 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26701,7 +26838,7 @@
 			)
 		)
 		(property "Value" "PJ-3136-3A"
-			(at 208.28 156.2099 0)
+			(at 198.12 149.352 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26768,6 +26905,17 @@
 		)
 		(property "LCSC Part" "C707248"
 			(at 200.66 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 200.66 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27207,7 +27355,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part Number" "C83206"
+		(property "JLCPCB Part Number" ""
 			(at 240.03 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -27526,10 +27674,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "91bba75f-e6bf-4bc6-9705-751cf8ca784a")
 		(property "Reference" "CN1"
-			(at 179.96 146.05 0)
+			(at 177.8 147.574 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27539,7 +27686,7 @@
 			)
 		)
 		(property "Value" "PJ-3136-3A"
-			(at 179.96 148.59 0)
+			(at 177.8 149.352 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27605,6 +27752,17 @@
 		)
 		(property "LCSC Part" "C707248"
 			(at 181.61 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 181.61 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27861,7 +28019,7 @@
 	)
 	(symbol
 		(lib_id "Device:Buzzer")
-		(at 237.49 82.55 0)
+		(at 252.73 87.63 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27872,7 +28030,7 @@
 		(fields_autoplaced yes)
 		(uuid "9245b7e4-3440-427f-b9fa-2a0fe6954c82")
 		(property "Reference" "BZ1"
-			(at 241.3 81.2799 0)
+			(at 251.4599 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27883,7 +28041,7 @@
 			)
 		)
 		(property "Value" "Buzzer"
-			(at 241.3 83.8199 0)
+			(at 253.9999 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27894,7 +28052,7 @@
 			)
 		)
 		(property "Footprint" "C968749:BUZ-TH_BD12.0-P6.50-D0.6-FD"
-			(at 236.855 80.01 90)
+			(at 250.19 88.265 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27905,7 +28063,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.855 80.01 90)
+			(at 250.19 88.265 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27916,7 +28074,18 @@
 			)
 		)
 		(property "Description" "Buzzer, polarized"
-			(at 237.49 82.55 0)
+			(at 252.73 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C968749"
+			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29522,6 +29691,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C2856838"
+			(at 275.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "9ea5778a-4563-4dcf-a576-ab411830a0ba")
 		)
@@ -30194,10 +30374,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a8f7f569-06b9-4881-aeca-ec480af4b60e")
 		(property "Reference" "TP4"
-			(at 198.12 127.7619 0)
+			(at 195.072 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30208,7 +30387,7 @@
 			)
 		)
 		(property "Value" "MS4"
-			(at 198.12 130.3019 0)
+			(at 200.914 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31460,10 +31639,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b7d322f7-78a3-41b7-9247-5feb2c090b56")
 		(property "Reference" "TP8"
-			(at 189.23 127.7619 0)
+			(at 185.928 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31474,7 +31652,7 @@
 			)
 		)
 		(property "Value" "MS3"
-			(at 189.23 130.3019 0)
+			(at 177.8 124.206 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32028,10 +32206,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bca04398-d8cc-4371-b062-9514532068bd")
 		(property "Reference" "TP15"
-			(at 204.47 160.0199 90)
+			(at 199.644 163.322 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33172,7 +33349,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 309.88 111.76 90)
+		(at 223.52 86.36 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33183,7 +33360,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca9d2a4d-b262-4f90-9eb4-a3c889d198c7")
 		(property "Reference" "#PWR0104"
-			(at 313.69 111.76 0)
+			(at 227.33 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33194,7 +33371,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 306.07 111.7599 90)
+			(at 219.71 86.3599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33205,7 +33382,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 309.88 111.76 0)
+			(at 223.52 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33216,7 +33393,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 309.88 111.76 0)
+			(at 223.52 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33227,7 +33404,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 309.88 111.76 0)
+			(at 223.52 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33510,7 +33687,7 @@
 	)
 	(symbol
 		(lib_id "C707248:PJ-3136-3A")
-		(at 200.66 123.19 0)
+		(at 201.93 123.19 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -33521,7 +33698,7 @@
 		(dnp no)
 		(uuid "d1c10962-a0e3-4f60-9a47-ae75ac995879")
 		(property "Reference" "CN4"
-			(at 208.28 123.1899 0)
+			(at 199.898 116.078 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33532,7 +33709,7 @@
 			)
 		)
 		(property "Value" "PJ-3136-3A"
-			(at 200.152 118.364 0)
+			(at 196.342 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33543,7 +33720,7 @@
 			)
 		)
 		(property "Footprint" "C707248:AUDIO-TH_PJ-3136-3A"
-			(at 200.66 135.89 0)
+			(at 201.93 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33554,7 +33731,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3136-3A_C707248.html"
-			(at 200.66 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33565,7 +33742,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 200.66 123.19 0)
+			(at 201.93 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33576,7 +33753,7 @@
 			)
 		)
 		(property "Manufacturer" "韩国韩荣"
-			(at 200.66 140.97 0)
+			(at 201.93 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33587,7 +33764,7 @@
 			)
 		)
 		(property "MPN" "PJ-3136-3A"
-			(at 200.66 143.51 0)
+			(at 201.93 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33598,7 +33775,18 @@
 			)
 		)
 		(property "LCSC Part" "C707248"
-			(at 200.66 146.05 0)
+			(at 201.93 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C707248"
+			(at 201.93 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33941,6 +34129,17 @@
 		)
 		(property "LCSC Part" "C5149201"
 			(at 231.14 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part Number" "C5149201"
+			(at 231.14 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34482,10 +34681,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d7efd1d3-df74-407f-bdb3-b330020847e1")
 		(property "Reference" "TP17"
-			(at 198.12 158.2419 0)
+			(at 195.072 162.052 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34496,7 +34694,7 @@
 			)
 		)
 		(property "Value" "MS6"
-			(at 198.12 160.7819 0)
+			(at 200.66 155.194 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36308,7 +36506,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 228.6 85.09 270)
+		(at 255.27 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -36319,7 +36517,7 @@
 		(fields_autoplaced yes)
 		(uuid "ef724efd-8ff9-496d-a449-8c3b0128c609")
 		(property "Reference" "#PWR0115"
-			(at 222.25 85.09 0)
+			(at 255.27 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36330,7 +36528,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 224.79 85.0899 90)
+			(at 255.2699 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36341,7 +36539,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 85.09 0)
+			(at 255.27 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36352,7 +36550,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 85.09 0)
+			(at 255.27 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36363,7 +36561,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 228.6 85.09 0)
+			(at 255.27 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36813,6 +37011,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C5149201"
+			(at 231.14 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3b171b04-ae0c-4240-a1d3-5f40a56451d0")
 		)
@@ -36978,7 +37187,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part Number" "C83206"
+		(property "JLCPCB Part Number" ""
 			(at 240.03 147.32 0)
 			(hide yes)
 			(show_name no)
