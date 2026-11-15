@@ -83,27 +83,7 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|152625000|121222500|ac44a533-2cbd-4a5f-bc02-918155721f2f|670e2109-660b-4909-94f3-ee72c0bcc59d",
-          ""
-        ],
-        [
-          "clearance|152625000|121397500|ac44a533-2cbd-4a5f-bc02-918155721f2f|c68f00f7-fe1b-42df-8966-e587d37846a0",
-          ""
-        ],
-        [
-          "clearance|154050000|121222500|c07cb8a4-cf6d-49c8-b038-24a5c428c71c|b5c8b77b-3efd-4cee-ae8a-9109a4404db2",
-          ""
-        ],
-        [
-          "clearance|154050000|121397500|c07cb8a4-cf6d-49c8-b038-24a5c428c71c|81ef008b-d2e7-4ab0-a6bd-f8ad74b32a6f",
-          ""
-        ],
-        [
-          "hole_clearance|175567000|120632764|5daa5f26-ad3b-4f55-97d0-f77c1fc24bbd|031f94d0-5840-45d3-b171-5360e447d193",
-          ""
-        ],
-        [
-          "silk_edge_clearance|103450000|90150000|0039b1ff-78d4-412c-b112-3630f860644d|d44b2913-8d20-428d-9f52-3318ee55e005",
+          "hole_clearance|140221315|78139730|4c1b94f8-b047-484a-8b90-f8e3a439891c|50d24cb9-7479-4e60-a28e-d8d07f34957e",
           ""
         ]
       ],
@@ -822,7 +802,7 @@
         "uuid": "53cd4412-b596-463c-8d76-f5cd1a4639a9"
       }
     ],
-    "used_designators": "#FLG1-4,R1-52,J1-20,U1-11,L1-2,#PWR1-115,D1-17,C1-24,Q1-3,SW1-6,MICRO_SD1,TP1-20,H1-7,CN1-7,FPC1-2,Card1,BZ1,LED1-3",
+    "used_designators": "#FLG1-4,R1-52,J1-20,U1-11,L1-2,#PWR1-116,D1-17,C1-24,Q1-4,SW1-6,MICRO_SD1,TP1-20,H1-7,CN1-7,FPC1-2,Card1,BZ1,LED1-3",
     "variants": []
   },
   "sheets": [
