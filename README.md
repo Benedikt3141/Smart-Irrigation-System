@@ -1,6 +1,6 @@
-![AIPreview](images/Progress/AI_preview.png)
+![Preview](images\Progress\Preview.jpg)
 
-→ AI Preview
+→ Version one of this project (didn't completely work)
 
 # Smart Irrigation System
 
@@ -87,7 +87,6 @@ Smart-Irrigation-System/
 ├── README.md
 ├── cart_adafruit.png
 └── cart_jlcpcb.png
-
 ```
 
 ## Getting started
@@ -134,12 +133,10 @@ The main monitoring unit is mostly implemented. The watering unit, web interface
 
 ## AI Usage
 
-Most of the code was written by myself. Since this is a work in progress, the code may still contain bugs or parts that could be improved.
+Allof the code was written by myself. Since this is a work in progress, the code may still contain bugs or parts that could be improved.
 
 I used AI for debugging assistance, spelling correction, research and for generating the concept visualization shown at the top of this README.
 
-The visualization is intended only as a preview of the planned device and
-does not represent the final manufactured hardware.
-
 The PCB design, hardware architecture and most of the firmware were
-created by myself.
+created completely by myself.
+
