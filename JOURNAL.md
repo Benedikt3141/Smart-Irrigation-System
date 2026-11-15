@@ -5,6 +5,7 @@ Description: "A monitoring and control unit of a smart irrigation system with so
 Created On: "13/04/2026"
 Total hours: ~ 175h (my mum says thier actually *much more*...)
 ---
+
 # Journal
 
 ## April 13, 2026
@@ -284,3 +285,15 @@ Finally I rendered all images, I generated all gerbers and put the board in my J
 
 I also wrote the Journal.
 Time spent: 10h
+
+## November 15, 2026
+
+I signed in at fabricate.hackclub.com and read all steps wich were need to apply. I upgraded the 3D files in the assembly folder. And did some screenshots for better visualisation.
+
+Time spent: 2h
+![Workspace](images/Progress/0FreecadAssembly.png)
+
+![Render](images/Progress/TOP_Render.png)
+![Render](images/Progress/Front_Render.png)
+![Render](images/Progress/Back_Render.png)
+

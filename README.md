@@ -1,6 +1,8 @@
 ![Preview](images/Progress/Preview.jpg)
-
 → Version one of this project (didn't completely work)
+
+![Preview](images/Progress/Back_Render.png)
+→ Current Version as .step Assembly ([Assembly](src/assembly_and_models/SmartIrrigationSystem.FCStd))
 
 # Smart Irrigation System
 
@@ -58,6 +60,8 @@ This part of the system is still work in progress.
 ![PCB](src/pcb/Project_PCB_Layout.jpg)
 
 ![Rendering](src/pcb/PCB_PlantWatering.png)
+
+![RenderingBack](images/Progress/Top_Render.png)
 
 ## Repository Structure
 
@@ -152,4 +156,29 @@ I used AI for debugging assistance, spelling correction, research and for genera
 
 The PCB design, hardware architecture and most of the firmware were
 created completely by myself.
+
+
+
+## Bill of Materials (BOM)
+
+| Item | Qty | Unit price | Total price | Purchase link | Notes |
+| --- | ---: | ---: | ---: | --- | --- |
+| PCB_Board | 1 | 15€ | 15€ | — | — |
+| PCB_Assembly | 1 | 186€ | 186€ | — | — |
+| PCB Shipping and Taxes | 1 | 100€ | 100€ | — | Last time I ordered, I had to pay 60€ tax before delivery |
+| Nocuta NF-A6x15 5V PWM | 1 | 17€ | 17€ | [Product](https://www.amazon.de/dp/B0DJP3987K?tag=noctua09-21) | Fan |
+| 3.2 TFT Display with Resistive Touchscreen | 2 | 15€ | 30€ | [Product](https://www.adafruit.com/product/4278) | Touchscreen |
+| 5.0" 40-pin TFT Display 800x480 with Touchscreen | 1 | 30€ | 30€ | [Product](https://www.adafruit.com/product/1596) | Plan B |
+| 7.0" 40-pin TFT Display 800x480 with Touchscreen | 1 | 35€ | 35€ | [Product](https://www.adafruit.com/product/2354) | Plan B |
+| RA8875 Driver Board for 40 pin TFT Touch Displays 800x480 Max | 1 | 40€ | 40€ | [Product](https://www.adafruit.com/product/1590) | Plan B |
+| Kailh Mechanical Key Switches - Tactile Brown - 10-pack WS2812B | 1 | 7€ | 7€ | [Product](https://www.adafruit.com/product/4954) | Switches |
+| NeoPixel Nano 2020 RGB LEDs -10-Pack -WS2812B | 1 | 4€ | 4€ | [Product](https://www.adafruit.com/product/4684) | LEDs for under the switches |
+| NeoPixel Stick -8 x 5050 RGBW LEDs -WarmWhite ~3000K | 2 | 8€ | 16€ | [Product](https://www.adafruit.com/product/2867) | LEDs for under the board |
+| Translucent Keycaps for MX Compatible Switches - 10 pack | 1 | 5€ | 5€ | [Product](https://www.adafruit.com/product/4956) | Keycaps |
+| Lithium Ion Polymer Battery - 3.7v 2500mAh | 1 | 15€ | 15€ | [Product](https://www.adafruit.com/product/328) | LiPo |
+| Shipping | 1 | 50€ | 50€ | — | Shipping from Adafruit and Amazon |
+
+**Total (including Plan B items): 550 €**
+**Optional Plan B items: 105 €**
+**Total (excluding Plan B items): 445 €**
 
