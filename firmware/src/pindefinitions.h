@@ -1,4 +1,9 @@
 #include "lvgl.h"
+
+#define SCREEN_HEIGHT 240
+#define SCREEN_WIDTH 320
+#define MARGIN_LEFT 10
+
 #ifndef PIN_DEFINITIONS
 #define PIN_DEFINITIONS
 
@@ -7,7 +12,7 @@ const uint16_t BLUE = 0x4d13;
 const uint16_t GREEN = 0x2e4c;
 const uint16_t RED = 0xfc00;
 
-#define MARGIN_LEFT 10
+
 const int linespace = 20;
 
 
@@ -16,15 +21,6 @@ extern const int wateringValue;
 extern bool watering;
 
 // Display Variables
-extern const uint16_t SCREEN_WIDTH;
-extern const uint16_t SCREEN_HEIGHT;
-
-extern lv_color_t lvBuffer[];
-extern lv_disp_draw_buf_t drawBuffer;
-extern lv_disp_drv_t displayDriver;
-extern lv_indev_drv_t touchDriver;
-extern lv_obj_t* counterLabel;
-
 
 // Time Info
 /*

@@ -32,8 +32,10 @@ extern Adafruit_ADS1115 adc2;
 extern Touch_PCB01 touch;
 
 // Display Variables
-extern const uint16_t SCREEN_WIDTH;
-extern const uint16_t SCREEN_HEIGHT;
+
+// Buffer für LVGL 9
+#define DRAW_BUF_SIZE (SCREEN_WIDTH * SCREEN_HEIGHT / 10 * (LV_COLOR_DEPTH / 8))
+uint8_t draw_buf[DRAW_BUF_SIZE];
 
 
 void SelfCheckRoutine::completeSelfCheck() {
@@ -90,7 +92,7 @@ void SelfCheckRoutine::selfCheckNegative(int Errorcode) {
 
 
 int SelfCheckRoutine::checkDisplay() {
-    info = "[INFO ] Initializing Display...";
+    info = "[INFO] Initializing Display...";
     try{
       tft.begin(); // start Display
       tft.setRotation(1);
@@ -297,40 +299,27 @@ int SelfCheckRoutine::checkBMP() {
 }
 
 int SelfCheckRoutine::checkLVGL() {
-    Serial.println("[LVGL] init");
+  Serial.println("[LVGL] init");
 
-    lv_init();
+  lv_init();
 
-    lv_disp_draw_buf_init(
-        &drawBuffer,
-        lvBuffer,
-        nullptr,
-        SCREEN_WIDTH * 20
-    );
+  // registrate Display
+  lv_display_t * disp = lv_display_create(SCREEN_WIDTH, SCREEN_HEIGHT);
+  lv_display_set_flush_cb(disp, my_disp_flush);
+  lv_display_set_buffers(disp, draw_buf, NULL, sizeof(draw_buf), LV_DISPLAY_RENDER_MODE_PARTIAL);
 
-    lv_disp_drv_init(&displayDriver);
+  // Touch
+  lv_indev_t * indev = lv_indev_create();
+  lv_indev_set_type(indev, LV_INDEV_TYPE_POINTER);
+  lv_indev_set_read_cb(indev, my_touch_read);
+  
 
-    displayDriver.hor_res = SCREEN_WIDTH;
-    displayDriver.ver_res = SCREEN_HEIGHT;
+  // Error messages into Serial Monitor:
+  #if LV_USE_LOG != 0 
+    lv_log_register_print_cb(print_error);
+  #endif
 
-    displayDriver.flush_cb = lvglDisplayFlush;
-    displayDriver.draw_buf = &drawBuffer;
-
-    lv_disp_drv_register(&displayDriver);
-
-
-    // Touch
-    lv_indev_drv_init(&touchDriver);
-
-    touchDriver.type = LV_INDEV_TYPE_POINTER;
-    touchDriver.read_cb = lvglTouchRead;
-
-    lv_indev_drv_register(&touchDriver);
-
-    Serial.println("[LVGL] driver registered");
-
-    
-
-    Serial.println("[LVGL] GUI created");
-    return 0;
+  create_ui();
+  
+  return 0;
 }
