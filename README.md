@@ -45,7 +45,8 @@ This part of the system is still work in progress.
 ###### Other features and outputs
 
 - **Battery powered**
-- 2.4" TFT LCD Screen with resistive touch
+- 2.2" TFT LCD Screen with resistive touch
+- Buzzer
 - SD log with data saved as .csv
 - LED-Strip status indicator
 - magnetic valve for watering Control
@@ -130,6 +131,19 @@ The main monitoring unit is mostly implemented. The watering unit, web interface
 
 [MQ2 Library](https://github.com/labay11/MQ-2-sensor-library/)
 [SD Card](https://RandomNerdTutorials.com/esp32-web-server-microsd-card/)
+
+
+## Why I Think I Should Receive Financial Sponsorship for This Project
+
+I already received $180 in rewards from Hack Club in July 2026. Since then, I have spent nearly 100 hours working on this project. During this time, I have gained many new skills and a lot of knowledge in PCB design, including effective routing techniques, reading datasheets, organizing schematics, and working with Git. I have also developed personal skills, especially resilience and perseverance throughout this long process.
+
+I started this project seven months ago, and I'm still determined to bring it to completion. Even though I've had to pause my work several times because I'm still in school, have exams coming up in two years, and have many other hobbies and responsibilities that take up my free time, I've always found a way to keep making progress.
+
+I've carefully reviewed and checked my design multiple times, and I'm now quite confident that the hardware design is ready to be finalized.
+
+I'm really proud of what I've accomplished and everything I've learned along the way. This project has been a challenging but incredibly rewarding experience, and I'm excited to take the next step toward completing it.
+
+Thank you, Hack Club, for supporting my previous request. I would be very grateful if you could help me with this next chapter of my project!
 
 ## AI Usage
 
