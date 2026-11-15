@@ -5,7 +5,6 @@ Description: "A monitoring and control unit of a smart irrigation system with so
 Created On: "13/04/2026"
 Total hours: ~ 175h (my mum says thier actually *much more*...)
 ---
-
 # Journal
 
 ## April 13, 2026
@@ -169,7 +168,7 @@ Time spent: 2h
 
 I tested the boards and as soon I as I drawed some current at some parts the cp2102 chip got hot and destroied itself. I first thought of a short circuit due to mismatching package types. Therefore I had to spend the whole day with replacing the chip and wiring the USB-c to the microusb directly.  That didn't work. I also tried to wire it to the exposed pads of the removed cp2102 but that also didn't work. I have been really disappointed.
 
-Time spend at this day and the week before: 8h
+Time spend: 8h
 
 ## July 29, 2026
 
@@ -181,6 +180,8 @@ I proceed with yesterdays strategie but I had to start over with a new board I r
 This struggle took very long. Time spent: 5h
 
 edit: no success while coding. SD mount failed, USB communication doesn't work. I actually don't want to proceed. Time wasted here: at least 3h
+
+Time spent: 8h
 
 ## July 31, 2026
 
@@ -223,7 +224,7 @@ First I started to unify the pcbs  by just adding each ones components to a new 
 
 Time spent (wasted): 5h
 
-## October 30, 2026
+## October 16, 2026
 
 ![image](images/Progress/20261021_092406.jpg)
 
@@ -254,6 +255,8 @@ Time spent:  5h
 
 I put forward my plans to switch the Display interface type to SPI. I started with the pinout of the connector from the datasheet and reworked everything until the concept for the SPI worked. I deleted the 8it voltage stabalizer chip I used prevously. Moreover I had to delete many wires in the layout . I placed many symbols in the schematic. Looked after many components' datasheets and pinouts. I downloaded footprints, installed tools like easyeda2kicad, made a new library directory on my desktop. all together I spent about 6 hours doing that. Unfortunately I havn't got pictures of that annoying work :(
 
+Time spent: 6h
+
 ## November 13, 2026
 
 I looked after my switch decisions. I previously decided for 4 simple push buttons as my switches but while researching I found much nicer keyboard switches on adafruit. I decided to switch the switches (funny sentence probably nobody will ever value). There was too less space for putting 4 buttons there so I deleted one (I don't neccessary need the Lizard screensaver button). I downloaded new footprints, placed them rearranged other parts to fit the board. I also decided for a silent Nocuta fan like Used those used in my 3D printer but I wasn't sure wheater to stay at a diameter o 40mm. Maybe i want to switch to 60mm.
@@ -281,4 +284,3 @@ Finally I rendered all images, I generated all gerbers and put the board in my J
 
 I also wrote the Journal.
 Time spent: 8h
-
