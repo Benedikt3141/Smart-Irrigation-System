@@ -1,4 +1,4 @@
-![Preview](images\Progress\Preview.jpg)
+![Preview](images/Progress/Preview.jpg)
 
 → Version one of this project (didn't completely work)
 
@@ -131,7 +131,6 @@ The main monitoring unit is mostly implemented. The watering unit, web interface
 
 [MQ2 Library](https://github.com/labay11/MQ-2-sensor-library/)
 [SD Card](https://RandomNerdTutorials.com/esp32-web-server-microsd-card/)
-
 
 ## Why I Think I Should Receive Financial Sponsorship for This Project
 

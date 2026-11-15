@@ -225,7 +225,7 @@ Time spend (wasted): ~5h
 
 ## End of October
 
-![image](images\Progress\20261021_092406.jpg)
+![image](images/Progress/20261021_092406.jpg)
 
 I started all over from scretch. I did further research on the circuits and components, watched Youtube Videos and found new tools like the buckboost converter calculater from Texas Instruments. I read articles about the functions of  capacitors, I read datasheets and decided for components which are well documentated. With that knowledge and the experience I gained while developing the first iteration of the project I started all over with a blank KiCAD Project.  The iterating progress can be seen in the commit tree.
 The carts can be seen in the project root.
@@ -240,13 +240,13 @@ All together I spend around 20h on that.
 
 I tried to reduce the cost by placing all components to one side of the board. This should decrease the cost of the board by about 40$. Therfore I had to generate a slot into the pcb and put the fpc on the top wide of the board. In addition to that, I realized after 3D printing a 1:1 Model of the board that the USB connector has to be placed much closer do the board edge in order to be usable. This took me about 2h.
 
-![image](images\Progress\board01.jpeg)
+![image](images/Progress/board01.jpeg)
 
 ## Novebmer 4 2026
 
 I tried to reduce the cost even further by trying to switch to pcba economic. In order to achieve that I realized, that the board size was to small for Economic PCBA. I added a breakoutpart to enlarge the surface. I wanted to use this space instead of wasting it so I designed an I2C expander and some example footprints to use it as a pcb ruler like one I saw on adafruit. I planned how to add the features I planned like the fan, the LED Stip and some other pwm depending features. I tried to find a I2C GPIO expander and even found some on Texas instruments but those were eigther far too expensive, didn't match the PWM frequencies I needed, or weren't in stock at JLCPCB. The best possible Solution I found was putting an STM32 microcontroller beside and let it communicate with the ESP32 via I2C protocol. But the STM32 microcontroller would have to be programmed and so I would need addiditonal tools or I would have need to have another accessible Serial interface and on top of that I would have to programm all neccessary features to this STM32 and all commands. That would increase the risk that in the end nothing would work so I thought of switching the display interface type from the 8-bit parallel interface to an SPI interface because this would save many GPIOs wich are also capable of doing PWM with the wished frequency.  I also considered wheather to expand the pins I used for the 8bit parallel bus to a GPIO expander but this wouldn't be fast enought and more complex while programming and configuring.
 
-![sdcart](images\Progress\sdcard.png)
+![sdcart](images/Progress/sdcard.png)
 
 Time spent:  5h
 
@@ -258,7 +258,7 @@ I put forward my plans to switch the Display interface type to SPI. I started wi
 
 I looked after my switch decisions. I previously decided for 4 simple push buttons as my switches but while researching I found much nicer keyboard switches on adafruit. I decided to switch the switches (funny sentence probably nobody will ever value). There was too less space for putting 4 buttons there so I deleted one (I don't neccessary need the Lizard screensaver button). I downloaded new footprints, placed them rearranged other parts to fit the board. I also decided for a silent Nocuta fan like Used those used in my 3D printer but I wasn't sure wheater to stay at a diameter o 40mm. Maybe i want to switch to 60mm.
 
-![nocuta](images\Progress\Nocuta.png)
+![nocuta](images/Progress/Nocuta.png)
 
 Time spent: 2h
 
@@ -267,7 +267,7 @@ Time spent: 2h
 I realized I didn't used the space on the pcb properly an I could also better split the different regions on my pcb. I deleted alsmost everything and completely started over with placing components. B ythat I had much cleaner areas where to put noisy pards like the buckboost converter away from the analog woltage regions and where to put my fast signals and display stuff. I also menaged to get nearly symmetrical places for the audio jacks and put the peripheal interfaces all on one side of the board. by doing that I got so much more space on the board that I decided to put a sound buzzer onto the board. It might be usefull. So if there is any kind of crazy error I could not only get visual but also auditive feedback like the Plants are in fact screaming because the tank is empty an their soil is completely dry :) . I decided for an 60mm 5V Nocuta fan and located the holes in the PCB.
 
 Furthermore I generated the gerberfiles and configured the part at JLCPCB.
- ![3dprint](images\Progress\20261115_165532.jpg)
+ ![3dprint](images/Progress/20261115_165532.jpg)
 
 Time spent: 7 hours
 
@@ -275,7 +275,7 @@ Time spent: 7 hours
 
 I finished last things I wanted to do before merge and before requesting submission from HackClub. I checked the gerbers and the PCB files of this project wit AI and it found some Issues with a MOSFET placed in the wrong direction it criticized my retundant buck converter. So I fixed it and deleted this unneccessary piece of hardware. I also fixed some other smaller Issues, like added a Mosfet to the buzzer so not the whole current flows through the GPIOs of the ESP32. I also added some Adafruit WS2812 LEDs and first wanted them to be assembled by JLC but this would have cost much more than I planned for this. I tried 3 diffrent components with 3 different designs, but in the end I decided to just solder them by hand later.  I 3D printed another referenc model and checked dimensions. I chose a smaller Lipo than I originally planned because it better matched the dimensions I planned :) I had to put VREGIN of the CP2102N to 3.3V because due to my buildin Buckboost converter the CP2102N's isn't used. I rerouted the VBUS_IN trace because I liked to use the full power of the USB to charge the lipo properly. I also checked the battary protection and charging circuit. The WS2812 LED strip is now powered by 5V not only 3.3V because the datasheet suggested doing this. I collected the wishlist on adafruit, proofed all footprints and added a Battary connections Switch so I can turn the dvice completely off if I want to :).
 
-![cart](images\Progress\cart2.png)
+![cart](images/Progress/cart2.png)
 
 Finally I rendered all images, I generated all gerbers and put the board in my JLC cart.
 
