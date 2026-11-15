@@ -8,17 +8,17 @@ Total hours: ~ 175h (my mum says thier actually *much more*...)
 
 # Journal
 
-## April 2026
+## April 13, 2026
 
 I looked for possible solutions for my idea of a smart irrigation system and searched for existing repositories. However, nothing really fitted my needs, so I decided to build my own system.
 
 I researched the required hardware and learned how capacitive soil moisture sensors work. I also started thinking about how the system could monitor several plants individually and how the data could later be used for automatic watering.
 
-**Time spent:** \~5 h
+Time spent: 5 h
 
 \---
 
-## End of April 2026
+## April 20, 2026
 
 I ordered my first soil moisture sensors and tried to monitor soil moisture with an ESP32 DevKitC. I had some issues when using Wi-Fi and analog readings at the same time on the ESP32. I had to figure out which analog pins were still available while Wi-Fi was enabled and which six pins I could use for the sensors.
 
@@ -39,11 +39,11 @@ I could not find a good existing library or code example that fitted my use case
 ![firstWebInterface](images/Progress/ScreenshotWebInterface.png)
 ↑ first WebInteface (already working!!!)
 
-**Time spent:** \~8 h
+Time spent: 8 h
 
 \---
 
-## Beginning of May 2026
+## 1 May, 2026
 
 I decided to add a display as an addition to the web interface and ordered a 2.4" TFT LCD screen with resistive touch. However, the display I ordered was especially designed for an Arduino Uno R3 or compatible boards.
 
@@ -56,12 +56,12 @@ In the end, I decided to wire the display directly to the ESP32 and accept the r
 ![DisplayTest](images/Progress/20260612_181839.jpg)
 ↑ First Image on Display. There were still errors like you can see :(
 
-**Time spent:** \~6 h
+Time spent: 6 h
 This included trial and error, research and consideration of different possible solutions.
 
 \---
 
-## May 2026 until begin of June 2026
+## June 12, 2026
 
 *20.05., 28.05., 05.06., 12.06. and dates between*
 
@@ -87,11 +87,11 @@ This whole process of getting used to PCB design software, making first attempts
 ![PCBSetup](images/Progress/20260520_210820.jpg)
 ↑ First time switching to PCB workbench with this project in KiCAD
 
-**Time spent:** >20 h
+Time spent: 20 h
 
 \---
 
-## June 2026
+## June 15, 2026
 
 After the disappointment with the first PCB design, I focused more on the code for the project. I mounted the modules on a breadboard and tested the wiring of the components. During testing, I found some errors in my wiring configuration. I fixed these issues and tested almost every part of the board.
 
@@ -107,7 +107,7 @@ I modified the schematic of the PCB according to these changes and also complete
 ![KiCAD](images/Progress/20260528_220145.jpg)
 ↑ Another photo of me editing something in KiCAD
 
-Time spent: ~12 h
+Time spent: 12 h
 
 ---
 
@@ -120,15 +120,15 @@ I had to do a lot of research to find a suitable system for decoding and playing
 [LizardVideo](images/Progress/20260630_183828.mp4)
 ↑ I got it!
 
-**Time spent:** ~5 h
+Time spent: 5 h
 
-## July 2026
+## July 1, 2026
 
 After asking in the Hack Club hardware channel, I learned that I can submit both PCBs because they belong to the same project. I reorganized the repository by moving the PlatformIO firmware into `/firmware` and creating a separate `/pcb` folder for the KiCad files and Gerber exports. I also added some features and improved the PCB to the final design. Now everything shold be working fine...
 
-Time spent: ~6 h
+Time spent: 6 h
 
-## July 6/7, 2026
+## July 6, 2026
 
 I prepared the mechanical files for the final submission. I exported both
 PCBs individually as STEP files and imported them into FreeCAD.
@@ -137,9 +137,9 @@ I then created an assembly of both stacked PCBs to verify their relative
 position and exported the complete assembly as a STEP file. I also updated
 the JLCPCB cart and cleaned up temporary KiCad lock files.
 
-Time spent: ~5 h
+Time spent: 5 h
 
-## July 10-15, 2026
+## July 15, 2026
 
 I ordered the PCB from JLCPCB and came to some issues with a footprint of the USB CP2102 Chip.  Because I was on travel with school I replaced this part in my order on 16.07.2026.
 
@@ -149,9 +149,9 @@ This was my final cart for the order:
 Final BOM:
 ![BOM](images/Progress/bom.png)
 
-Time spent: ~1h
+Time spent: 1h
 
-## July 17-23, 2026
+## July 23, 2026
 
 I received an Emails about a mismatching of the audio jack. With some friendly email communication I could solve those Issues and received the boards at July 24. But I were on vacation so I could only inspect the boards when I came back at July 27.
 
@@ -169,7 +169,7 @@ Time spent: 2h
 
 I tested the boards and as soon I as I drawed some current at some parts the cp2102 chip got hot and destroied itself. I first thought of a short circuit due to mismatching package types. Therefore I had to spend the whole day with replacing the chip and wiring the USB-c to the microusb directly.  That didn't work. I also tried to wire it to the exposed pads of the removed cp2102 but that also didn't work. I have been really disappointed.
 
-Time spend at this day and the week before: ~8h
+Time spend at this day and the week before: 8h
 
 ## July 29, 2026
 
@@ -178,52 +178,52 @@ I proceed with yesterdays strategie but I had to start over with a new board I r
 ![board](images/Progress/boardlightup.jpg)
 ![board](images/Progress/boardlightup2.jpg)
 
-This struggle took very long: ~5h
+This struggle took very long. Time spent: 5h
 
 edit: no success while coding. SD mount failed, USB communication doesn't work. I actually don't want to proceed. Time wasted here: at least 3h
 
-## July 30 - 31, 2026
+## July 31, 2026
 
 I fixed SD failures. I succeed by showing up the lizard video on the screen. I am not able to use the USB-C. I forgot to cross the UART cables and end up wiring those manually to the Devkit C. Eventhough the communication didn't worked. I also soldered the buttons directly to the board and tested them. They worked perfect and also the MQ2 Gas sensor worked without any bigger issues.
 I also tested the battery and the boost converter they worked perfect :) Next step is to test the I2C communication and to find out if or how to find around the usb connection issues.
 
 Time spend: 6h
 
-## August 1 2026
+## August 1, 2026
 
 I laied the hardware issues to the side and started coding. I coded a selfcheck class that automatically initializes the components of the board. I had to do some debugging but on August 2 the first part of my code all worked fine!
 Time spend: 4h
 
-## August 2 2026
+## August 2, 2026
 
 I tried to use functilns of board 2 but after quite a bit of software bugs and some new functions nobody ever asked for I found out that the wire to board 2 were broken and the board wasn't even supplied by power.
 I soldered new connectors to the board and reached the state of August 1. But I also did some research on GUI engines.
-Time spend: ~ 2h
+Time spend: 2h
 
-## August 3 2026
+## August 3, 2026
 
 My goal for today was to get the LEDs working properly And to address the ADCs. But before I could start I had to realise that again some connectors didn't properly connect. So again soldering of wires that don't want to stick in the holes they're supposed to.
 Finally everything was connected I asked AI to find software bugs. My self check class couldn't have worked or thrown an error because the begin functions don't throw an error but return non-zero values so I had to modify the complete class. In the end it worked so it thrower errors. But I didn't want to get those errors. It started with simple Errors that the ADCs and the clock couldn't be addressed or called by their begin functions. I tried a lot but that didn't worked. I got even more cable broken at their connectors, my Laptop was constantly throwing errors because the connected device was pulling too much power from the USB port because I probably miswired the MQ2 so it heated up to more than 60°C... Anyway I had a successful I2C scan. but as I wanted to repeat it it didn't work. I thought it would have been a software bug but it turned out to be another hardware problem.
 It took me hours until I decided to turn all over. Until then I had already tried to throw away all files aren't necessary needed.
 But then I started wir a new board. I learned from my mistakes with board 1 and 2 and tried to connect everything using connectors then can easily be removed. Finally after I had soldered alle components except for the buttons and the MQ2 I could successfully use the I2C of the ESP32 Devkit c. It took me again a lot of time until I reached the state of August 1. Eventough the LEDs still don't light up and the SD card doesn't work I had wasted around 8.5 hours of my life here and still don't really know what the error was. It was one of my least successful and enjoyable days this year. I think it was the last bigger project in my life.
 
-Time spend: 8.5h
+Time spend: 9h
 
-## September 2026
+## September 15, 2026
 
 I tested the pcb functions and found some errors. I fixed them by wiring some cabels and got every system working. But due to lose contacts some features didn't work all the time. Some  contacts shortened 3.3V and 5V so sometimes features like the sd card didn't work because of a mismatching voltage.  The RX and TX wires were accidently not crossed so some more wires were need to make the USB communication via Board-USB2UART bridge possible.
 
-Time spend: ~10h
+Time spend: 10h
 
-## October 2026
+## October 15, 2026
 
 The lose connections and the annoying wires sucked so I decided to focus on the next iteration of pcb. I decided to put everything on one single pcb. Moreover I tried to get rid of the modules and use an ESP32 directly soldered to the board. Besides, I wanted to have a  larger display and looked at adafruit for larger seperate displays.
 
 First I started to unify the pcbs  by just adding each ones components to a new KiCAD project folder. I realized that some components I chose weren't optimal or mismatched my requirements. In addition, I realized that all the components were too big for the small pcb.
 
-Time spend (wasted): ~5h
+Time spent (wasted): 5h
 
-## End of October
+## October 30, 2026
 
 ![image](images/Progress/20261021_092406.jpg)
 
@@ -236,13 +236,13 @@ Together pcbs and display hardware will cost around 560$
 
 All together I spend around 20h on that.
 
-## October 29 2026
+## October 29, 2026
 
 I tried to reduce the cost by placing all components to one side of the board. This should decrease the cost of the board by about 40$. Therfore I had to generate a slot into the pcb and put the fpc on the top wide of the board. In addition to that, I realized after 3D printing a 1:1 Model of the board that the USB connector has to be placed much closer do the board edge in order to be usable. This took me about 2h.
 
 ![image](images/Progress/board01.jpeg)
 
-## Novebmer 4 2026
+## Novebmer 4, 2026
 
 I tried to reduce the cost even further by trying to switch to pcba economic. In order to achieve that I realized, that the board size was to small for Economic PCBA. I added a breakoutpart to enlarge the surface. I wanted to use this space instead of wasting it so I designed an I2C expander and some example footprints to use it as a pcb ruler like one I saw on adafruit. I planned how to add the features I planned like the fan, the LED Stip and some other pwm depending features. I tried to find a I2C GPIO expander and even found some on Texas instruments but those were eigther far too expensive, didn't match the PWM frequencies I needed, or weren't in stock at JLCPCB. The best possible Solution I found was putting an STM32 microcontroller beside and let it communicate with the ESP32 via I2C protocol. But the STM32 microcontroller would have to be programmed and so I would need addiditonal tools or I would have need to have another accessible Serial interface and on top of that I would have to programm all neccessary features to this STM32 and all commands. That would increase the risk that in the end nothing would work so I thought of switching the display interface type from the 8-bit parallel interface to an SPI interface because this would save many GPIOs wich are also capable of doing PWM with the wished frequency.  I also considered wheather to expand the pins I used for the 8bit parallel bus to a GPIO expander but this wouldn't be fast enought and more complex while programming and configuring.
 
@@ -250,11 +250,11 @@ I tried to reduce the cost even further by trying to switch to pcba economic. In
 
 Time spent:  5h
 
-## Until November 12 2026
+## November 12, 2026
 
-I put forward my plans to switch the Display interface type to SPI. I started with the pinout of the connector from the datasheet and reworked everything until the concept for the SPI worked. I deleted the 8it voltage stabalizer chip I used prevously. Moreover I had to delete many wires in the layout . I placed many symbols in the schematic. Looked after many components' datasheets and pinouts. I downloaded footprints, installed tools like easyeda2kicad, made a new library directory on my desktop. all together I spent about 6 hous doing that. Unfortunately I havn't got pictures of that annoying work :(
+I put forward my plans to switch the Display interface type to SPI. I started with the pinout of the connector from the datasheet and reworked everything until the concept for the SPI worked. I deleted the 8it voltage stabalizer chip I used prevously. Moreover I had to delete many wires in the layout . I placed many symbols in the schematic. Looked after many components' datasheets and pinouts. I downloaded footprints, installed tools like easyeda2kicad, made a new library directory on my desktop. all together I spent about 6 hours doing that. Unfortunately I havn't got pictures of that annoying work :(
 
-## November 13 2026
+## November 13, 2026
 
 I looked after my switch decisions. I previously decided for 4 simple push buttons as my switches but while researching I found much nicer keyboard switches on adafruit. I decided to switch the switches (funny sentence probably nobody will ever value). There was too less space for putting 4 buttons there so I deleted one (I don't neccessary need the Lizard screensaver button). I downloaded new footprints, placed them rearranged other parts to fit the board. I also decided for a silent Nocuta fan like Used those used in my 3D printer but I wasn't sure wheater to stay at a diameter o 40mm. Maybe i want to switch to 60mm.
 
@@ -262,7 +262,7 @@ I looked after my switch decisions. I previously decided for 4 simple push butto
 
 Time spent: 2h
 
-## November 14 2026
+## November 14, 2026
 
 I realized I didn't used the space on the pcb properly an I could also better split the different regions on my pcb. I deleted alsmost everything and completely started over with placing components. B ythat I had much cleaner areas where to put noisy pards like the buckboost converter away from the analog woltage regions and where to put my fast signals and display stuff. I also menaged to get nearly symmetrical places for the audio jacks and put the peripheal interfaces all on one side of the board. by doing that I got so much more space on the board that I decided to put a sound buzzer onto the board. It might be usefull. So if there is any kind of crazy error I could not only get visual but also auditive feedback like the Plants are in fact screaming because the tank is empty an their soil is completely dry :) . I decided for an 60mm 5V Nocuta fan and located the holes in the PCB.
 
@@ -271,7 +271,7 @@ Furthermore I generated the gerberfiles and configured the part at JLCPCB.
 
 Time spent: 7 hours
 
-## November 15 2026
+## November 15, 2026
 
 I finished last things I wanted to do before merge and before requesting submission from HackClub. I checked the gerbers and the PCB files of this project wit AI and it found some Issues with a MOSFET placed in the wrong direction it criticized my retundant buck converter. So I fixed it and deleted this unneccessary piece of hardware. I also fixed some other smaller Issues, like added a Mosfet to the buzzer so not the whole current flows through the GPIOs of the ESP32. I also added some Adafruit WS2812 LEDs and first wanted them to be assembled by JLC but this would have cost much more than I planned for this. I tried 3 diffrent components with 3 different designs, but in the end I decided to just solder them by hand later.  I 3D printed another referenc model and checked dimensions. I chose a smaller Lipo than I originally planned because it better matched the dimensions I planned :) I had to put VREGIN of the CP2102N to 3.3V because due to my buildin Buckboost converter the CP2102N's isn't used. I rerouted the VBUS_IN trace because I liked to use the full power of the USB to charge the lipo properly. I also checked the battary protection and charging circuit. The WS2812 LED strip is now powered by 5V not only 3.3V because the datasheet suggested doing this. I collected the wishlist on adafruit, proofed all footprints and added a Battary connections Switch so I can turn the dvice completely off if I want to :).
 
