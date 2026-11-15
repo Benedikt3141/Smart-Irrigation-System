@@ -283,4 +283,4 @@ I finished last things I wanted to do before merge and before requesting submiss
 Finally I rendered all images, I generated all gerbers and put the board in my JLC cart.
 
 I also wrote the Journal.
-Time spent: 8h
+Time spent: 10h
