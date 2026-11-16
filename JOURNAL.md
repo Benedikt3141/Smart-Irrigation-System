@@ -5,7 +5,6 @@ Description: "A monitoring and control unit of a smart irrigation system with so
 Created On: "13/04/2026"
 Total hours: ~ 175h (my mum says thier actually *much more*...)
 ---
-
 # Journal
 
 ## April 13, 2026
@@ -223,7 +222,7 @@ The lose connections and the annoying wires sucked so I decided to focus on the 
 
 First I started to unify the pcbs  by just adding each ones components to a new KiCAD project folder. I realized that some components I chose weren't optimal or mismatched my requirements. In addition, I realized that all the components were too big for the small pcb.
 
-Time spent (wasted): 5h
+Time spent: 5h
 
 ## October 16, 2026
 
@@ -236,11 +235,13 @@ The additional displays are for spare options if Version 2 still doesnt work so 
 ![cart](cart_jlcpcb.png)
 Together pcbs and display hardware will cost around 560$
 
-All together I spend around 20h on that.
+Time spent: 20h
 
 ## October 29, 2026
 
-I tried to reduce the cost by placing all components to one side of the board. This should decrease the cost of the board by about 40$. Therfore I had to generate a slot into the pcb and put the fpc on the top wide of the board. In addition to that, I realized after 3D printing a 1:1 Model of the board that the USB connector has to be placed much closer do the board edge in order to be usable. This took me about 2h.
+I tried to reduce the cost by placing all components to one side of the board. This should decrease the cost of the board by about 40$. Therfore I had to generate a slot into the pcb and put the fpc on the top wide of the board. In addition to that, I realized after 3D printing a 1:1 Model of the board that the USB connector has to be placed much closer do the board edge in order to be usable. 
+
+Time spent: 2h.
 
 ![image](images/Progress/board01.jpeg)
 
@@ -296,4 +297,3 @@ Time spent: 2h
 ![Render](images/Progress/TOP_Render.png)
 ![Render](images/Progress/Front_Render.png)
 ![Render](images/Progress/Back_Render.png)
-
