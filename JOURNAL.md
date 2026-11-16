@@ -5,6 +5,7 @@ Description: "A monitoring and control unit of a smart irrigation system with so
 Created On: "13/04/2026"
 Total hours: ~ 175h (my mum says thier actually *much more*...)
 ---
+
 # Journal
 
 ## April 13, 2026
@@ -14,6 +15,8 @@ I looked for possible solutions for my idea of a smart irrigation system and sea
 I researched the required hardware and learned how capacitive soil moisture sensors work. I also started thinking about how the system could monitor several plants individually and how the data could later be used for automatic watering.
 
 Time spent: 5 h
+
+![Test](images/Progress/First_Test.jpg)
 
 \---
 
@@ -54,6 +57,8 @@ In the end, I decided to wire the display directly to the ESP32 and accept the r
 
 ![DisplayTest](images/Progress/20260612_181839.jpg)
 ↑ First Image on Display. There were still errors like you can see :(
+
+
 
 Time spent: 6 h
 This included trial and error, research and consideration of different possible solutions.
@@ -127,6 +132,8 @@ After asking in the Hack Club hardware channel, I learned that I can submit both
 
 Time spent: 6 h
 
+![ProgrammingSession](images/Progress/20260803_193211.jpg)
+
 ## July 6, 2026
 
 I prepared the mechanical files for the final submission. I exported both
@@ -168,11 +175,16 @@ Time spent: 2h
 
 I tested the boards and as soon I as I drawed some current at some parts the cp2102 chip got hot and destroied itself. I first thought of a short circuit due to mismatching package types. Therefore I had to spend the whole day with replacing the chip and wiring the USB-c to the microusb directly.  That didn't work. I also tried to wire it to the exposed pads of the removed cp2102 but that also didn't work. I have been really disappointed.
 
+![Problem](images/Progress/20260803_174404.jpg)
+
+
 Time spend: 8h
 
 ## July 29, 2026
 
 I proceed with yesterdays strategie but I had to start over with a new board I realiesed that the short circuit only appered when I had soldered the MQ2 Sensor to the board. therefore I looked into the schematic again an noticed that all current has to float through the cp2102 chip. I had the solution that I wired a parallel wire to the dcdc converter of the esp32devkit c directly to split the current and prevent it of floating through only one thin wire. That suprisingly worked fantastic! Even the display turned on and every status LED lighted up as intended. Now I only have to test the data transphere...
+
+![coding](images/Progress/20260416_212341.jpg)
 
 ![board](images/Progress/boardlightup.jpg)
 ![board](images/Progress/boardlightup2.jpg)
@@ -188,6 +200,8 @@ Time spent: 8h
 I fixed SD failures. I succeed by showing up the lizard video on the screen. I am not able to use the USB-C. I forgot to cross the UART cables and end up wiring those manually to the Devkit C. Eventhough the communication didn't worked. I also soldered the buttons directly to the board and tested them. They worked perfect and also the MQ2 Gas sensor worked without any bigger issues.
 I also tested the battery and the boost converter they worked perfect :) Next step is to test the I2C communication and to find out if or how to find around the usb connection issues.
 
+![board](images/Progress/First_mislucked_board.jpg)
+
 Time spend: 6h
 
 ## August 1, 2026
@@ -201,6 +215,10 @@ I tried to use functilns of board 2 but after quite a bit of software bugs and s
 I soldered new connectors to the board and reached the state of August 1. But I also did some research on GUI engines.
 Time spend: 2h
 
+![working](images/Progress/IMG-20260620-WA0004.jpeg)
+
+
+
 ## August 3, 2026
 
 My goal for today was to get the LEDs working properly And to address the ADCs. But before I could start I had to realise that again some connectors didn't properly connect. So again soldering of wires that don't want to stick in the holes they're supposed to.
@@ -210,11 +228,17 @@ But then I started wir a new board. I learned from my mistakes with board 1 and 
 
 Time spend: 9h
 
+![Struggle](images/Progress/20260803_125140.jpg)
+
+
+
 ## September 15, 2026
 
 I tested the pcb functions and found some errors. I fixed them by wiring some cabels and got every system working. But due to lose contacts some features didn't work all the time. Some  contacts shortened 3.3V and 5V so sometimes features like the sd card didn't work because of a mismatching voltage.  The RX and TX wires were accidently not crossed so some more wires were need to make the USB communication via Board-USB2UART bridge possible.
 
 Time spend: 10h
+
+![Board](images/Progress/TestCP2102N.jpg)
 
 ## October 15, 2026
 
@@ -239,7 +263,7 @@ Time spent: 20h
 
 ## October 29, 2026
 
-I tried to reduce the cost by placing all components to one side of the board. This should decrease the cost of the board by about 40$. Therfore I had to generate a slot into the pcb and put the fpc on the top wide of the board. In addition to that, I realized after 3D printing a 1:1 Model of the board that the USB connector has to be placed much closer do the board edge in order to be usable. 
+I tried to reduce the cost by placing all components to one side of the board. This should decrease the cost of the board by about 40$. Therfore I had to generate a slot into the pcb and put the fpc on the top wide of the board. In addition to that, I realized after 3D printing a 1:1 Model of the board that the USB connector has to be placed much closer do the board edge in order to be usable.
 
 Time spent: 2h.
 
@@ -297,3 +321,8 @@ Time spent: 2h
 ![Render](images/Progress/TOP_Render.png)
 ![Render](images/Progress/Front_Render.png)
 ![Render](images/Progress/Back_Render.png)
+
+## November 16, 2026
+
+I corrected mistakes in the Readme and deleted Plan B items for saving cost.
+

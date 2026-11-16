@@ -75,6 +75,7 @@ This repository contains both the firmware and the PCB design files.
 - `/firmware/src/` contains the ESP32 source code.
 - `/src/pcb/` contains the KiCad PCB design files.
 - `/src/pcb/Smart_Irrigation_SystemV2/production/` contains the exported Gerber files for manufacturing.
+- `/src/pcb/assembly_and_models` contains 3d assembly files
 
 ## File Structure
 
@@ -152,7 +153,7 @@ I've carefully reviewed and checked my design multiple times, and I'm now quite 
 
 I'm really proud of what I've accomplished and everything I've learned along the way. This project has been a challenging but incredibly rewarding experience, and I'm excited to take the next step toward completing it.
 
-Thank you, Hack Club, for supporting my previous request. I would be very grateful if you could help me with this next chapter of my project! I need 500$ to finance this project. The rest of the money I'll pay from my own money.
+Thank you, Hack Club, for supporting my previous request. I would be very grateful if you could help me with this next chapter of my project! I need 500$ (450€) to finance this the new pcb (SmartIrrigationSystemV2.5) and the other neccessary parts mentioned in the BOM like Displays, fans, buttons, LEDs etc.. The rest of the money I'll need for this project iteration I'll pay from my own money.
 
 ## AI Usage
 
@@ -167,14 +168,11 @@ created completely by myself.
 
 | Item                                                            | Qty | Unit price | Total price | Purchase link                                                  | Notes                                                      |
 | ----------------------------------------------------------------- | ----: | -----------: | ------------: | ---------------------------------------------------------------- | ------------------------------------------------------------ |
-| PCB_Board                                                       |   1 |       15€ |        15€ | —                                                             | —                                                         |
-| PCB_Assembly                                                    |   1 |      186€ |       186€ | —                                                             | —                                                         |
-| PCB Shipping and Taxes                                          |   1 |      100€ |       100€ | —                                                             | Last time I ordered, I had to pay 60€ tax before delivery |
+| PCB_Board                                                       |   1 |       15€ |        15€ |[Product](cart_jlcpcb.png)                                                             | —                                                         |
+| PCB_Assembly                                                    |   1 |      186€ |       186€ | [Product](cart_jlcpcb.png)                                                            | —                                                         |
+| PCB Shipping and Taxes                                          |   1 |      100€ |       100€ | [Product](cart_jlcpcb.png)                                                             | Last time I ordered, I had to pay 60€ tax before delivery |
 | Nocuta NF-A6x15 5V PWM                                          |   1 |       17€ |        17€ | [Product](https://www.amazon.de/dp/B0DJP3987K?tag=noctua09-21) | Fan                                                        |
 | 3.2 TFT Display with Resistive Touchscreen                      |   2 |       15€ |        30€ | [Product](https://www.adafruit.com/product/4278)               | Touchscreen                                                |
-| 5.0" 40-pin TFT Display 800x480 with Touchscreen                |   1 |       30€ |        30€ | [Product](https://www.adafruit.com/product/1596)               | Plan B                                                     |
-| 7.0" 40-pin TFT Display 800x480 with Touchscreen                |   1 |       35€ |        35€ | [Product](https://www.adafruit.com/product/2354)               | Plan B                                                     |
-| RA8875 Driver Board for 40 pin TFT Touch Displays 800x480 Max   |   1 |       40€ |        40€ | [Product](https://www.adafruit.com/product/1590)               | Plan B                                                     |
 | Kailh Mechanical Key Switches - Tactile Brown - 10-pack WS2812B |   1 |        7€ |         7€ | [Product](https://www.adafruit.com/product/4954)               | Switches                                                   |
 | NeoPixel Nano 2020 RGB LEDs -10-Pack -WS2812B                   |   1 |        4€ |         4€ | [Product](https://www.adafruit.com/product/4684)               | LEDs for under the switches                                |
 | NeoPixel Stick -8 x 5050 RGBW LEDs -WarmWhite ~3000K            |   2 |        8€ |        16€ | [Product](https://www.adafruit.com/product/2867)               | LEDs for under the board                                   |
@@ -183,7 +181,5 @@ created completely by myself.
 | SoilMoisture Sensors 6pcs                      |   1 |       9€ |        9€ | [Product](https://www.amazon.de/Aideepen-Bodenfeuchtigkeitssensor-Hygrometer-Modul-korrosionsbest%C3%A4ndiges-Arduin0-Pflanzenbew%C3%A4sserung/dp/B08GCRZVSR/ref=sr_1_4?s=industrial)                | Moisture sensors I already bought                                                       |
 | Shipping                                                        |   1 |       50€ |        50€ | —                                                             | Shipping from Adafruit and Amazon                          |
 
-**Total (including Plan B items): 550 €**
-**Optional Plan B items: 105 €**
-**Total (excluding Plan B items): 445 €**
+**Total: 445 €**
 
