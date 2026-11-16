@@ -143,7 +143,7 @@ The main monitoring unit is mostly implemented. The watering unit, web interface
 [MQ2 Library](https://github.com/labay11/MQ-2-sensor-library/)
 [SD Card](https://RandomNerdTutorials.com/esp32-web-server-microsd-card/)
 
-## Why I Think I Should Receive Financial Sponsorship for This Project
+## Why I think I should receive financial sponsorship for this project
 
 I already received $180 in rewards from Hack Club in July 2026. Since then, I have spent nearly 100 hours working on this project. During this time, I have gained many new skills and a lot of knowledge in PCB design, including effective routing techniques, reading datasheets, organizing schematics, and working with Git. I have also developed personal skills, especially resilience and perseverance throughout this long process.
 
