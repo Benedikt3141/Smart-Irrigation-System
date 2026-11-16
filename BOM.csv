@@ -1,12 +1,9 @@
 Item name,Qty,Price (EUR€),price total,URL,Comment
-PCB_Board,1,15€,15€,,
-PCB_Assembly,1,186€,186€,,
-PCB Shipping and Taxes,1,100€,100€,,"last time I ordered, I had to pay 60€ Tax before delivery"
+PCB_Board,1,15€,15€,https://github.com/Benedikt3141/Smart-Irrigation-System/blob/main/cart_jlcpcb.png,
+PCB_Assembly,1,186€,186€,https://github.com/Benedikt3141/Smart-Irrigation-System/blob/main/cart_jlcpcb.png,
+PCB Shipping and Taxes,1,100€,100€,https://github.com/Benedikt3141/Smart-Irrigation-System/blob/main/cart_jlcpcb.png,"last time I ordered, I had to pay 60€ Tax before delivery"
 Nocuta NF-A6x15 5V PWM,1,17€,17€,https://www.amazon.de/dp/B0DJP3987K?tag=noctua09-21,Fan
 3.2 TFT Display with Resistive Touchscreen,2,15€,30€,https://www.adafruit.com/product/4278,Touchscreen
-"5.0"" 40-pin TFT Display 800x480 with Touchscreen",1,30€,30€,https://www.adafruit.com/product/1596,Plan B
-"7.0"" 40-pin TFT Display 800x480 with Touchscreen",1,35€,35€,https://www.adafruit.com/product/2354,Plan B
-RA8875 Driver Board for 40 pin TFT Touch Displays 800x480 Max,1,40€,40€,https://www.adafruit.com/product/1590,Plan B
 Kailh Mechanical Key Switches - Tactile Brown - 10-pack WS2812B,1,7€,7€,https://www.adafruit.com/product/4954,Switches
 NeoPixel Nano 2020 RGB LEDs -10-Pack -WS2812B,1,4€,4€,https://www.adafruit.com/product/4684,LEDs for under the swtches
 NeoPixel Stick -8 x 5050 RGBW LEDs -WarmWhite ~3000K,2,8€,16€,https://www.adafruit.com/product/2867,LED for under the board
@@ -14,4 +11,4 @@ Translucent Keycaps for MX Compatible Switches - 10 pack,1,5€,5€,https://www
 Lithium Ion Polymer Battery - 3.7v 2500mAh,1,15€,15€,https://www.adafruit.com/product/328,Lipo
 Shipping,1,50€,50€,,shipping for adafruit and amazon
 ,,,,,
-Total,,,550€,,
+Total,,,454€ / 500$,,

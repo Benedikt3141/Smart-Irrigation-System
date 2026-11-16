@@ -1,5 +1,5 @@
 ![Preview](images/Progress/Back_Render.png)
-→ Current Version as .step Assembly ([Assembly](src/assembly_and_models/SmartIrrigationSystem.FCStd))
+→ Current Version as .step Assembly ([Assembly](src/assembly_and_models/SmartIrrigationSystem-Assembly.step)
 
 ![Title](images/Progress/ascii-art-text.png)
 
@@ -181,5 +181,5 @@ created completely by myself.
 | SoilMoisture Sensors 6pcs                      |   1 |       9€ |        9€ | [Product](https://www.amazon.de/Aideepen-Bodenfeuchtigkeitssensor-Hygrometer-Modul-korrosionsbest%C3%A4ndiges-Arduin0-Pflanzenbew%C3%A4sserung/dp/B08GCRZVSR/ref=sr_1_4?s=industrial)                | Moisture sensors I already bought                                                       |
 | Shipping                                                        |   1 |       50€ |        50€ | —                                                             | Shipping from Adafruit and Amazon                          |
 
-**Total: 445 €**
+**Total: 454 €**
 

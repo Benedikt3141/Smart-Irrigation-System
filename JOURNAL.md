@@ -141,9 +141,11 @@ PCBs individually as STEP files and imported them into FreeCAD.
 
 I then created an assembly of both stacked PCBs to verify their relative
 position and exported the complete assembly as a STEP file. I also updated
-the JLCPCB cart and cleaned up temporary KiCad lock files.
+the JLCPCB cart and cleaned up temporary KiCad log files.
 
 Time spent: 5 h
+
+![stacked boards](images/Progress/stackedBoards.png)
 
 ## July 15, 2026
 
@@ -162,6 +164,8 @@ Time spent: 1h
 I received an Emails about a mismatching of the audio jack. With some friendly email communication I could solve those Issues and received the boards at July 24. But I were on vacation so I could only inspect the boards when I came back at July 27.
 
 Time spent: 1h
+
+![Emails](images/Progress/Emails.png)
 
 ## July 27, 2026
 
@@ -208,6 +212,8 @@ Time spend: 6h
 
 I laied the hardware issues to the side and started coding. I coded a selfcheck class that automatically initializes the components of the board. I had to do some debugging but on August 2 the first part of my code all worked fine!
 Time spend: 4h
+
+![code](images/Progress/ScreenshotCode.png)
 
 ## August 2, 2026
 
@@ -324,5 +330,8 @@ Time spent: 2h
 
 ## November 16, 2026
 
-I corrected mistakes in the Readme and deleted Plan B items for saving cost.
+I corrected mistakes in the Readme and deleted Plan B items for saving cost. I added Images to the Journal. I checked the schematic one more time.
+Time spent: 2.5h
+
+![Image](images/Progress/Readme.png)
 
