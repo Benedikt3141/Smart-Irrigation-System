@@ -26,7 +26,7 @@ Each soil moisture sensor is connected individually using an audio jack connecto
 The watering unit is planned as a separate module. It will receive commands from the main control unit via ESP-NOW and control the water flow using a solenoid valve.
 The unit should also monitor the water tank level using an ultrasonic sensor.
 
-This part of the system is still work in progress.
+This part of the system is still work in progress. But It will be bareable with electronic modules I have at hand so I won't need a custom PCB for it and it also doesn't count to the sponsorship.
 
 ![Concept](Concept.jpg)
 
@@ -157,11 +157,9 @@ Thank you, Hack Club, for supporting my previous request. I would be very gratef
 
 ## AI Usage
 
-Allof the code was written by myself. Since this is a work in progress, the code may still contain bugs or parts that could be improved.
+All of the code was written by myself. Since this is a work in progress, the code may still contain bugs or parts that could be improved.
 
-I used AI for debugging assistance, spelling correction, research and for generating the concept visualization shown at the top of this README.
-
-The PCB design, hardware architecture and most of the firmware were
+The PCB design, hardware architecture and  the firmware were
 created completely by myself.
 
 ## Bill of Materials (BOM)
@@ -178,7 +176,7 @@ created completely by myself.
 | NeoPixel Stick -8 x 5050 RGBW LEDs -WarmWhite ~3000K            |   2 |        8€ |        16€ | [Product](https://www.adafruit.com/product/2867)               | LEDs for under the board                                   |
 | Translucent Keycaps for MX Compatible Switches - 10 pack        |   1 |        5€ |         5€ | [Product](https://www.adafruit.com/product/4956)               | Keycaps                                                    |
 | Lithium Ion Polymer Battery - 3.7v 2500mAh                      |   1 |       15€ |        15€ | [Product](https://www.adafruit.com/product/328)                | LiPo                                                       |
-| SoilMoisture Sensors 6pcs                      |   1 |       9€ |        9€ | [Product](https://www.amazon.de/Aideepen-Bodenfeuchtigkeitssensor-Hygrometer-Modul-korrosionsbest%C3%A4ndiges-Arduin0-Pflanzenbew%C3%A4sserung/dp/B08GCRZVSR/ref=sr_1_4?s=industrial)                | Moisture sensors I already bought                                                       |
+| SoilMoisture Sensors 6pcs                      |   1 |       9€ |        9€ | [Product](https://www.amazon.de/Aideepen-Bodenfeuchtigkeitssensor-Hygrometer-Modul-korrosionsbest%C3%A4ndiges-Arduin0-Pflanzenbew%C3%A4sserung/dp/B08GCRZVSR/ref=sr_1_4?s=industrial)                | Moisture sensors                                                        |
 | Shipping                                                        |   1 |       50€ |        50€ | —                                                             | Shipping from Adafruit and Amazon                          |
 
 **Total: 454 €**
