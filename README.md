@@ -62,7 +62,7 @@ This part of the system is still work in progress.
 
 ![Rendering](src/pcb/PCB_PlantWatering.png)
 
-![RenderingBack](images/Progress/Top_Render.png)
+![RenderingBack](images/Progress/TOP_Render.png)
 
 ![Preview](images/Progress/Preview.jpg)
    → Version one of this project (didn't completely work)
