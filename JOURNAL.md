@@ -5,7 +5,6 @@ Description: "A monitoring and control unit of a smart irrigation system with so
 Created On: "13/04/2026"
 Total hours: ~ 175h (my mum says thier actually *much more*...)
 ---
-
 # Journal
 
 ## April 13, 2026
@@ -57,8 +56,6 @@ In the end, I decided to wire the display directly to the ESP32 and accept the r
 
 ![DisplayTest](images/Progress/20260612_181839.jpg)
 ↑ First Image on Display. There were still errors like you can see :(
-
-
 
 Time spent: 6 h
 This included trial and error, research and consideration of different possible solutions.
@@ -181,7 +178,6 @@ I tested the boards and as soon I as I drawed some current at some parts the cp2
 
 ![Problem](images/Progress/20260803_174404.jpg)
 
-
 Time spend: 8h
 
 ## July 29, 2026
@@ -223,8 +219,6 @@ Time spend: 2h
 
 ![working](images/Progress/IMG-20260620-WA0004.jpeg)
 
-
-
 ## August 3, 2026
 
 My goal for today was to get the LEDs working properly And to address the ADCs. But before I could start I had to realise that again some connectors didn't properly connect. So again soldering of wires that don't want to stick in the holes they're supposed to.
@@ -235,8 +229,6 @@ But then I started wir a new board. I learned from my mistakes with board 1 and 
 Time spend: 9h
 
 ![Struggle](images/Progress/20260803_125140.jpg)
-
-
 
 ## September 15, 2026
 
@@ -331,7 +323,6 @@ Time spent: 2h
 ## November 16, 2026
 
 I corrected mistakes in the Readme and deleted Plan B items for saving cost. I added Images to the Journal. I checked the schematic one more time.
-Time spent: 2.5h
+Time spent: 3.5h
 
 ![Image](images/Progress/Readme.png)
-
