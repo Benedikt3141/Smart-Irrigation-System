@@ -121,6 +121,7 @@ I had to do a lot of research to find a suitable system for decoding and playing
 
 [LizardVideo](images/Progress/20260630_183828.mp4)
 ↑ I got it!
+![LizardFoto](images/Progress/Lizard.jpeg)
 
 Time spent: 5 h
 
@@ -245,6 +246,8 @@ The lose connections and the annoying wires sucked so I decided to focus on the 
 
 First I started to unify the pcbs  by just adding each ones components to a new KiCAD project folder. I realized that some components I chose weren't optimal or mismatched my requirements. In addition, I realized that all the components were too big for the small pcb.
 
+![image](images/Progress/commit.png)
+
 Time spent: 5h
 
 ## October 16, 2026
@@ -278,7 +281,10 @@ Time spent:  5h
 
 ## November 12, 2026
 
-I put forward my plans to switch the Display interface type to SPI. I started with the pinout of the connector from the datasheet and reworked everything until the concept for the SPI worked. I deleted the 8it voltage stabalizer chip I used prevously. Moreover I had to delete many wires in the layout . I placed many symbols in the schematic. Looked after many components' datasheets and pinouts. I downloaded footprints, installed tools like easyeda2kicad, made a new library directory on my desktop. all together I spent about 6 hours doing that. Unfortunately I havn't got pictures of that annoying work :(
+I put forward my plans to switch the Display interface type to SPI. I started with the pinout of the connector from the datasheet and reworked everything until the concept for the SPI worked. I deleted the 8it voltage stabalizer chip I used prevously. Moreover I had to delete many wires in the layout . I placed many symbols in the schematic. Looked after many components' datasheets and pinouts. I downloaded footprints, installed tools like easyeda2kicad, made a new library directory on my desktop. all together I spent about 6 hours doing that.
+
+![search](images/Progress/12.11.png)
+the actual history is much longer but doesn't fit on this screenshot.
 
 Time spent: 6h
 
