@@ -5,6 +5,7 @@ Description: "A monitoring and control unit of a smart irrigation system with so
 Created On: "13/04/2026"
 Total hours: ~ 175h (my mum says thier actually *much more*...)
 ---
+
 # Journal
 
 ## April 13, 2026
@@ -326,3 +327,12 @@ I corrected mistakes in the Readme and deleted Plan B items for saving cost. I a
 Time spent: 3.5h
 
 ![Image](images/Progress/Readme.png)
+
+## November 17, 2026
+
+I checked my schemaitc, checked my routing, checked my BOM checked my journal, my readme and everything! I put so much effort into this project and I am so proud on what I did so far. Please support me hack club! <3
+
+![hackclub](images/Progress/hackclub.webp)
+
+Time spent: 30m
+
